@@ -654,9 +654,11 @@ pre code {
  clear:both
 }
 .row {
+ /* Removed to fix alignment
+
  margin-right:-15px;
  margin-left:-15px
-}
+} */
 .row:before,
 .row:after {
  display:table;
