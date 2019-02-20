@@ -251,7 +251,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
 }
 @media (max-width: 767.999px) {
   #globalHeaderResourcesLinks{
-    margin: 0 0 0 -10px;
+    margin: 0 0 0 -9px;
     text-align:left;
     padding: 20px 0 25px;
   }
