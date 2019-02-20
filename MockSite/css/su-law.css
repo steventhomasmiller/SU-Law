@@ -147,7 +147,6 @@ body.advertising{ /* page layout #280291 */
   }
 }
 /* search box */
-/* FOR NOLAN */
 #googleSearchBox{
   padding: 14px 0;
 }
@@ -215,8 +214,6 @@ body #googleSearchBox input#gsc-i-id1:focus {
 #googleSearchBox .gsc-search-button:focus {
   color: #fdb913;
 }
-
-/* END NOLAN */
 
 /* links in red bar */
 #globalHeaderResourcesLinks{
