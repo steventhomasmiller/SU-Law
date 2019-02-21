@@ -148,7 +148,7 @@ body.advertising{ /* page layout #280291 */
 }
 /* search box */
 #googleSearchBox{
-  padding: 14px 0;
+  padding: 20px 0;
 }
 
  #googleSearchBox td.gsc-input{
@@ -218,7 +218,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
 /* links in red bar */
 #globalHeaderResourcesLinks{
   margin:0;
-  padding:25px 20px;
+  padding:29px 0px;
   text-align:right;
 }
 #globalHeaderResourcesLinks li{
