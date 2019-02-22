@@ -98,7 +98,7 @@ body.advertising{ /* page layout #280291 */
 #globalHeader #mainlogo{
   float:left;
   height: 83px;
-  padding: 20px 32px;
+  padding: 20px 43px;
 }
 #globalHeader #mainlogo a{
   display: block;
@@ -109,7 +109,7 @@ body.advertising{ /* page layout #280291 */
   color:#fff;
   font-family:'Oswald',sans-serif;
   font-size:2.8rem;
-  height:45px;
+  height:50px;
   max-width: 184px;
   text-align: left;
 }
@@ -281,14 +281,14 @@ body #googleSearchBox input#gsc-i-id1:focus {
   -webkit-backface-visibility: hidden; /*stops the flickering. Maybe. */
   background: #ffffff;
   margin:0;
-  padding: 0 0 0 5px;
+  padding: 3px 0 0 9px;
   position: relative;
   text-transform: uppercase;
   width:100%;
 }
 @media (max-width:1169.999px) {
   #globalHeaderNavigation {
-    padding:0 0 0 10px;
+    padding:0 0 0 17px;
   }
 }
 @media (max-width:991.999px) {
@@ -301,10 +301,10 @@ body #googleSearchBox input#gsc-i-id1:focus {
 }
 #globalHeaderNavigation li.dropdown a {
   color: #666666;
-  font-size: 1.6rem;
+  font-size: 1.43rem;
   font-weight: 500;
   line-height: 1;
-  padding: 25px 25px;
+  padding: 25px 35px;
 }
 @media screen and (max-width: 1180px) { /* md */
   #globalHeaderNavigation li.dropdown a {
@@ -314,8 +314,8 @@ body #googleSearchBox input#gsc-i-id1:focus {
 }
 @media screen and (max-width: 1000px) { 
   #globalHeaderNavigation li.dropdown a {
-    font-size:1.3rem;
-    padding: 25px 15px;
+    font-size:1.1rem;
+    padding: 25px 21px;
   }	
 }
 @media screen and (max-width:991.999px) { /* sm */
@@ -421,7 +421,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
 }
 #globalHeaderNavigation .globalHeaderNavigationMainLinks ul li {
   max-height: 30px;
-  padding: 0px 0 48px;
+  padding: 0px 0 65px;
   list-style-type: none;
 }
 #globalHeaderNavigation .globalHeaderNavigationMainLinks ul li a {
