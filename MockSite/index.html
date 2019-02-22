@@ -264,8 +264,8 @@ x.homepageGridWrapper .homepageGrid .homepageGridItem4 .homepageGridHeading{
       </div>
       <i class="collapse collapseMe fa fa-times close-button"></i>
     </button>
-    <div id="globalHeaderResourcesWrapper" class="collapse collapseMe" style="position:relative; float:right; margin-top: 30px;" aria-expanded="false">
-      <p style="color: #ffffff; cursor: pointer;">Close</p>
+    <div id="globalHeaderResourcesWrapper" style="position:relative; float:right; margin-top: 30px;" aria-expanded="false">
+      <span class="collapse collapseMe" id="close-label" style="color: #ffffff; cursor: pointer;">Close</span>
     </div>
     <div id="mainlogo" class="col-xs-6 col-md-2"> 
       <a href="/" title="Seattle University Home Page" aria-label="Link back to Seattle University Home Page">
@@ -913,7 +913,17 @@ x.homepageGridWrapper .homepageGrid .homepageGridItem4 .homepageGridHeading{
 <!-- Seattle University JavaScript Conversion; Goal ID: 'mainpage' -->
 <script type="text/javascript">var ordnumber = Math.random() * 10000000000000;var sscUrl = ("https:" == document.location.protocol ? "https://" : "http://") + "trkn.us/pixel/c?ppt=580&g=mainpage&gid=2778&ord="+ordnumber+"&v=113";var x = document.createElement("IMG");x.setAttribute("src", sscUrl);x.setAttribute("width", "1");x.setAttribute("height", "1");document.body.appendChild(x);</script> 
 
+<script>
+ $(window).on('resize', function () {
+  if (window.innerWidth > 993) $('#close-label').collapse('hide')
+})
+</script>
 
+<!-- <script>
+ $(window).on('resize', function () {
+  if (window.innerWidth < 993 && ('#close-x').hasClass('collapse in')) $('#close-label').collapse('show')
+})
+</script> -->
 
 </body>
 </html> 
