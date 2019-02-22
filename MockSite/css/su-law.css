@@ -337,9 +337,9 @@ body #googleSearchBox input#gsc-i-id1:focus {
   background-color: transparent;
   color:#000000;
 }
-#globalHeaderNavigation li.mega-dropdown:hover>a.dropdown-toggle:after, 
-#globalHeaderNavigation li.mega-dropdown:focus>a.dropdown-toggle:after { /* yellow triangle */
-  border-color: transparent transparent #fdb913 transparent;
+/* #globalHeaderNavigation li.mega-dropdown:hover>a.dropdown-toggle:after, 
+#globalHeaderNavigation li.mega-dropdown:focus>a.dropdown-toggle:after {  yellow triangle */
+  /* border-color: transparent transparent #fdb913 transparent;
   border-style: solid;
   border-width: 0 10px 10px 10px;
   bottom: 0;
@@ -348,13 +348,13 @@ body #googleSearchBox input#gsc-i-id1:focus {
   left:calc(50% - 10px);
   position: absolute;
   width: 0;
-}
+}*/
 @media (max-width:991.999px) {
   #globalHeaderNavigationWrapper li.mega-dropdown:hover>a.dropdown-toggle,
   #globalHeaderNavigationWrapper li.mega-dropdown:focus>a.dropdown-toggle{
     color: #aa0000;
   }
-  #globalHeaderNavigationWrapper li.mega-dropdown:hover>a.dropdown-toggle:after,
+  /* #globalHeaderNavigationWrapper li.mega-dropdown:hover>a.dropdown-toggle:after,
   #globalHeaderNavigationWrapper li.mega-dropdown:focus>a.dropdown-toggle:after{
     content:'';
     width: 0;
@@ -365,7 +365,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
     position: absolute;
     left: 0;
     top: 15px;
-  }
+  } */
 }
 #globalHeaderNavigation li.mega-dropdown a .fa-angle-right{
   color: #04a1b9;
@@ -2269,7 +2269,10 @@ footer #footerSocialMediaLinks .social a:hover, footer #footerSocialMediaLinks .
   color:#b3b3b3;
   font-size:1.2rem;
   border-top: 1px solid;
+  padding-top: 20px;
+  margin-top: 30px;
 }
+
 #subfooter a, #subfooter a:visited{ 
   color:#b3b3b3;
   padding: 0 .5rem;
