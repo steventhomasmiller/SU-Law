@@ -397,7 +397,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
   background: #f7f7f7;
   border: none; /* remove? */
   border-radius: 0;
-  border-top: 2px solid #fdb913; /* this probably for large screens only */
+  /* border-top: 2px solid #fdb913; */
   line-height:1.6rem; /* remove? */
   min-height:200px;
   padding: 75px 30px;
