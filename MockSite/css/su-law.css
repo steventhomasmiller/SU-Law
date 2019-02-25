@@ -2276,7 +2276,6 @@ footer #footerSocialMediaLinks .social a:hover, footer #footerSocialMediaLinks .
 #subfooter a, #subfooter a:visited{ 
   color:#b3b3b3;
   padding: 0 .5rem;
-  text-decoration:underline;
 }
 #subfooter a:focus, #subfooter a:hover, #subfooter a:focus, #subfooter a:focus{ 
   color:#ffffff;
