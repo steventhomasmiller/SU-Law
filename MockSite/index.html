@@ -249,13 +249,14 @@ x.homepageGridWrapper .homepageGrid .homepageGridItem4 .homepageGridHeading{
 <!-- NOLAN'S SEARCH BOX SCRIPT -->
 <script type="text/javascript">
   function searchbox_control() {
-    var search_in = document.getElementById("search_content");
-    if (search_in.classList.contains("filled")) {
-      document.getElementById("search_button").type = "submit";
+    var search_in = document.getElementById("gsc-i-id1");
+    if (search_in.classList.contains("hidden")) {
+      search_in.classList.remove("hidden");
+      if (window.innerWidth > 993)
+        document.getElementById("globalHeaderResourcesLinks").style.right = "35%";
     }
     else {
-      search_in.innerHTML = '<input autocomplete="off" type="text" size="10" class=" gsc-input " name="Search" title="Search" id="gsc-i-id1" x-webkit-speech="" x-webkit-grammar="builtin:search" lang="en" dir="ltr" placeholder="Search" spellcheck="false" style="outline: none;"><input type="hidden" name="bgresponse" id="bgresponse">';
-      search_in.classList.add("filled");
+      document.getElementById("search_button").type = "submit";
     }
     return false;
   }
@@ -299,7 +300,8 @@ x.homepageGridWrapper .homepageGrid .homepageGridItem4 .homepageGridHeading{
                 <tr>
                   <td class="gsc-input">
                     <div id="search_content">
-                      <!-- THIS IS WHERE JS WILL PUT THE INPUT HTML WHEN THE BUTTON IS CLICKED -->
+                      <input autocomplete="off" type="text" size="10" class="hidden" name="Search" title="Search" id="gsc-i-id1" x-webkit-speech="" x-webkit-grammar="builtin:search" lang="en" dir="ltr" placeholder="Search" spellcheck="false" style="outline: none;" required="required">
+                      <input type="hidden" name="bgresponse" id="bgresponse">
                     </div>
                   </td>
                   <td class="gsc-search-button">
