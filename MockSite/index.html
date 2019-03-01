@@ -298,7 +298,6 @@
             });
           </script> 
         </div>
-
         <ul id="globalHeaderResourcesLinks" class="col-xs-12 col-sm-12 col-md-8 col-md-pull-3 col-lg-8 col-lg-pull-4">
           <li><a href="/visit/" id="SUtopNavVisit"  aria-label= "Plan a visit to Seattle University" class="globalHeaderResourcesLinksItem">Students</a></li>
           <li><a href="/admissions/apply/" id="SUtopNavApply" aria-label= "Apply to Seattle University" class="globalHeaderResourcesLinksItem">Employees</a></li>
@@ -1063,6 +1062,22 @@
     }
     return false;
   }
+</script>
+
+<script type="text/javascript">
+  window.addEventListener("resize", function(){
+    if (window.innerWidth < 993)
+      document.getElementById("globalHeaderResourcesLinks").style.right = "5%";
+    if (window.innerWidth >= 993 && !document.getElementById("gsc-i-id1").classList.contains("hidden"))
+      document.getElementById("globalHeaderResourcesLinks").style.right = "33%";
+    if(window.innerWidth == 992) {
+      document.getElementById('googleSearchBox').classList.remove('col-md-push-8');
+      document.getElementById('googleSearchBox').classList.add('col-md-push-11');
+    } else {
+      document.getElementById('googleSearchBox').classList.add('col-md-push-8');
+      document.getElementById('googleSearchBox').classList.remove('col-md-push-11');
+    }
+  });
 </script>
 
 <!-- Seattle University JavaScript Conversion; Goal ID: 'mainpage' -->
