@@ -305,7 +305,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
   font-size: 1.43rem;
   font-weight: 500;
   line-height: 1;
-  padding: 25px 29px;
+  padding: 25px 16px;
 }
 @media screen and (max-width: 1180px) { /* md */
   #globalHeaderNavigation li.dropdown a {
