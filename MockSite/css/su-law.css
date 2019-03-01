@@ -98,7 +98,7 @@ body.advertising{ /* page layout #280291 */
 #globalHeader #mainlogo{
   float:left;
   height: 83px;
-  padding: 20px 43px;
+  padding: 20px 15px;
 }
 #globalHeader #mainlogo a{
   display: block;
@@ -149,6 +149,7 @@ body.advertising{ /* page layout #280291 */
 /* search box */
 #googleSearchBox{
   padding: 20px 0;
+  margin-right: -7px;
 }
 
  #googleSearchBox td.gsc-input{
