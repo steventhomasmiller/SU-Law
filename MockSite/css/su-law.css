@@ -239,8 +239,14 @@ header.menu-is-open .primary-nav-trigger:focus {
   letter-spacing: .2px;
   line-height: 4rem;
   padding: 0 15px;
-  width: 91%;
+  width: 100%;
   float: right;
+}
+
+ @media (min-width:992px) {
+    #googleSearchBox input#gsc-i-id1{
+    width: 115%;  
+    }
 }
 
 
@@ -308,7 +314,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
 }
 @media (max-width:991.999px) {
   #globalHeaderResources {
-    padding: 0 30px;
+    padding: 17px 30px;
   }
   #googleSearchBox{
     padding: 0;
@@ -326,6 +332,24 @@ body #googleSearchBox input#gsc-i-id1:focus {
     padding: 20px 0 25px;
   }
 }
+
+
+/* @media (min-width: 992px) {
+  #googleSearchBox{
+    margin: auto;
+    text-align:center;
+    padding: 20px 0 25px;
+  }
+}*/
+
+/* @media (min-width: 992px) {
+  #globalHeaderResourcesLinks{
+    margin: auto;
+    text-align:center;
+    padding: 28px 0 25px;
+  }
+}*/
+
 /* SU Resources menu */
 #globalHeaderResources .dropdown-menu{
     margin: 0;
@@ -2260,7 +2284,7 @@ footer .footerLinks a:hover, footer .footerLinks a:focus {
   text-decoration: none;
 }
 
-@media (max-width:767.999px) {
+@media (max-width:991.999px) {
   #footerLinksPeople {
     text-align: center;
   }
@@ -2270,7 +2294,7 @@ footer .footerLinks a:hover, footer .footerLinks a:focus {
   }
 }
 
-@media (max-width:767.99px) {
+@media (max-width:991.999px) {
   #footerLinksEssentials li {
     text-align: center;
   }
