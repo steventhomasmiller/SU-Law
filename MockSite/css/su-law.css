@@ -83,7 +83,8 @@ body.advertising{ /* page layout #280291 */
   padding:0px;
   position: fixed;
   top:0;
-  transition: top 0.2s ease-in-out; /*c*/
+  /*transition: top 0.2s ease-in-out; /*c*/
+  transition: 0.4s;
   width:100%;
   z-index:1000;
 }
@@ -99,6 +100,7 @@ body.advertising{ /* page layout #280291 */
   float:left;
   height: 83px;
   padding: 20px 15px;
+  transition: 0.4s;
 }
 #globalHeader #mainlogo a{
   display: block;
@@ -112,6 +114,7 @@ body.advertising{ /* page layout #280291 */
   height:50px;
   max-width: 184px;
   text-align: left;
+  transition: 0.4s;
 }
 #globalHeader #mainlogo a:focus:after {
     content: 'Link to SU Home Page';
@@ -221,6 +224,7 @@ header.menu-is-open .primary-nav-trigger:focus {
 /* search box */
 #googleSearchBox{
   padding: 20px 0;
+  transition: 0.4s;
 }
 
  #googleSearchBox td.gsc-input{
@@ -299,6 +303,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
   padding:29px 0px;
   text-align:right;
   right: 5%;
+  transition: 0.4s;
 }
 #globalHeaderResourcesLinks li{
   display: inline-block;
@@ -382,6 +387,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
   position: relative;
   text-transform: uppercase;
   width:100%;
+  transition: 0.4s;
 }
 @media (max-width:1169.999px) {
   #globalHeaderNavigation {
@@ -402,6 +408,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
   font-weight: 500;
   line-height: 1;
   padding: 25px 16px;
+  transition: 0.4s;
 }
 @media screen and (max-width: 1180px) { /* md */
   #globalHeaderNavigation li.dropdown a {
@@ -500,6 +507,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
   padding: 75px 30px;
   width: 100%;
   -webkit-backface-visibility: hidden; /* remove? */
+  transition: 0.4s;
 }
 @media (max-width:991.999px) {
   #globalHeaderNavigation .mega-dropdown-menu {

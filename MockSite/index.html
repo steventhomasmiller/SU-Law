@@ -1069,6 +1069,46 @@
   });
 </script>
 
+<script type="text/javascript">
+  window.onscroll = function() {
+    var nav_elems = document.querySelectorAll( "#globalHeaderNavigation li.dropdown a" );
+    var dropdown_elems = document.querySelectorAll( "#globalHeaderNavigation .mega-dropdown-menu");
+    if (window.innerWidth >= 993) {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        for (var i = nav_elems.length - 1; i >= 0; i--) {
+          nav_elems[i].style.padding = "10px 32px 10px";
+          nav_elems[i].style.fontSize = "1rem";
+        }
+        for (var i = dropdown_elems.length - 1; i >= 0; i--) {
+          dropdown_elems[i].style.padding = "25px 30px 0";
+        }
+        document.querySelector( "#globalHeader #mainlogo img" ).style.height = "30px";
+        document.querySelector( "#globalHeader #mainlogo" ).style.padding = "15px 15px";
+        document.querySelector( "#googleSearchBox" ).style.padding = "10px 0px";
+        document.querySelector( "#globalHeader" ).style.height = "60px";
+        document.querySelector( "#globalHeaderNavigation" ).style.bottom = "25px";
+        document.querySelector( "#globalHeaderResourcesLinks" ).style.padding = "19px 0px";
+        document.querySelector( "#globalHeaderResourcesWrapper" ).style.fontSize = "1.07rem";
+      } else {
+        for (var i = nav_elems.length - 1; i >= 0; i--) {
+          nav_elems[i].style.padding = "25px 16px";
+          nav_elems[i].style.fontSize = "1.43rem";
+        }
+        for (var i = dropdown_elems.length - 1; i >= 0; i--) {
+          dropdown_elems[i].style.padding = "75px 30px";
+        }
+        document.querySelector( "#globalHeader #mainlogo img" ).style.height = "50px";
+        document.querySelector( "#globalHeader #mainlogo" ).style.padding = "20px 15px";
+        document.querySelector( "#googleSearchBox" ).style.padding = "20px 0px";
+        document.querySelector( "#globalHeader" ).style.height = "150px";
+        document.querySelector( "#globalHeaderNavigation" ).style.bottom = "0";
+        document.querySelector( "#globalHeaderResourcesLinks" ).style.padding = "29px 0px";
+        document.querySelector( "#globalHeaderResourcesWrapper" ).style.fontSize = "1.3rem";
+      }
+    }
+  }
+</script>
+
 
 </body>
 </html> 
