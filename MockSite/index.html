@@ -1106,6 +1106,22 @@
         document.querySelector( "#globalHeaderResourcesWrapper" ).style.fontSize = "1.3rem";
       }
     }
+    else {
+      for (var i = nav_elems.length - 1; i >= 0; i--) {
+        nav_elems[i].style.padding = null;
+        nav_elems[i].style.fontSize = null;
+      }
+      for (var i = dropdown_elems.length - 1; i >= 0; i--) {
+        dropdown_elems[i].style.padding = null;
+      }
+      document.querySelector( "#globalHeader #mainlogo img" ).style.height = null;
+      document.querySelector( "#globalHeader #mainlogo" ).style.padding = null;
+      document.querySelector( "#googleSearchBox" ).style.padding = null;
+      document.querySelector( "#globalHeader" ).style.height = null;
+      document.querySelector( "#globalHeaderNavigation" ).style.bottom = null;
+      document.querySelector( "#globalHeaderResourcesLinks" ).style.padding = null;
+      document.querySelector( "#globalHeaderResourcesWrapper" ).style.fontSize = null;
+    }
   }
 </script>
 
