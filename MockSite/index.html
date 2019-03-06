@@ -1055,8 +1055,31 @@
 
 <script type="text/javascript">
   window.addEventListener("resize", function(){
-    if (window.innerWidth < 993)
+    var nav_elems = document.querySelectorAll( "#globalHeaderNavigation li.dropdown a" );
+    var dropdown_elems = document.querySelectorAll( "#globalHeaderNavigation .mega-dropdown-menu");
+    var button_down_items = document.querySelectorAll( "#globalHeaderResources .dropdown-menu>li>a");
+    if (window.innerWidth < 993) {
       document.getElementById("globalHeaderResourcesLinks").style.right = "5%";
+      for (var i = nav_elems.length - 1; i >= 0; i--) {
+        nav_elems[i].style.padding = null;
+        nav_elems[i].style.fontSize = null;
+      }
+      for (var i = dropdown_elems.length - 1; i >= 0; i--) {
+        dropdown_elems[i].style.padding = null;
+      }
+      for (var i = button_down_items.length - 1; i >= 0; i--) {
+        button_down_items[i].style.fontSize = null;
+        button_down_items[i].style.padding = null;
+      }
+      document.querySelector( "#globalHeader #mainlogo img" ).style.height = null;
+      document.querySelector( "#globalHeader #mainlogo" ).style.padding = null;
+      document.querySelector( "#googleSearchBox" ).style.padding = null;
+      document.querySelector( "#globalHeader" ).style.height = null;
+      document.querySelector( "#globalHeaderNavigation" ).style.bottom = null;
+      document.querySelector( "#globalHeaderResourcesLinks" ).style.padding = null;
+      document.querySelector( "#globalHeaderResourcesWrapper" ).style.fontSize = null;
+      document.querySelector( "#googleSearchBox input#gsc-i-id1" ).style.fontSize = null;
+    }
     if (window.innerWidth >= 993 && !document.getElementById("gsc-i-id1").classList.contains("hidden"))
       document.getElementById("globalHeaderResourcesLinks").style.right = "30%";
     if(window.innerWidth == 992) {
@@ -1073,6 +1096,7 @@
   window.onscroll = function() {
     var nav_elems = document.querySelectorAll( "#globalHeaderNavigation li.dropdown a" );
     var dropdown_elems = document.querySelectorAll( "#globalHeaderNavigation .mega-dropdown-menu");
+    var button_down_items = document.querySelectorAll( "#globalHeaderResources .dropdown-menu>li>a");
     if (window.innerWidth >= 993) {
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         for (var i = nav_elems.length - 1; i >= 0; i--) {
@@ -1082,6 +1106,10 @@
         for (var i = dropdown_elems.length - 1; i >= 0; i--) {
           dropdown_elems[i].style.padding = "25px 30px 0";
         }
+        for (var i = button_down_items.length - 1; i >= 0; i--) {
+          button_down_items[i].style.fontSize = "1.07rem";
+          button_down_items[i].style.padding = "6px 15px";
+        }
         document.querySelector( "#globalHeader #mainlogo img" ).style.height = "30px";
         document.querySelector( "#globalHeader #mainlogo" ).style.padding = "15px 15px";
         document.querySelector( "#googleSearchBox" ).style.padding = "10px 0px";
@@ -1089,6 +1117,7 @@
         document.querySelector( "#globalHeaderNavigation" ).style.bottom = "25px";
         document.querySelector( "#globalHeaderResourcesLinks" ).style.padding = "19px 0px";
         document.querySelector( "#globalHeaderResourcesWrapper" ).style.fontSize = "1.07rem";
+        document.querySelector( "#googleSearchBox input#gsc-i-id1" ).style.fontSize = "1.2rem";
       } else {
         for (var i = nav_elems.length - 1; i >= 0; i--) {
           nav_elems[i].style.padding = "25px 16px";
@@ -1097,6 +1126,10 @@
         for (var i = dropdown_elems.length - 1; i >= 0; i--) {
           dropdown_elems[i].style.padding = "75px 30px";
         }
+        for (var i = button_down_items.length - 1; i >= 0; i--) {
+          button_down_items[i].style.fontSize = "1.3rem";
+          button_down_items[i].style.padding = "12px 15px";
+        }
         document.querySelector( "#globalHeader #mainlogo img" ).style.height = "50px";
         document.querySelector( "#globalHeader #mainlogo" ).style.padding = "20px 15px";
         document.querySelector( "#googleSearchBox" ).style.padding = "20px 0px";
@@ -1104,6 +1137,7 @@
         document.querySelector( "#globalHeaderNavigation" ).style.bottom = "0";
         document.querySelector( "#globalHeaderResourcesLinks" ).style.padding = "29px 0px";
         document.querySelector( "#globalHeaderResourcesWrapper" ).style.fontSize = "1.3rem";
+        document.querySelector( "#googleSearchBox input#gsc-i-id1" ).style.fontSize = "1.5rem";
       }
     }
     else {
@@ -1114,6 +1148,10 @@
       for (var i = dropdown_elems.length - 1; i >= 0; i--) {
         dropdown_elems[i].style.padding = null;
       }
+      for (var i = button_down_items.length - 1; i >= 0; i--) {
+        button_down_items[i].style.fontSize = null;
+        button_down_items[i].style.padding = null;
+      }
       document.querySelector( "#globalHeader #mainlogo img" ).style.height = null;
       document.querySelector( "#globalHeader #mainlogo" ).style.padding = null;
       document.querySelector( "#googleSearchBox" ).style.padding = null;
@@ -1121,6 +1159,7 @@
       document.querySelector( "#globalHeaderNavigation" ).style.bottom = null;
       document.querySelector( "#globalHeaderResourcesLinks" ).style.padding = null;
       document.querySelector( "#globalHeaderResourcesWrapper" ).style.fontSize = null;
+      document.querySelector( "#googleSearchBox input#gsc-i-id1" ).style.fontSize = null;
     }
   }
 </script>
