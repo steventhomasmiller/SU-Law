@@ -62,7 +62,7 @@
     z-index: 0;
     flex: 4;
   }
-  @media (max-width:991.999px) {
+  @media (max-width:992px) {
     .hero .bg-container-2 {
       background-position:center;
     }
@@ -232,7 +232,7 @@
     <button type="button" class="navbar-toggle collapse primary-menu-button" data-toggle="collapse" data-target=".collapseMe" aria-expanded="false">
       <span class="sr-only">Toggle navigation</span>
       <span class="menu-icon"></span>
-<!--       <span id="globalHeaderResourcesWrapper" class="collapse collapseMe navbar-collapse close-label" style="box-shadow: none;-webkit-box-shadow: none;">
+      <!--<span id="globalHeaderResourcesWrapper" class="collapse collapseMe navbar-collapse close-label" style="box-shadow: none;-webkit-box-shadow: none;">
         Close
       </span> -->
     </button>
@@ -304,7 +304,7 @@
       <ul class="nav navbar-nav" id="globalHeaderNavigation" role="menubar" aria-label="Global Navigation">
         <li class="dropdown mega-dropdown" role="menuitem">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-label="Open About Seattle University submenu" role="button" aria-haspopup="true" aria-expanded="false">
-            Admission <span class="fa fa-angle-right visible-xs-inline" aria-hidden="true"></span><span class="fa fa-chevron-down hidden-xs blue-arrow"></span>
+            Admission<span class="fa fa-angle-right visible-xs-inline" aria-hidden="true"></span><span class="fa fa-chevron-down hidden-xs blue-arrow"></span>
           </a>
           <div class="dropdown-menu mega-dropdown-menu">
             <div class="globalHeaderNavigationMainLinks col-xs-12 col-sm-9">
@@ -1058,34 +1058,31 @@
     var nav_elems = document.querySelectorAll( "#globalHeaderNavigation li.dropdown a" );
     var dropdown_elems = document.querySelectorAll( "#globalHeaderNavigation .mega-dropdown-menu");
     var button_down_items = document.querySelectorAll( "#globalHeaderResources .dropdown-menu>li>a");
+    for (var i = nav_elems.length - 1; i >= 0; i--) {
+      nav_elems[i].style.padding = null;
+      nav_elems[i].style.fontSize = null;
+    }
+    for (var i = dropdown_elems.length - 1; i >= 0; i--) {
+      dropdown_elems[i].style.padding = null;
+    }
+    for (var i = button_down_items.length - 1; i >= 0; i--) {
+      button_down_items[i].style.fontSize = null;
+      button_down_items[i].style.padding = null;
+    }
+    document.querySelector( "#globalHeader #mainlogo img" ).style.height = null;
+    document.querySelector( "#globalHeader #mainlogo" ).style.padding = null;
+    document.querySelector( "#googleSearchBox" ).style.padding = null;
+    document.querySelector( "#globalHeader" ).style.height = null;
+    document.querySelector( "#globalHeaderNavigation" ).style.bottom = null;
+    document.querySelector( "#globalHeaderResourcesLinks" ).style.padding = null;
+    document.querySelector( "#globalHeaderResourcesWrapper" ).style.fontSize = null;
+    document.querySelector( "#googleSearchBox input#gsc-i-id1" ).style.fontSize = null;
     if (window.innerWidth < 993) {
       document.getElementById("globalHeaderResourcesLinks").style.right = "5%";
-      for (var i = nav_elems.length - 1; i >= 0; i--) {
-        nav_elems[i].style.padding = null;
-        nav_elems[i].style.fontSize = null;
-      }
-      for (var i = dropdown_elems.length - 1; i >= 0; i--) {
-        dropdown_elems[i].style.padding = null;
-      }
-      for (var i = button_down_items.length - 1; i >= 0; i--) {
-        button_down_items[i].style.fontSize = null;
-        button_down_items[i].style.padding = null;
-      }
-      document.querySelector( "#globalHeader #mainlogo img" ).style.height = null;
-      document.querySelector( "#globalHeader #mainlogo" ).style.padding = null;
-      document.querySelector( "#googleSearchBox" ).style.padding = null;
-      document.querySelector( "#globalHeader" ).style.height = null;
-      document.querySelector( "#globalHeaderNavigation" ).style.bottom = null;
-      document.querySelector( "#globalHeaderResourcesLinks" ).style.padding = null;
-      document.querySelector( "#globalHeaderResourcesWrapper" ).style.fontSize = null;
-      document.querySelector( "#googleSearchBox input#gsc-i-id1" ).style.fontSize = null;
     }
     if (window.innerWidth >= 993 && !document.getElementById("gsc-i-id1").classList.contains("hidden"))
       document.getElementById("globalHeaderResourcesLinks").style.right = "30%";
-    if(window.innerWidth == 992) {
-      //document.getElementById('googleSearchBox').classList.remove('col-md-push-8');
-      document.getElementById('googleSearchBox').classList.add('col-md-push-11');
-    } else {
+    else {
       //document.getElementById('googleSearchBox').classList.add('col-md-push-8');
       document.getElementById('googleSearchBox').classList.remove('col-md-push-11');
     }
@@ -1097,48 +1094,30 @@
     var nav_elems = document.querySelectorAll( "#globalHeaderNavigation li.dropdown a" );
     var dropdown_elems = document.querySelectorAll( "#globalHeaderNavigation .mega-dropdown-menu");
     var button_down_items = document.querySelectorAll( "#globalHeaderResources .dropdown-menu>li>a");
-    if (window.innerWidth >= 993) {
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        for (var i = nav_elems.length - 1; i >= 0; i--) {
-          nav_elems[i].style.padding = "10px 32px 10px";
-          nav_elems[i].style.fontSize = "1rem";
+    if (window.innerWidth >= 993 && (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)) {
+      for (var i = nav_elems.length - 1; i >= 0; i--) {
+        if (window.innerWidth > 1189) {
+          nav_elems[i].style.padding = "10px 23px 10px";
+          nav_elems[i].style.fontSize = "1.25rem";
         }
-        for (var i = dropdown_elems.length - 1; i >= 0; i--) {
-          dropdown_elems[i].style.padding = "25px 30px 0";
+        else {
+          nav_elems[i].style.padding = "10px";
         }
-        for (var i = button_down_items.length - 1; i >= 0; i--) {
-          button_down_items[i].style.fontSize = "1.07rem";
-          button_down_items[i].style.padding = "6px 15px";
-        }
-        document.querySelector( "#globalHeader #mainlogo img" ).style.height = "30px";
-        document.querySelector( "#globalHeader #mainlogo" ).style.padding = "15px 15px";
-        document.querySelector( "#googleSearchBox" ).style.padding = "10px 0px";
-        document.querySelector( "#globalHeader" ).style.height = "60px";
-        document.querySelector( "#globalHeaderNavigation" ).style.bottom = "25px";
-        document.querySelector( "#globalHeaderResourcesLinks" ).style.padding = "19px 0px";
-        document.querySelector( "#globalHeaderResourcesWrapper" ).style.fontSize = "1.07rem";
-        document.querySelector( "#googleSearchBox input#gsc-i-id1" ).style.fontSize = "1.2rem";
-      } else {
-        for (var i = nav_elems.length - 1; i >= 0; i--) {
-          nav_elems[i].style.padding = "25px 16px";
-          nav_elems[i].style.fontSize = "1.43rem";
-        }
-        for (var i = dropdown_elems.length - 1; i >= 0; i--) {
-          dropdown_elems[i].style.padding = "75px 30px";
-        }
-        for (var i = button_down_items.length - 1; i >= 0; i--) {
-          button_down_items[i].style.fontSize = "1.3rem";
-          button_down_items[i].style.padding = "12px 15px";
-        }
-        document.querySelector( "#globalHeader #mainlogo img" ).style.height = "50px";
-        document.querySelector( "#globalHeader #mainlogo" ).style.padding = "20px 15px";
-        document.querySelector( "#googleSearchBox" ).style.padding = "20px 0px";
-        document.querySelector( "#globalHeader" ).style.height = "150px";
-        document.querySelector( "#globalHeaderNavigation" ).style.bottom = "0";
-        document.querySelector( "#globalHeaderResourcesLinks" ).style.padding = "29px 0px";
-        document.querySelector( "#globalHeaderResourcesWrapper" ).style.fontSize = "1.3rem";
-        document.querySelector( "#googleSearchBox input#gsc-i-id1" ).style.fontSize = "1.5rem";
       }
+      for (var i = dropdown_elems.length - 1; i >= 0; i--) {
+        dropdown_elems[i].style.padding = "25px 30px 0";
+      }
+      for (var i = button_down_items.length - 1; i >= 0; i--) {
+        button_down_items[i].style.fontSize = "1.25rem";
+        button_down_items[i].style.padding = "6px 15px";
+      }
+      document.querySelector( "#globalHeader #mainlogo img" ).style.height = "40px";
+      document.querySelector( "#globalHeader #mainlogo" ).style.padding = "10px 15px";
+      document.querySelector( "#googleSearchBox" ).style.padding = "10px 0px";
+      document.querySelector( "#globalHeader" ).style.height = "60px";
+      document.querySelector( "#globalHeaderNavigation" ).style.bottom = "25px";
+      document.querySelector( "#globalHeaderResourcesLinks" ).style.padding = "19px 0px";
+      document.querySelector( "#globalHeaderResourcesWrapper" ).style.fontSize = "1.25rem";
     }
     else {
       for (var i = nav_elems.length - 1; i >= 0; i--) {

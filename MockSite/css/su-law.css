@@ -421,13 +421,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
   transition: 0.4s;
   transition-timing-function: ease;
 }
-@media screen and (max-width: 1180px) { /* md */
-  #globalHeaderNavigation li.dropdown a {
-    font-size:1.5rem;
-    padding: 25px 18px;
-  } 
-}
-@media screen and (max-width: 1000px) { 
+@media screen and (max-width: 1181px) { 
   #globalHeaderNavigation li.dropdown a {
     font-size:1.1rem;
     padding: 25px 15px;
