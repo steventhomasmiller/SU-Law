@@ -31,32 +31,51 @@
   <link rel="stylesheet" type="text/css" media="" href="/media/css/v9-print.css" /> <!-- print -->
 
   <style>
-
- /* Start TitleBanner CSS */
-#id365658 .titleBanner2BackgroundImage{
-  background-image: url('assets/schools-and-colleges.jpg');
-  background-position:  center;
-}
-@media screen and (min-width:992px) {
-  #id365658 .titleBanner2BackgroundImage{
-    height: 400px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991.999px){
-  #id365658 .titleBanner2BackgroundImage{
-     
-  }
-}
-@media screen and (max-width: 767.999px){
-  #id365658 .titleBanner2BackgroundImage{
-     
-  }
-}
-
-
-/* End TitleBanner CSS */
-
- 
+    /* Start TitleBanner CSS */
+    #id365658 {
+      background: #000000;
+    }
+    #id365658 .titleBanner2BackgroundImage{
+      background-image: url('assets/schools-and-colleges.jpg');
+      background-position:  center;
+      position: relative;
+      text-align: center;
+      opacity: 0.9;
+    }
+    #id365658 .titleBanner2BackgroundImage h1{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #ffffff;
+      font-size: 55px;
+      font-weight: lighter;
+    }
+    #id365658 .titleBanner2BackgroundImage h4{
+      position: absolute;
+      top: 63%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: lighter;
+    }
+    @media screen and (min-width:992px) {
+      #id365658 .titleBanner2BackgroundImage{
+        height: 400px;
+      }
+    }
+    @media screen and (min-width: 768px) and (max-width: 991.999px){
+      #id365658 .titleBanner2BackgroundImage{
+         
+      }
+    }
+    @media screen and (max-width: 767.999px){
+      #id365658 .titleBanner2BackgroundImage{
+         
+      }
+    }
+    /* End TitleBanner CSS */
   </style>
 </head>
 <body class="homePage">
@@ -70,13 +89,9 @@
     <button type="button" class="navbar-toggle collapse primary-menu-button" data-toggle="collapse" data-target=".collapseMe" aria-expanded="false">
       <span class="sr-only">Toggle navigation</span>
       <span class="menu-icon"></span>
-      <!--<span id="globalHeaderResourcesWrapper" class="collapse collapseMe navbar-collapse close-label" style="box-shadow: none;-webkit-box-shadow: none;">
-        Close
-      </span> -->
     </button>
     <div id="mainlogo" class="col-xs-6 col-md-2"> 
       <a href="/" title="Seattle University Home Page" aria-label="Link back to Seattle University Home Page">
-        <!--<img src="assets/LAW-spritmark-WhiteBlack.png" alt="Seattle University" style="     " /> -->
         <img src="https://law.seattleu.edu/Images/LAW-spritmark-WhiteBlack.PNG" alt="Seattle University School of Law" style="     " />
       </a> 
     </div>
@@ -390,89 +405,86 @@
         </li>
       </ul>
     </div>
-  </header>
-
-<div class="clearfix"></div>
-  
-<div id="BannerZoneWrapper" role="banner" class="container-fluid">
-  <div id="BannerZone" class="row">
-    <div class="titleBanner2Wrapper" id="id365658">
-  <a name="d.en.365658"></a>
-  <div class="titleBanner2">
-    <div class="titleBanner2BackgroundImage">
-      <div class="titleBanner2Overlay titleBanner2OverlayTransparent"> </div>
+  </header>  
+  <div id="BannerZoneWrapper" role="banner" class="container-fluid">
+    <div id="BannerZone" class="row">
+      <div class="titleBanner2Wrapper" id="id365658">
+        <a name="d.en.365658"></a>
+        <div class="titleBanner2">
+          <div class="titleBanner2BackgroundImage">
+            <div class="titleBanner2Overlay titleBanner2OverlayTransparent"></div>
+            <h1>Academics</h1>
+            <h4>Schools and Colleges</h4>
+          </div>
+          <div class="titleBanner2Triangles  titleBanner2TrianglesRed"> </div>
+        </div>
+      </div>
     </div>
-    <div class="titleBanner2Triangles  titleBanner2TrianglesRed"> </div>
-    <div class="titleBanner2Text">   
-      <h1>
-        <span>Academics</span> 
-        Schools and Colleges
-      </h1>  
-    </div>
-  </div>
+  </div> 
+  <div id="pageContentWrapper" role="main" class="container-fluid">
+    <div id="pageContent" class="row">  
+      <div id="TopZone" class="col-xs-12"> 
+        <div class="colorButtonWrapper" id="id365668" data-position-default="topZone" data-position-selected="topZone">
+          <a name="d.en.365668"></a>
+          <a href="/undergraduate-admissions/academics/programs/" id="button1" style="display:block" class="colorButton colorButtonRed">
+            <h4>Undergraduate Programs</h4>
+            <p>
+
+            </p>
+          </a>
+          <a href="/graduate-admissions/programs/" id="button2" style="display:block" class="colorButton colorButtonRed">
+            <h4>Graduate Programs</h4>
+            <p>
+
+            </p>
+          </a>
+          <a href="/cce/" id="button3" style="display:block" class="colorButton colorButtonRed">
+            <h4>Service Learning</h4>
+            <p>
+
+            </p>
+          </a>
+          <a href="/about/centers-and-institutes/" id="button4" style="display:block" class="colorButton colorButtonRed">
+            <h4>Centers and Institutes</h4>
+            <p>
+
+            </p>
+          </a>
+          <a href="/academics/gainful-employment-disclosures/" id="button5" style="display:block" class="colorButton colorButtonRed">
+            <h4>Gainful Employment Disclosures</h4>
+            <p>
+
+            </p>
+          </a>
+        </div>
+      </div>
+      <div id="zoneA" class="col-xs-12 col-md-9">
+        <div class="quicklinksWrapper contentItem" id="id365683" data-position-default="ZoneB" data-position-selected="ZoneB">
+        </div>
+        <div class="jumbotron1Wrapper contentItem hspace" id="id367144" data-position-default="ZoneA" data-position-selected="ZoneA" aria-labelledby="label367144">
+          <a name="d.en.367144"></a>
+          <div class="jumbotron1 standardContent">
+            <h2 id="label367144">
+              Committed to Your Academic Excellence 
+            </h2>
+            <div class="jumbotronContent">
+              <p>Seattle University houses eight schools and colleges, each with their own highly ranked programs. Across the board, all our departments are committed to your academic excellence, with small class sizes, a dedicated faculty and a community of driven scholars and leaders to effect change for a more just and humane world.</p>
+              <p><strong>Select one of our&nbsp;colleges or schools&nbsp;to jump down and learn more.</strong></p>
+            </div> 
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div> 
+      <div class="clearfix"></div>
+    </div>     
+  </div><!-- end #zoneA -->
+  <div id="zoneB" class="col-xs-12">
+  </div><!-- end #zoneB -->   
   <div class="clearfix"></div>
-</div>
-  </div>
-</div>
-  
-<div id="pageContentWrapper" role="main" class="container-fluid">
-  <div id="pageContent" class="row">     
-      
-    <div id="TopZone" class="col-xs-12"> 
-      <div class="colorButtonWrapper" id="id365668" data-position-default="topZone" data-position-selected="topZone">
-  <a name="d.en.365668"></a>
-  <a href="/undergraduate-admissions/academics/programs/" id="button1" style="display:block" class="colorButton colorButtonRed"><h4>Undergraduate Programs</h4><p></p></a>
-  <a href="/graduate-admissions/programs/" id="button2" style="display:block" class="colorButton colorButtonRed"><h4>Graduate Programs</h4><p></p></a>
-  <a href="/cce/" id="button3" style="display:block" class="colorButton colorButtonRed"><h4>Service Learning</h4><p></p></a>
-  <a href="/about/centers-and-institutes/" id="button4" style="display:block" class="colorButton colorButtonRed"><h4>Centers and Institutes</h4><p></p></a>
-  <a href="/academics/gainful-employment-disclosures/" id="button5" style="display:block" class="colorButton colorButtonRed"><h4>Gainful Employment Disclosures</h4><p></p></a>
-  
-</div>
-  
-    </div>
-      
-    <div id="zoneA" class="col-xs-12">   <div class="quicklinksWrapper contentItem" id="id365683" data-position-default="ZoneB" data-position-selected="ZoneB">
-
-</div>
-<!-- Keep --> <div class="jumbotron1Wrapper contentItem hspace" id="id367144" data-position-default="ZoneA" data-position-selected="ZoneA" aria-labelledby="label367144">
-  <a name="d.en.367144"></a>
-  <div class="jumbotron1 standardContent">
-    <h2 id="label367144">
-      
-      Committed to Your Academic Excellence 
-      
-    </h2>
-    
-    <div class="jumbotronContent">
-      <p>Seattle University houses eight schools and colleges, each with their own highly ranked programs. Across the board, all our departments are committed to your academic excellence, with small class sizes, a dedicated faculty and a community of driven scholars and leaders to effect change for a more just and humane world.</p>
-<p><strong>Select one of our&nbsp;colleges or schools&nbsp;to jump down and learn more.</strong></p>
-    </div> 
-  </div>
-</div> 
-
-
-
-
-    
-    <div class="clearfix"></div>
-  </div>
-  <div class="clearfix"></div>
-    
-  <div class="clearfix"></div>
-</div>
-         
-    </div><!-- end #zoneA -->
-
-    <div id="zoneB" class="col-xs-12">
-      
-    </div><!-- end #zoneB -->   
-
-    <div class="clearfix"></div>
   </div>  <!-- end #pageContent --> 
 </div><!-- end #pageContentWrapper -->
-
 <div class="clearfix"></div>
-
 <footer>
   <span class="triangle"></span> 
   <div id="footerInner" class="container"> 
@@ -488,43 +500,49 @@
             <span itemprop="addressLocality">Seattle</span>, <span itemprop="addressRegion">WA</span> <span itemprop="postalCode">98122</span>           </div>
           </address>
           <div class="phone" itemprop="telephone" content="206-296-6000"><a href="tel:206-296-6000">206-296-6000</a></div>
-
         </div>
-
       </div>
       <div class="clearfix visible-xs"></div>
       <div id="footerLinksPeople" class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 col-md-2 footerLinks">
         <h4>People</h4>
         <ul><li><a href="/student-life/">Students</a></li><li><a href="/faculty-and-staff/">Faculty and Staff</a></li><li><a href="/alumni/">Alumni</a></li><li><a href="/pfe/">Legal Community</a></li></ul>
-
       </div>
-
       <div id="footerLinksEssentials" class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 col-md-2 footerLinks">
         <h4>Quicklinks</h4>
         <ul><li><a href="/directories/">Directories</a></li><li><a href="/library/">Library</a></li><li><a href="/giving/">Give</a></li><li><a href="/mysu/">MySU</a></li></ul>
-
       </div>
     <!-- <div class="clearfix visible-xs"></div>
     <div id="footerLinksVisit" class="col-xs-5 col-xs-push-0 col-sm-2 col-sm-push-0 footerLinks">
       <h4>Visit</h4>
-<ul><li><a href="/visit/campus-tours/">Campus Tours</a></li><li><a href="/map/">Campus Map</a></li><li><a href="/visit/travel-information/">Travel Info</a></li><li><a href="/visit/getting-to-seattle-university/">Getting to SU</a></li></ul>
-
-
-</div> -->
-
-<div class="clearfix visible-xs"></div>
-<div id="footerLinksVisit" class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 col-md-4 footerLinks">
-  <ul id="footerCallToActionLinks">
-    <li><a id="SUfooterNavApply" class=“footerCallToActionLinksItem” href="/visit/campus-tours/">Apply Now</a></li>
-    <li><a id="SUfooterNavContact" class=“footerCallToActionLinksItem” href="/">Contact</a></li>
-    <li><a id="SUfooterNavRequestInfo" class=“footerCallToActionLinksItem” href="/visit/travel-information/">Request Info</a></li>
-  </ul>
-
-</div>
-
-
-   <!-- <div id="footerSocialMediaLinks" class="col-xs-5 col-xs-push-1 col-sm-3 col-sm-push-0">
-            
+      <ul>
+        <li>
+          <a href="/visit/campus-tours/">Campus Tours</a>
+        </li>
+        <li>
+          <a href="/map/">Campus Map</a>
+        </li>
+        <li>
+          <a href="/visit/travel-information/">Travel Info</a>
+        </li>
+        <li>
+          <a href="/visit/getting-to-seattle-university/">Getting to SU</a>
+        </li>
+      </ul>
+    </div> -->
+    <div class="clearfix visible-xs"></div>
+      <div id="footerLinksVisit" class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-1 col-md-4 footerLinks">
+        <ul id="footerCallToActionLinks">
+          <li>
+            <a id="SUfooterNavApply" class=“footerCallToActionLinksItem” href="/visit/campus-tours/">Apply Now</a></li>
+            <li>
+              <a id="SUfooterNavContact" class=“footerCallToActionLinksItem” href="/">Contact</a>
+            </li>
+            <li>
+              <a id="SUfooterNavRequestInfo" class=“footerCallToActionLinksItem” href="/visit/travel-information/">Request Info</a>
+            </li>
+          </ul>
+        </div>
+      <!-- <div id="footerSocialMediaLinks" class="col-xs-5 col-xs-push-1 col-sm-3 col-sm-push-0">    
         <h4>Follow Us</h4>
           <ul class="social">
             <li> 
@@ -562,28 +580,24 @@
           </ul>
         </div> -->
         <div class="clearfix"></div>
-   <!-- <a name="ctaLinksAnchor"></a>
-    <ul id="footerCallToActionLinks">
-      <li class="col-xs-10 col-xs-push-0 col-sm-push-0 col-sm-3"><a href="/admissions/apply/" id="SUfooterNavApply" class=“footerCallToActionLinksItem”>Apply Now</a></li>
-      <li class="col-xs-10 col-xs-push-0 col-sm-push-0 col-sm-3"><a href="/about/contact/"  id="SUfooterNavContact" class=“footerCallToActionLinksItem”>Contact</a></li>
-      <li class="col-xs-10 col-xs-push-0 col-sm-push-0 col-sm-3"><a href="/careers/"  id="SUfooterNavCareer" class=“footerCallToActionLinksItem”>Careers</a></li> 
-      <li class="col-xs-10 col-xs-push-0 col-sm-push-0 col-sm-3"><a href="/undergraduate-admissions/request-information/"  id="SUfooterNavRequestInfo" class=“footerCallToActionLinksItem”>Request Info</a></li>
-    </ul> 
-
-  </div> -->
-
-  <div id="subfooterWrapper">
-    <div id="subfooter" class="container">
-      <div id="subfooterLinks" aria-label="Links in subfooter">
-        <div class="clearfix visible-xs"></div><a href="https://secure.ethicspoint.com/domain/media/en/gui/23241/index.html" target="_blank">ABA Required Disclosures</a>
-        <a href="/web/feedback/">Nondiscrimination Policy</a>
-      </nav>
-      <!--<div id="subfooterCopyright">
-       <span>&copy; Seattle University &nbsp; &nbsp;</span> 
-     </div> -->
-   </div>    <!-- end #subfooter--> 
- </div>   <!-- end #subfooterWrapper-->
-
+       <!-- <a name="ctaLinksAnchor"></a>
+        <ul id="footerCallToActionLinks">
+          <li class="col-xs-10 col-xs-push-0 col-sm-push-0 col-sm-3"><a href="/admissions/apply/" id="SUfooterNavApply" class=“footerCallToActionLinksItem”>Apply Now</a></li>
+          <li class="col-xs-10 col-xs-push-0 col-sm-push-0 col-sm-3"><a href="/about/contact/"  id="SUfooterNavContact" class=“footerCallToActionLinksItem”>Contact</a></li>
+          <li class="col-xs-10 col-xs-push-0 col-sm-push-0 col-sm-3"><a href="/careers/"  id="SUfooterNavCareer" class=“footerCallToActionLinksItem”>Careers</a></li> 
+          <li class="col-xs-10 col-xs-push-0 col-sm-push-0 col-sm-3"><a href="/undergraduate-admissions/request-information/"  id="SUfooterNavRequestInfo" class=“footerCallToActionLinksItem”>Request Info</a></li>
+        </ul> 
+      </div> -->
+    <div id="subfooterWrapper">
+      <div id="subfooter" class="container">
+        <div id="subfooterLinks" aria-label="Links in subfooter">
+          <div class="clearfix visible-xs"></div>
+          <a href="https://secure.ethicspoint.com/domain/media/en/gui/23241/index.html" target="_blank">ABA Required Disclosures</a>
+          <a href="/web/feedback/">Nondiscrimination Policy</a>
+        </div>
+      </div>    <!-- end #subfooter--> 
+    </div>   <!-- end #subfooterWrapper-->
+  </div>
 </footer>
 
 <div class="clearfix"></div>
