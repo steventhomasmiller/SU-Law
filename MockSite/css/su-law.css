@@ -933,27 +933,12 @@ _____________________  _____________________________  __________________________
 }
 /* ------------------- The arrow next to submenu items --------------------- */
 
-#siteNavigation #menu .glyphicon{
-  color:#666666;
-  cursor: pointer;
-  display: block;
-  font-size: 1.6rem;
-  right: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding: 15px 10px;
-  position: absolute;
-}
-#siteNavigation #menu .currentsection+.glyphicon {
-  color:#fff;
-  padding: 15px 10px;
-  transform:rotate(90deg);
-  -ms-transform:rotate(90deg); /* IE 9 */
-  -webkit-transform:rotate(90deg); /* Safari and Chrome */
-}
-.currentsection+.glyphicon:hover,
-.currentsection+.glyphicon:focus{ 
-  color:#088099;
+.blue-arrow {
+  color: #1ab9d6;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+  left: 6px;
 }
 
 /* ------------------- Navigation menu items --------------------- */
@@ -1030,6 +1015,15 @@ _____________________  _____________________________  __________________________
 }
 #siteNavigation #menu .multilevel-linkul-4 li a{ /* fifth submenu*/
   padding: 10px 0 10px 65px;
+}
+#siteNavigation #menu li a .siteNavigationArrow { /*chevrons next to submenu triggers*/
+  font-size: 1.6rem;
+  transition: -webkit-transform .4s ease;
+  transition: transform .4s ease;
+}
+#siteNavigation #menu li a.collapsed .siteNavigationArrow {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 @media screen and (max-width: 991.999px){
   #siteNavigation #menu li a {
