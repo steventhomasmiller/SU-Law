@@ -788,7 +788,7 @@ _____________________  _____________________________  __________________________
   }
 }
 #zoneC div:first-child{ /* qqq ?*/
-  margin-top: 0;
+  margin-top: 25px;
 }
 
 #TopZone {
@@ -804,7 +804,7 @@ _____________________  _____________________________  __________________________
 */
 
 #siteNavigation {
-  font-family: "Oswald",sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin-bottom: 60px;
   position:relative;
@@ -823,7 +823,7 @@ _____________________  _____________________________  __________________________
   font-weight: 500;
   height:inherit;
   line-height:100%;
-  padding: 15px;
+  padding: 15px 0px 13px 15px;
   text-decoration:none;
   width:100%;
   text-transform: uppercase;
@@ -956,7 +956,7 @@ _____________________  _____________________________  __________________________
   padding: 15px 35px 15px 15px;
   position:relative;
   text-decoration:none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 @media screen and (max-width: 767.999px){
   body #siteNavigation #menu li a { /* All links in the sitenav menu */
@@ -1267,10 +1267,10 @@ _____________________  _____________________________  __________________________
 .standardContent h2 { /* major headings */
   color: #aa0000;
   clear:both; /* acts as a clearing element */
-  font-family: "Roboto Slab", serif;
-  font-size:3.2rem;
-  font-weight: 400;
-  margin:30px 0 3px 0; 
+  font-family: "Montserrat", sans-serif;
+  font-size:2.7rem;
+  font-weight: 520;
+  margin:30px 0 22px -3px; 
 } 
 .standardContent h2 a { /* links in major headings */
   color: #aa0000;
@@ -5748,6 +5748,7 @@ a .homepageGridItemCopy h4:hover{/*delete*/
 .jumbotron1 h2,
 .jumbotron1 h2 a, .jumbotron1 h2 a:visited{
   text-decoration: none;
+  text-transform: uppercase;
 }
 .jumbotron1 h2 a:focus, .jumbotron1 h1 a:hover{
   text-decoration:underline;
