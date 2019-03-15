@@ -216,6 +216,40 @@ body.advertising{ /* page layout #280291 */
     transform: rotate(225deg);
 }
 
+.menu-icon.sub-hamburger {
+    /* Inactive State (Hamburger) */
+    /* this span is the central line of the menu icon */
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    transition: background-color 0.3s;
+    background-color: #ab0000;
+    bottom: auto;
+    display: inline-block;
+    height: 2px;
+    left: 0;
+    position: relative;
+    vertical-align: middle;
+    width: 25px;
+    top: 15px;
+    /* these are the upper and lower lines in the menu icon */
+    /* Active State (X) */
+}
+
+.menu-icon.sub-hamburger:before, .menu-icon.sub-hamburger:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #ab0000;
+    right: 0;
+    transition: -webkit-transform .8s, top .8s, background-color 0s;
+    transition: transform .8s, top .8s, background-color 0s;
+}
+
+.menu-icon.sub-hamburger.is-clicked {
+    background-color: #FFFFFF;
+}
+
 header.menu-is-open {
     background: #0f72b9;
 }
@@ -826,7 +860,6 @@ _____________________  _____________________________  __________________________
   line-height:100%;
   padding: 15px 0px 13px 0;
   text-decoration:none;
-  width:100%;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
@@ -962,7 +995,7 @@ _____________________  _____________________________  __________________________
 }
 @media screen and (max-width: 767.999px){
   body #siteNavigation #menu li a { /* All links in the sitenav menu */
-    padding:10px 15px;
+    padding:10px 35px 10px 25px;
   }
 }
 #siteNavigation #menu li a:hover,
@@ -1084,7 +1117,8 @@ _____________________  _____________________________  __________________________
     left:0;
     margin:0;
     padding-left:0;
-    padding: 5px 0 5px 15px;
+    /*padding: 5px 0 5px 15px;*/
+    padding: 10px 35px 10px 25px;
     width:inherit;
   }
 }

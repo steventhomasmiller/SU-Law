@@ -432,8 +432,11 @@
           <nav id="siteNavigationWrapper" aria-labelledby="siteNavigationLabel">
             <div id="siteNavigation">
               <div id="siteNavigationTitleWrapper">
-                <div id="siteNavigationTitle">
-                  <span><a href="/cejs/" id="siteNavigationLabel" class="navbar-brand">Admissions</a></span>
+                <div id="siteNavigationTitle" class="row" style="margin-left: 0;">
+                  <a href="/cejs/" id="siteNavigationLabel" class="navbar-brand col-xs-5">Admissions</a>
+                  <a id="submenu-button" href="#menu" data-toggle="collapse" aria-expanded="false" class="col-xs-1 visible-xs visible-sm col-xs-offset-6" style="padding: 0;">
+                    <span class="menu-icon sub-hamburger"></span>
+                  </a>
                 </div>
               </div>
               <ul id="menu" class="collapse navbar-collapse">
@@ -789,6 +792,11 @@
 <script type="text/javascript">
   document.querySelector( ".primary-menu-button" ).addEventListener( "click", function() {
     document.querySelector( ".menu-icon" ).classList.toggle( "is-clicked" );
+  });
+</script>
+<script type="text/javascript">
+  document.querySelector( " #submenu-button" ).addEventListener( "click", function() {
+    document.querySelector( ".menu-icon.sub-hamburger" ).classList.toggle( "is-clicked" );
   });
 </script>
 <script type="text/javascript">
