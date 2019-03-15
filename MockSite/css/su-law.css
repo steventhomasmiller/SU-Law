@@ -774,7 +774,7 @@ _____________________  _____________________________  __________________________
   }
 }
 #pageContentWrapper.container #zoneC { /* left COLUMN */
-    padding:0 30px 0 0;
+    padding: 0;
 }
 @media screen and (min-width: 768px) and (max-width: 1199.999px) { /* sm + md */
   #zoneC {
@@ -817,13 +817,14 @@ _____________________  _____________________________  __________________________
 }
 #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a,
 #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a:visited{
-  border-bottom: 2px solid #088099;
+  border-bottom: 1px solid #B7B7B7;
   color: #333333;
   display:block;
-  font-weight: 500;
+  font-weight: bold;
+  font-size: 15px !important;
   height:inherit;
   line-height:100%;
-  padding: 15px 0px 13px 15px;
+  padding: 15px 0px 13px 0;
   text-decoration:none;
   width:100%;
   text-transform: uppercase;
@@ -923,7 +924,7 @@ _____________________  _____________________________  __________________________
       display:block !important;
   }
   #siteNavigation #siteNavigationTitleWrapper {
-    border-bottom: 1px solid #088099;
+    border-bottom: 1px solid #B7B7B7;
   }
   #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a, 
   #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a:visited {
@@ -947,17 +948,17 @@ _____________________  _____________________________  __________________________
 #siteNavigation #menu li{ /* affects all menu items */
   display:block;
   position:relative; /* to allow <span> (arrow) to be positioned within this block */
+  border-bottom: 1px solid #B7B7B7;
 }
 #siteNavigation #menu li a{ /* all links in all menu items */
-  border-bottom: 1px solid #088099;
-  color: #666;
+  color: #797979;
   display:block;
-  font-size: 1.6rem;
+  font-size: 14px;
+  font-weight: bold;
   line-height:1.2em;
-  padding: 10px 35px 15px 15px;
+  padding: 10px 7px 15px 0;
   position:relative;
   text-decoration:none;
-  /* text-transform: uppercase; */
 }
 @media screen and (max-width: 767.999px){
   body #siteNavigation #menu li a { /* All links in the sitenav menu */
@@ -966,7 +967,7 @@ _____________________  _____________________________  __________________________
 }
 #siteNavigation #menu li a:hover,
 #siteNavigation #menu li a:focus{
-  color: #aa0000;
+  color: #ab0000;
 }
 #siteNavigation #menu li a:active{
   color:#aa0000;
@@ -978,7 +979,6 @@ _____________________  _____________________________  __________________________
 }
 #siteNavigation #menu li span.currentsection{
   background-color:#088099;
-  border-bottom: 1px solid #088099;
   color: #fff;
   display:block;
   font-size:1.6rem;
@@ -996,29 +996,53 @@ _____________________  _____________________________  __________________________
 #siteNavigation #menu li span.currentsection a:hover{  
   color:#fff;
 }
+#siteNavigation #menu .multilevel-linkul-0 {
+  padding-left: 20px;
+}
+#siteNavigation #menu .multilevel-linkul-0 li {
+  border-bottom: none;
+}
 #siteNavigation #menu .multilevel-linkul-0 li a,
 #siteNavigation #menu .multilevel-linkul-0 span.currentsection{ /* first submenu*/
-  padding: 10px 35px 10px 25px;
+  color: #000;
+  font-weight: normal;
+  padding: 0px 7px 14px 0;
 }
 #siteNavigation #menu .multilevel-linkul-0 li .glyphicon {
   padding: 10px 10px;
 }
+#siteNavigation #menu .multilevel-linkul-1 {
+  padding-left: 20px;
+}
+#siteNavigation #menu .multilevel-linkul-1 li {
+  border-bottom: none;
+}
 #siteNavigation #menu .multilevel-linkul-1 li a,
 #siteNavigation #menu .multilevel-linkul-1 span.currentsection{ /* second submenu*/
-  padding: 10px 30px 10px 35px;
+}
+#siteNavigation #menu .multilevel-linkul-2 {
+  padding-left: 20px;
+}
+#siteNavigation #menu .multilevel-linkul-3 li {
+  border-bottom: none;
 }
 #siteNavigation #menu .multilevel-linkul-2 li a,
 #siteNavigation #menu .multilevel-linkul-2 span.currentsection{ /* third submenu*/
-  padding: 10px 0 10px 45px;
+}
+#siteNavigation #menu .multilevel-linkul-3 {
+  padding-left: 20px;
 }
 #siteNavigation #menu .multilevel-linkul-3 li a{ /* fourth submenu*/
-  padding: 10px 0 10px 55px;
 }
-#siteNavigation #menu .multilevel-linkul-4 li a{ /* fifth submenu*/
-  padding: 10px 0 10px 65px;
+#siteNavigation #menu .multilevel-linkul-4 {
+  padding-left: 20px;
+}
+#siteNavigation #menu .multilevel-linkul-4 li {
+  border-bottom: none;
 }
 #siteNavigation #menu li a .siteNavigationArrow { /*chevrons next to submenu triggers*/
   font-size: 1.6rem;
+  float: right;
   transition: -webkit-transform .4s ease;
   transition: transform .4s ease;
 }
@@ -1109,7 +1133,7 @@ _____________________  _____________________________  __________________________
     padding: 15px;
     color:#fff;
     font-family: "Oswald",sans-serif;
-    font-size: 1.6em;
+    font-size: 1.6rem;
     line-height: 1.2em;
     position:relative;
   }  
@@ -1132,7 +1156,12 @@ _____________________  _____________________________  __________________________
   padding: 30px 15px 30px 0;
   word-wrap: break-word;
 }
-#pageContentWrapper.container-fluid #pageTitle {
+@media screen and (min-width: 992px) {
+  #pageContentWrapper {
+    padding-top: 100px;
+  }
+}
+.container-fluid #pageTitle {
   padding: 30px 15px 30px 30px;
 }
 @media screen and (max-width:767.999px){
@@ -1351,6 +1380,7 @@ _____________________  _____________________________  __________________________
   font-size: 1.6rem;
   line-height:2;
   margin-bottom: 1.6rem;
+  font-weight: 500;
 }
 
 #zoneB .standardContent p,
