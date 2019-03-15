@@ -827,6 +827,7 @@ _____________________  _____________________________  __________________________
   text-decoration:none;
   width:100%;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 @media (max-width: 767.999px){
   #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a,
@@ -953,7 +954,7 @@ _____________________  _____________________________  __________________________
   display:block;
   font-size: 1.6rem;
   line-height:1.2em;
-  padding: 15px 35px 15px 15px;
+  padding: 10px 35px 15px 15px;
   position:relative;
   text-decoration:none;
   /* text-transform: uppercase; */
