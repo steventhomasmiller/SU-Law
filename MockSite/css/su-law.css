@@ -5824,6 +5824,10 @@ a .homepageGridItemCopy h4:hover{/*delete*/
   padding: 0;
   text-transform: uppercase;
 }
+.jumbotron1 h3.white,
+.jumbotron1 p.white{
+  color: #fff;
+}
 .jumbotron1Image {
   max-height:300px;
   overflow:hidden;
