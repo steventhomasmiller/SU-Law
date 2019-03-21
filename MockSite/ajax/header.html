@@ -1,0 +1,475 @@
+<div class="emergencynotice" role="alert" aria-atomic="true" style="display:block"></div>
+<header id="globalHeader" class="container-fluid is-visible" data-nav-status="toggle">
+  <button type="button" class="navbar-toggle collapse primary-menu-button" data-toggle="collapse" data-target=".collapseMe" aria-expanded="false">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="menu-icon"></span>
+  </button>
+  <div id="mainlogo" class="col-xs-6 col-md-2"> 
+    <a href="/" title="Seattle University Home Page" aria-label="Link back to Seattle University Home Page">
+      <img src="https://law.seattleu.edu/Images/LAW-spritmark-WhiteBlack.PNG" alt="Seattle University School of Law" style="     " />
+    </a> 
+  </div>
+  <div id="globalHeaderResourcesWrapper" class="col-xs-12 col-md-10">
+  <div id="globalHeaderNavigationWrapper" class="collapse collapseMe navbar-collapse" style="box-shadow: none;-webkit-box-shadow: none;">
+      <div class="col-xs-12 col-md-12">
+        <div id="globalHeaderResources">
+          <div id="googleSearchBox" class="col-xs-12 col-sm-8 col-sm-push-2 col-md-3 col-md-push-9">
+            <table>
+              <form class="gsc-search-box">
+                <tbody>
+                  <tr>
+                    <td class="gsc-input">
+                      <div id="search_content">
+                        <input autocomplete="off" type="text" size="10" class="hidden" name="Search" title="Search" id="gsc-i-id1" x-webkit-speech="" x-webkit-grammar="builtin:search" lang="en" dir="ltr" placeholder="Search" spellcheck="false" style="outline: none;" required="required">
+                        <input type="hidden" name="bgresponse" id="bgresponse">
+                      </div>
+                    </td>
+                    <td class="gsc-search-button">
+                      <button type="button" id="search_button" value="Search" class="gsc-search-button" title="search" onclick="searchbox_control();"></button>
+                    </td>
+                    <td class="gsc-clear-button">
+                      <div class="gsc-clear-button" title="clear results">
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </form>
+            </table>
+            <script>
+              // Add listener to submit search query on form submit
+              $("form.gsc-search-box").on('submit', function() {
+                var URL = "//www.seattleu.edu/search/";
+                var search = encodeURIComponent($("form.gsc-search-box input.gsc-input"));
+                window.location.href = URL + "?q=" + search;
+                return false; // Stops the form from executing its default submit (which reloads the page and breaks our desired functionality)
+              });
+            </script> 
+          </div>
+          <ul id="globalHeaderResourcesLinks" class="col-xs-12 col-sm-12 col-md-9 col-md-pull-3 col-lg-8 col-lg-pull-4">
+            <li><a href="/visit/" id="SUtopNavVisit"  aria-label= "Plan a visit to Seattle University" class="globalHeaderResourcesLinksItem">Students</a></li>
+            <li><a href="/admissions/apply/" id="SUtopNavApply" aria-label= "Apply to Seattle University" class="globalHeaderResourcesLinksItem">Employees</a></li>
+            <li><a href="/giving/" id="SUtopNavGive" aria-label= "Give to Seattle University" class="globalHeaderResourcesLinksItem">Alumni</a></li>
+            <li><a href="/giving/" id="SUtopNavGive" aria-label= "Give to Seattle University" class="globalHeaderResourcesLinksItem">Legal Community</a></li>
+            <li class="dropdown"> <a href="#" class="dropdown-toggle" id="headerResourcesMenu" data-toggle="dropdown" aria-label="Open SU Resources submenu"aria-haspopup="true" aria-expanded="false">SU Resources <span class="fa fa-chevron-down visible-inline blue-arrow"></span> </a>
+              <ul class="dropdown-menu" aria-labelledby="headerResourcesMenu">
+                <li><a href="https://outlook.com/owa/seattleu.edu" target="_blank" title="Email (opens new window)">Library</a></li>
+                <li><a href="https://seattleu.instructure.com/login" target="_blank" title="Canvas (opens new window)">Calendar</a></li>
+                <li><a href="https://webadvisor.seattleu.edu/" target="_blank" title="SU Online (opens new window)">News</a></li>
+                <li><a href="https://www.seattleu.edu/mysu/">Maps</a></li>
+                <li><a href="https://www.seattleu.edu/mysu/">Technology</a></li>
+                <li><a href="https://www.seattleu.edu/mysu/">SU Connect</a></li>
+                <li><a href="https://www.seattleu.edu/mysu/">MySU</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="globalHeaderNavigationWrapper" class="collapse navbar-collapse collapseMe">
+    <ul class="nav navbar-nav" id="globalHeaderNavigation" role="menubar" aria-label="Global Navigation">
+      <li class="dropdown mega-dropdown" role="menuitem">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-label="Open About Seattle University submenu" role="button" aria-haspopup="true" aria-expanded="false">
+          Admission<span class="fa fa-angle-right visible-xs-inline" aria-hidden="true"></span><span class="fa fa-chevron-down hidden-xs blue-arrow"></span>
+        </a>
+        <div class="dropdown-menu mega-dropdown-menu">
+          <div class="globalHeaderNavigationMainLinks col-xs-12 col-sm-9">
+            <ul role="menu" aria-label="About Submenu">
+              <li class="col-xs-12 col-sm-4">
+                <a href="/about/">About Seattle U</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/about/facts/">Facts and Figures</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/map/">Campus Map</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/cejs/campus-sustainability/">Campus Sustainability</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/about/centers-and-institutes/">Centers and Institutes</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/visit/">Visit</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/news/">University News</a>
+              </li>
+            </ul>
+          </div>
+          <div class="globalHeaderNavigationQuickLinks col-xs-12 col-sm-3">
+            <h5>Quicklinks</h5>
+            <ul role="menu" aria-label="About Menu Quicklinks">
+              <li><a href="/faculty-and-staff/">Faculty and Staff Resources</a></li><li><a href="/directories/">Directories</a></li></ul>
+            </div>
+        </div>
+      </li>
+      <li class="dropdown mega-dropdown"> 
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"  role="button" aria-label="Open Academics submenu" aria-haspopup="true" aria-expanded="false">
+          Academics
+          <span class="fa fa-angle-right visible-xs-inline" aria-hidden="true"></span>
+          <span class="fa fa-chevron-down hidden-xs blue-arrow"></span>
+        </a>
+        <div class="dropdown-menu mega-dropdown-menu">
+          <div class="globalHeaderNavigationMainLinks col-xs-12 col-sm-9">
+            <ul role="menu" aria-label="Academics Submenu">
+              <li class="col-xs-12 col-sm-4">
+                <a href="/academics/">Academics</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/undergraduate-admissions/academics/programs/">Undergraduate Majors and Degrees</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/graduate-admissions/programs/">Graduate Programs and Degrees</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/academics/schools-and-colleges/">Colleges and Schools</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/library/">Lemieux Library</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/cce/">Service Learning</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/abroad/">Education Abroad</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/sas/">Student Academic Services</a>
+              </li>
+            </ul>
+          </div>
+          <div class="globalHeaderNavigationQuickLinks col-xs-12 col-sm-3">
+            <h5>Quicklinks</h5>
+            <ul role="menu" aria-label="Academics Quicklinks">
+              <li>
+                <a href="/redhawk-service-center/">Redhawk Service Center</a>
+              </li>
+            </ul>
+         </div>
+       </div>
+       </li>
+       <li class="dropdown mega-dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-label="Open Student Life submenu" aria-haspopup="true" aria-expanded="false">
+          Student Life
+          <span class="fa fa-angle-right visible-xs-inline" aria-hidden="true"></span>
+          <span class="fa fa-chevron-down hidden-xs blue-arrow"></span>
+        </a> 
+        <div class="dropdown-menu mega-dropdown-menu">
+          <div class="globalHeaderNavigationMainLinks col-xs-12 col-sm-9">
+            <ul role="menu" aria-label="Student Life Submenu">
+              <li class="col-xs-12 col-sm-4">
+                <a href="/student-life/">Student Life</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/housing/">Housing and Residence Life</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="https://www.dineoncampus.com/seattleu" target="_blank">Dining Services</a>
+              </li>
+              <li class="col-xs-12 col-sm-4"><a href="/cce/">Center for Community Engagement</a>
+              </li>
+              <li class="col-xs-12 col-sm-4"><a href="/involvement/">Center for Student Involvement</a>
+              </li>
+              <li class="col-xs-12 col-sm-4"><a href="/student-life/health-and-personal-wellness/">Health and Personal Wellness</a></li><li class="col-xs-12 col-sm-4">
+                <a href="/student-life/diversity-and-multicultural-resources/">Diversity and Multicultural Resources</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/careerengagement/">Career Engagement Office</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/pfe/">Parent and Family Engagement</a>
+              </li>
+            </ul>
+          </div>
+          <div class="globalHeaderNavigationQuickLinks col-xs-12 col-sm-3">
+            <h5>Quicklinks</h5>
+            <ul role="menu" aria-label="Student Life Quicklinks">
+              <li>
+                <a href="/safety/">Public Safety</a>
+              </li>
+              <li>
+                <a href="/campus-store/">Campus Store</a>
+              </li>
+              <li>
+                <a href="http://calendar.seattleu.edu/MasterCalendar.aspx">Campus Calendar</a>
+              </li>
+              <li>
+                <a href="/recreation/">University Recreation</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="dropdown mega-dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-label="Open Admissions submenu" aria-haspopup="true" aria-expanded="false">
+          Faculty
+          <span class="fa fa-angle-right visible-xs-inline" aria-hidden="true"></span>
+          <span class="fa fa-chevron-down hidden-xs blue-arrow"></span>
+        </a> 
+        <div class="dropdown-menu mega-dropdown-menu">
+          <div class="globalHeaderNavigationMainLinks col-xs-12 col-sm-9">
+            <ul role="menu" aria-label="Admissions Submenu">
+              <li class="col-xs-12 col-sm-4">
+                <a href="/admissions/">Admissions</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/undergraduate-admissions/apply/freshman/">First Year Applicants</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/international/">International Students</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/undergraduate-admissions/apply/transfer/">Transfer Students</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/undergraduate-admissions/">Undergraduate Admissions</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/graduate-admissions/">Graduate Admissions</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="https://ncs.seattleu.edu/">Adult Learners</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="https://law.seattleu.edu/">School of Law</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/impact/">SU Impact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="globalHeaderNavigationQuickLinks col-xs-12 col-sm-3">
+            <h5>Quicklinks</h5>
+            <ul role="menu" aria-label="Admissions Quicklinks">
+              <li>
+                <a href="/visit/campus-tours/">Campus Tours</a>
+              </li>
+              <li>
+                <a href="/accepted/">Accepted Students</a>
+              </li>
+              <li>
+                <a href="/orientation/">Orientation</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="dropdown mega-dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-label="Open Tuition and Aid submenu" aria-haspopup="true" aria-expanded="false">
+          Centers and Institutes
+          <span class="fa fa-angle-right visible-xs-inline" aria-hidden="true"></span>
+          <span class="fa fa-chevron-down hidden-xs blue-arrow"></span>
+        </a> 
+        <div class="dropdown-menu mega-dropdown-menu">
+          <div class="globalHeaderNavigationMainLinks col-xs-12 col-sm-9">
+            <ul role="menu" aria-label="Tuition and Aid Submenu">
+              <li class="col-xs-12 col-sm-4">
+                <a href="/tuition-and-aid/">Tuition and Aid</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/costs/">Costs</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/costs/net-price-calculators/">Net Price Calculator</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/financial-aid/">Financial Aid</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/financial-aid/grants-and-scholarships/">Scholarships and Grants</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/student-payment/">Student Billing and Payment</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/sfs/">Student Financial Services</a>
+              </li>
+            </ul>
+          </div>
+          <div class="globalHeaderNavigationQuickLinks col-xs-12 col-sm-3">
+          <h5>Quicklinks</h5>
+          <ul role="menu" aria-label="Tuition and Aid Quicklinks">
+            <li>
+              <a href="/redhawk-service-center/academic-calendar/">Academic Calendar</a>
+            </li>
+            <li>
+              <a href="https://secure.touchnet.net/C21365_tsa/web/login.jsp">Authorized User Login</a>
+            </li>
+            <li>
+              <a href="/student-payment/forms-and-documents/">Forms & Documents</a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </li>
+      <li class="dropdown mega-dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-label="Open Jesuit Tradition submenu" aria-haspopup="true" aria-expanded="false">
+          Our Impact
+          <span class="fa fa-angle-right visible-xs-inline" aria-hidden="true"></span>
+          <span class="fa fa-chevron-down hidden-xs blue-arrow"></span>
+        </a> 
+        <div class="dropdown-menu mega-dropdown-menu">
+          <div class="globalHeaderNavigationMainLinks col-xs-12 col-sm-9">
+            <ul role="menu" aria-label="Jesuit Tradition Submenu">
+              <li class="col-xs-12 col-sm-4">
+                <a href="/jesuit-tradition/">Jesuit Tradition</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/campus-ministry/">Campus Ministry</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/jesuit-education/">Center for Jesuit Education</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/ictc/">Institute for Catholic Thought and Culture</a>
+              </li>
+              <li class="col-xs-12 col-sm-4">
+                <a href="/chapel/">Chapel of St. Ignatius</a>
+              </li>
+            </ul>
+          </div>
+          <div class="globalHeaderNavigationQuickLinks col-xs-12 col-sm-3">
+            <h5>Quicklinks</h5>
+            <ul role="menu" aria-label="Jesuit Tradition Quicklinks">
+              <li>
+                <a href="/commons/all-things-jesuit/">All Things Jesuit</a>
+              </li>
+              <li>
+                <a href="/commons/all-things-jesuit/the-jesuits-of-seattle-university/">Jesuits of Seattle U</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="dropdown mega-dropdown">
+        <a href="http://www.goseattleu.com" class="dropdown-toggle" role="button" target="_blank" title="Athletics (opens new window)">
+          Careers <span class="fa fa-angle-right visible-xs-inline" aria-hidden="true"></span>
+          <span class="fa fa-chevron-down hidden-xs blue-arrow"></span>
+        </a>
+      </li> 
+      <li class="dropdown mega-dropdown">
+        <a href="http://www.goseattleu.com" class="dropdown-toggle" role="button" target="_blank" title="Athletics (opens new window)">
+          Our School
+          <span class="fa fa-angle-right visible-xs-inline" aria-hidden="true"></span>
+          <span class="fa fa-chevron-down hidden-xs blue-arrow"></span>
+        </a> 
+      </li>
+    </ul>
+  </div>
+</header>
+<script type="text/javascript">
+  function searchbox_control() {
+    var search_in = document.getElementById("gsc-i-id1");
+    if (search_in.classList.contains("hidden")) {
+      search_in.classList.remove("hidden");
+      if (window.innerWidth >= 993)
+        document.getElementById("globalHeaderResourcesLinks").style.right = "30%";
+    }
+    else {
+      document.getElementById("search_button").type = "submit";
+    }
+    return false;
+  }
+</script>
+<script type="text/javascript">
+  document.querySelector( ".primary-menu-button" ).addEventListener( "click", function() {
+    document.querySelector( ".menu-icon" ).classList.toggle( "is-clicked" );
+  });
+</script>
+<script type="text/javascript">
+  document.querySelector( " #submenu-button" ).addEventListener( "click", function() {
+    document.querySelector( ".menu-icon.sub-hamburger" ).classList.toggle( "is-clicked" );
+  });
+</script>
+<script type="text/javascript">
+  window.addEventListener("resize", function(){
+    var nav_elems = document.querySelectorAll( "#globalHeaderNavigation li.dropdown a" );
+    var dropdown_elems = document.querySelectorAll( "#globalHeaderNavigation .mega-dropdown-menu");
+    var button_down_items = document.querySelectorAll( "#globalHeaderResources .dropdown-menu>li>a");
+    for (var i = nav_elems.length - 1; i >= 0; i--) {
+      nav_elems[i].style.padding = null;
+      nav_elems[i].style.fontSize = null;
+    }
+    for (var i = dropdown_elems.length - 1; i >= 0; i--) {
+      dropdown_elems[i].style.padding = null;
+    }
+    for (var i = button_down_items.length - 1; i >= 0; i--) {
+      button_down_items[i].style.fontSize = null;
+      button_down_items[i].style.padding = null;
+    }
+    document.querySelector( "#globalHeader #mainlogo img" ).style.height = null;
+    document.querySelector( "#globalHeader #mainlogo" ).style.padding = null;
+    document.querySelector( "#googleSearchBox" ).style.padding = null;
+    document.querySelector( "#globalHeader" ).style.height = null;
+    document.querySelector( "#globalHeaderNavigation" ).style.bottom = null;
+    document.querySelector( "#globalHeaderResourcesLinks" ).style.padding = null;
+    document.querySelector( "#globalHeaderResourcesWrapper" ).style.fontSize = null;
+    document.querySelector( "#googleSearchBox input#gsc-i-id1" ).style.fontSize = null;
+    if (window.innerWidth < 993) {
+      document.getElementById("globalHeaderResourcesLinks").style.right = "5%";
+    }
+    if (window.innerWidth >= 993 && !document.getElementById("gsc-i-id1").classList.contains("hidden"))
+      document.getElementById("globalHeaderResourcesLinks").style.right = "30%";
+    else {
+      //document.getElementById('googleSearchBox').classList.add('col-md-push-8');
+      document.getElementById('googleSearchBox').classList.remove('col-md-push-11');
+    }
+  });
+</script>
+
+<script type="text/javascript">
+  window.onscroll = function() {
+    var nav_elems = document.querySelectorAll( "#globalHeaderNavigation li.dropdown a" );
+    var dropdown_elems = document.querySelectorAll( "#globalHeaderNavigation .mega-dropdown-menu");
+    var button_down_items = document.querySelectorAll( "#globalHeaderResources .dropdown-menu>li>a");
+    if (window.innerWidth >= 993 && (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)) {
+      for (var i = nav_elems.length - 1; i >= 0; i--) {
+        if (window.innerWidth > 1189) {
+          nav_elems[i].style.padding = "10px 23px 10px";
+          nav_elems[i].style.fontSize = "1.25rem";
+        }
+        else {
+          nav_elems[i].style.padding = "10px";
+        }
+      }
+      for (var i = dropdown_elems.length - 1; i >= 0; i--) {
+        dropdown_elems[i].style.padding = "25px 30px 0";
+      }
+      for (var i = button_down_items.length - 1; i >= 0; i--) {
+        button_down_items[i].style.fontSize = "1.25rem";
+        button_down_items[i].style.padding = "6px 15px";
+      }
+      document.querySelector( "#globalHeader #mainlogo img" ).style.height = "40px";
+      document.querySelector( "#globalHeader #mainlogo" ).style.padding = "10px 15px";
+      document.querySelector( "#googleSearchBox" ).style.padding = "10px 0px";
+      document.querySelector( "#globalHeader" ).style.height = "60px";
+      document.querySelector( "#globalHeaderNavigation" ).style.bottom = "25px";
+      document.querySelector( "#globalHeaderResourcesLinks" ).style.padding = "19px 0px";
+      document.querySelector( "#globalHeaderResourcesWrapper" ).style.fontSize = "1.25rem";
+    }
+    else {
+      for (var i = nav_elems.length - 1; i >= 0; i--) {
+        nav_elems[i].style.padding = null;
+        nav_elems[i].style.fontSize = null;
+      }
+      for (var i = dropdown_elems.length - 1; i >= 0; i--) {
+        dropdown_elems[i].style.padding = null;
+      }
+      for (var i = button_down_items.length - 1; i >= 0; i--) {
+        button_down_items[i].style.fontSize = null;
+        button_down_items[i].style.padding = null;
+      }
+      document.querySelector( "#globalHeader #mainlogo img" ).style.height = null;
+      document.querySelector( "#globalHeader #mainlogo" ).style.padding = null;
+      document.querySelector( "#googleSearchBox" ).style.padding = null;
+      document.querySelector( "#globalHeader" ).style.height = null;
+      document.querySelector( "#globalHeaderNavigation" ).style.bottom = null;
+      document.querySelector( "#globalHeaderResourcesLinks" ).style.padding = null;
+      document.querySelector( "#globalHeaderResourcesWrapper" ).style.fontSize = null;
+      document.querySelector( "#googleSearchBox input#gsc-i-id1" ).style.fontSize = null;
+    }
+  }
+</script>
