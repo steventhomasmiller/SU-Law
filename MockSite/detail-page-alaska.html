@@ -78,6 +78,185 @@
     }
   }
   /* End TitleBanner CSS */
+
+  .hero {
+    background-color: #333;
+    border-top:10px solid #fdb913;
+    position: relative;
+    min-height: 637px;
+    display: flex;
+    flex-direction: row;
+  }
+  .hero .bg-container-1 {
+    background-color: #000;
+    background-image:url('assets/library1200x800.jpg'); 
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 637px;
+    z-index: 0;
+    flex: 5;
+  }
+  #id413878 .hero .bg-container-2 {
+    background-color: #000;
+    background-image:url('assets/CSE_ProjectsDay_yck_027-2.jpg'); 
+    background-position: 75% 60% !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 637px;
+    z-index: 0;
+    flex: 4;
+  }
+  @media (max-width:992px) {
+    .hero .bg-container-2 {
+      background-position:center;
+    }
+  }
+  .hero .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(1, 146, 171, 0.7); 
+    z-index: 999;
+    height: 40%;
+    text-align: center;
+  }
+  .hero .tri-overlay {
+    background-image: linear-gradient(45deg, rgba(170,0,0,.7) 0%, rgba(170,0,0,.7) 23%, transparent 23%, transparent 100%);
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .hero h2 {
+    color: #fdb913;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    font-size: 3rem;
+    margin: 3rem 0;
+    letter-spacing: 1px;
+  }
+  .hero h1 {
+    background: none;
+    color: white;
+    display: block;
+    font-size: 6rem;
+    font-family: Roboto Slab,serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1000;
+    max-width: 90%;
+    margin: 0 auto;
+    background-image:url('assets/Jesuit-Education.png'); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    text-indent: -99999em;
+    height: 80px;
+  }
+  .hero svg.arrow {
+    stroke: #fdb913;
+    width: 50px;
+    transform: rotate(90deg);
+    margin: 0 auto;
+    z-index:1000;
+    top: 4.5rem;
+    display:none;
+  }
+  @media (max-width:767.999px) {
+    .hero {
+      flex-direction: column;
+    }
+    .hero .bg-container-1 {
+      background-position: left 20%;
+      height: 50%;
+      flex:1;
+      display:none
+    }
+    .hero .bg-container-2 {
+      height: 50%;
+      flex:1;
+    }
+  }
+  @media (max-width:1009.999px) {
+    .hero h1 {
+      font-size:2.4rem;
+      top:-8rem;  
+    }
+    .hero h1 strong {
+      margin:0 !important;
+    }
+    .hero svg.arrow {
+      top:0rem;  
+    }
+  }
+  @media (max-width:991.999px) {
+    .hero h1 {
+      font-size:2.4rem;
+      top:0rem;  
+    }
+    .hero svg.arrow {
+      top:5rem;
+    }
+  }
+  @media (max-width:767.999px) {
+    .hero h1 {
+      font-size:2.4rem;
+      top:0rem;  
+    }
+    .hero h1 strong {
+      margin:0 !important;
+    }
+    .hero svg.arrow {
+      top:3rem;
+    }
+  }
+
+  #id411825{ display:none} /* hides christmas centerpiece for testing purposes */
+  #id291340{ display:none} /* hides "all begins here and links to The Ones and Tour for reasons */
+
+  .homepageGridItemCopy a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .homepageGridItemCopy a:hover, .homepageGridItemCopy a:focus {
+    color: #fdb913;
+  }
+
+  .homepageGridWrapper .homepageGrid .homepageGridItem2 .homepageGridHeading,
+  x.homepageGridWrapper .homepageGrid .homepageGridItem4 .homepageGridHeading{
+    font-size: calc(25vw / 9);
+    line-height: calc(25vw / 9);
+    xtext-shadow: 0 0 9px #000000;
+  }
+
+  @media screen and (max-width: 767.999px) { /* xs */
+    .homepageGridWrapper .homepageGrid .homepageGridItem2 .homepageGridHeading,
+    x.homepageGridWrapper .homepageGrid .homepageGridItem4 .homepageGridHeading{
+      font-size: calc(100vw / 9);
+      line-height: calc(100vw / 9);
+      xtext-shadow: 0 0 9px #000000;
+    }
+  }
+  .homepageGrid .homepageGridItem2 h3,
+  .homepageGrid .homepageGridItem4 h3{
+    color:#333333;
+  }
+  .homepageGrid .homepageGridItem2 a:hover, .homepageGrid .homepageGridItem2 a:focus,
+  .homepageGrid .homepageGridItem4 a:hover, .homepageGrid .homepageGridItem4 a:focus{
+    background-image: linear-gradient(rgba(255, 255,255, .3), rgba(255, 255, 255, .3));
+  }
+
+  #zoneA #id285421{
+    background-color:#333333;
+    padding-top: 30px;
+    margin-bottom:0px;
+  }
   </style>
 </head>
 <body class="homePage">
@@ -467,8 +646,66 @@
 
 <!--FOR THE MAIN CONTENT AREA --> 
 
-  <div id="pageContentWrapper" role="main" class="container-fluid">
+  <div id="pageContentWrapper" role="main" class="container-fluid" style="padding: 0;">
     <div id="pageContent">
+      <div class="codeZoneAWrapper contentItem noGap" id="id413878" data-position-default="ZoneA" data-position-selected="ZoneA" data-order="1">
+        <a name="d.en.413878"></a>
+        <div class="codeZoneA">
+          <div class="hero">
+            <div class="bg-container-1"></div>
+            <div class="bg-container-2"></div>
+            <div class="overlay">
+              <h2>Guided by Purpose × Driven by Passion</h2>
+              <h1>Jesuit Education</h1>
+              <svg viewBox="0 0 100 100" class="arrow circle">
+                <use xlink:href="/media/v9-icons.svg#icon-arrow"></use>
+              </svg>
+            </div>
+            <div class="tri-overlay"></div>
+          </div>
+        </div>
+      </div>
+      <div class="jumbotron3Wrapper contentItem noGap" id="id413882" data-position-default="ZoneA" data-position-selected="ZoneA" aria-labelledby="label413882" data-order="2">
+        <a name="d.en.413882"></a>
+        <div class="jumbotron3">
+          <div class="jumbotron3Image" style="background-image:url(assets/cityinred19.jpg); min-height:500px"> 
+          </div>
+          <div class="jumbotron3Text standardContent">
+            <h2 id="label413882">Take on the World</h2>
+            <p>Our Jesuit tradition emphasizes education not just for its own sake, but to prepare skilled, ethical&nbsp;and wise professionals who will serve the world in their chosen careers. A Jesuit education is ideal for people who want to make a difference. Whatever your field—in the arts, sciences, humanities or professions—Seattle University students are prepared to work for a more just and humane world.</p>
+            <ul class="boxlinks">
+              <li>
+                <a href="/academics/">Explore Academics</a>
+              </li>
+              <li>
+                <a href="/undergraduate-admissions/academics/programs/">Explore Programs and Majors</a>
+              </li>
+            </ul>
+          </div>  
+        </div>
+      </div>
+      <div class="callToActionWrapper contentItem noGap" id="id261046" data-position-default="zoneA" data-position-selected="zoneA" style="background-image:url(assets/home-cta-background_web.jpg);" data-order="3">
+        <a name="d.en.261046"></a>
+        <div class="callToActionOverlay callToActionOverlayColorRed">
+          <div class="callToAction">
+            <div class="callToActionButtonWrapper row">
+              <div class="callToActionButton col-md-3">
+                <a href="/admissions/apply/">Apply</a>
+                <div class="callToActionButtonArrow"></div>
+              </div>
+              <div class="callToActionButton col-md-3">
+                <a href="/visit/">Visit</a>
+              </div>
+              <div class="callToActionButton col-md-3">
+                <a href="/undergraduate-admissions/request-information/">Request Information</a>
+              </div>
+              <div class="callToActionButton col-md-3">
+                <a href="/about/contact/">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="homepageGridWrapper contentItem noGap" data-position-default="zoneA" data-position-selected="zoneA" id="id341681" data-order="4">
         <div class="jumbotron1 standardContent">
           <a name="d.en.341681"></a>

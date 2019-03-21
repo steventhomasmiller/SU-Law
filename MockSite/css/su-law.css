@@ -3114,6 +3114,7 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
 .callToActionOverlay{
   background: rgba(247,247,247,0.75); /*Default white*/
   width:100%;
+  height: 200px;
   margin:auto auto;
 }
 .callToActionWrapper .callToActionOverlayColorGold{
@@ -3147,9 +3148,10 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
   background: rgba(51,51,51,0.75);
 }
 .callToAction{
-  margin:auto auto;
-  max-width:1170px;
+  margin: auto auto;
+  max-width:95%;
   padding:30px;
+  height: 200px;
 }
 .callToActionWrapper h2{
   color:#ffffff;
@@ -3177,10 +3179,9 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
 }
 .callToActionButton{
   background-color:#f7f7f7;
-  display:flex;
-  flex: 0 1 100%;
   justify-content: center;
-  margin: 15px 0 0 0;
+  max-width:24%;
+  margin-top: 45px;
   text-align:center;
 }
 /* Flex Grid Queries [FOR ZONE A]*/
