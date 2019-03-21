@@ -1191,10 +1191,10 @@ _____________________  _____________________________  __________________________
   word-wrap: break-word;
 }
 @media screen and (min-width: 992px) {
-  #pageContentWrapper {
+  /* #pageContentWrapper {
     padding-top: 100px;
-  }
-}
+  } */
+} 
 .container-fluid #pageTitle {
   padding: 30px 15px 30px 30px;
 }
