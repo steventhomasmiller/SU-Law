@@ -5691,10 +5691,10 @@ input[type="checkbox"]:focus, input[type="file"]:focus {
 }
 .homepageGrid .homepageGridItem .homepageGridHeading{
   display: block;
-  font-size: calc(25vw / 4);
-  line-height: calc(25vw / 4);
+  font-size: calc(40vw / 4);
+  line-height: calc(40vw / 4);
 }
-@media screen and (max-width: 767.999px) { /* xs */
+@media screen and (max-width: 767px) { /* xs */
   .homepageGrid .homepageGridItem .homepageGridHeading{
     font-size: calc(100vw / 4);
     line-height: calc(100vw / 4);
@@ -5995,7 +5995,7 @@ a .homepageGridItemCopy h4:hover{/*delete*/
   }
   .jumbotron3Wrapper .jumbotron3Text p,
   .jumbotron3Wrapper .jumbotron3Text .boxlinks{
-    margin: 0 35px 15px 35px;
+    margin: 0 30px 15px 30px;
   }
 }
 
