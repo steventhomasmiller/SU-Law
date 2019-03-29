@@ -8810,28 +8810,80 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
     background: #f7f7f7;
     padding: 2rem 3rem;
 }
-
-
-
-
-
-
 .alertSubtle .moreLink{
   display:none;
 }
 
+/*Alaska Sidebar Content*/
+.apply-button-wrapper {
+  display: inherit;
+}
 
+.apply-button {
+  background-color: #666;
+  display: block;
+  margin: 5px 0;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+}
 
+.apply-button-primary {
+  background-color: #a00;
+}
 
+.apply-button a {
+  color: #fff;
+  font-size: 14px;
+}
 
+.contact-info .title {
+  font-weight: bold;
+}
 
+.contact-info .body p {
+  font-weight: lighter;
+}
 
+.signup-form-wrapper .title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
+.signup-form-wrapper .signup-form label {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0;
+  display: block;
+  margin-bottom: 0;
+}
 
+.signup-form-wrapper .signup-form input[type="text"] {
+  background-color: #f7f7f7 !important;
+  border-radius: 0px !important;
+  box-shadow: none;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  height: inherit;
+  padding: 5px;
+  margin-bottom: 10px;
+}
 
+.signup-form-wrapper .signup-form .radio-label {
+  font-size: 14px;
+  color: #333;
+  vertical-align: baseline;
+}
 
+.signup-form-wrapper .signup-form input[type="radio"] {
+  margin: 4px 4px 0 0;
+}
 
-
-
-
-
+.signup-form-wrapper .signup-form input[type="submit"] {
+  display: block;
+  color: #ffffff;
+  background-color: #aa0000;
+  border-color: #ffffff;
+}
