@@ -8887,3 +8887,24 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   background-color: #aa0000;
   border-color: #ffffff;
 }
+
+.page-navigation-wrapper .page-navigation h3 {
+  font-size: 16px;
+  color: #a00;
+  font-weight: 700;
+}
+
+.page-navigation-wrapper .page-navigation ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.page-navigation-wrapper .page-navigation ul>li {
+  border-bottom: 1px solid #aaa;
+  padding: 3px 0 7px 10px;
+}
+.page-navigation-wrapper .page-navigation ul>li>a {
+  color: #a00;
+  text-decoration: none;
+  font-size: 14px;
+}
