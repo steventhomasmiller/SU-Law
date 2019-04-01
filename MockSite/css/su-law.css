@@ -8845,6 +8845,10 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   font-weight: lighter;
 }
 
+.signup-form-wrapper {
+  padding-bottom: 10px;
+}
+
 .signup-form-wrapper .title {
   font-weight: bold;
   margin-bottom: 5px;

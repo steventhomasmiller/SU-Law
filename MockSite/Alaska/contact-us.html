@@ -453,5 +453,96 @@
       </div>
     </div>
   </div>
+  <div class="clearfix"></div>
+  <div id="footerWrapper"></div>
+  <script>
+    $('#footerWrapper').load('../ajax/footer.html');
+  </script>
+  <div class="clearfix"></div>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" />
+  <script type="text/javascript" src="/media/scripts/recursivemenu-min.js"></script>
+  <script type="text/javascript" src="/media/scripts/contentOrganizationCompressed.js"></script>
+  <script type="text/javascript" src="/media/scripts/modernizr-custom.js"></script>
+  <script type="text/javascript" src="/media/scripts/scripts.js"></script>
+  <script type="text/javascript" src="/media/scripts/alert.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-media.js"></script>
+  <script>
+    var previousWidth = window.innerWidth;
+    $(window).resize(function () {
+      if (previousWidth != window.innerWidth) {
+        determinePageWidth();
+        reorganizeContentItems();
+        previousWidth = window.innerWidth;
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    (function(){
+      function addVideoAttr(id) {
+        document.getElementById("video_" + videoIDs[i]).setAttribute('href', href[id]);
+      }
+      var videoIDs = ['', '', '', ''],
+      href = ['', '', '', ''];
+      for(var i = 0; i < videoIDs.length; i++){
+        if(videoIDs[i].length > 3){
+          href[i] = ('//www.vimeo.com/' + videoIDs[i]);
+          addVideoAttr(i);
+        }
+      }
+    })();
+  </script>
+  <script>
+    $(".video_popup").fancybox({
+      scrolling: 'no',
+      wrapCSS: "fancybox-class",
+      type: "iframe",
+      iframe: {
+        preload: false,
+        scrolling: 'no'
+      },
+      helpers: {
+        overlay: {
+          locked: false
+        }
+      }
+    });
+    $(".video_helper").fancybox({
+      scrolling: 'no',
+      wrapCSS: "fancybox-class",
+      padding : 0,
+      helpers: {
+        media: {},
+        overlay: {
+          locked: false
+        },
+      },
+      beforeLoad : function() {
+        this.width  = 800;
+        this.height = 450;
+      },
+      afterShow: function(){
+        this.inner.css({
+          overflow: 'hidden'
+        });
+      }
+    });
+  </script> 
+  <script>
+    $(".popup").fancybox({
+      scrolling: 'no',
+      wrapCSS: "fancybox-class",
+      type: "iframe",
+      iframe: {
+        preload: false,
+        scrolling: 'no'
+      },
+      helpers: {
+        overlay: {
+          locked: false
+        }
+      }
+    });
+  </script>
 </body>
-</html>
+</html> 
