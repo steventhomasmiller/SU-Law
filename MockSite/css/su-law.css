@@ -8844,16 +8844,16 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   font-weight: lighter;
 }
 
-.signup-form-wrapper {
+.form-wrapper {
   padding-bottom: 10px;
 }
 
-.signup-form-wrapper .title {
+.form-wrapper .title {
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.signup-form-wrapper .signup-form label {
+.form-wrapper .form label {
   font-size: 16px;
   font-weight: 500;
   padding: 0;
@@ -8861,7 +8861,8 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   margin-bottom: 0;
 }
 
-.signup-form-wrapper .signup-form input[type="text"] {
+.form-wrapper .form input,
+.form-wrapper .form textarea {
   background-color: #f7f7f7 !important;
   border-radius: 0px !important;
   box-shadow: none;
@@ -8874,21 +8875,77 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   margin-bottom: 10px;
 }
 
-.signup-form-wrapper .signup-form .radio-label {
+.form-wrapper .form .radio-label {
   font-size: 14px;
   color: #333;
   vertical-align: baseline;
 }
 
-.signup-form-wrapper .signup-form input[type="radio"] {
+.form-wrapper .form input[type="radio"] {
   margin: 4px 4px 0 0;
 }
 
-.signup-form-wrapper .signup-form input[type="submit"] {
+.form-wrapper .form input[type="submit"] {
   display: block;
   color: #ffffff;
   background-color: #aa0000;
   border-color: #ffffff;
+}
+
+.form-wrapper .form label {
+  display: inline;
+}
+
+.form-wrapper .form hr,
+.form-wrapper hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.form-wrapper .form .input-box {
+  display: block;
+}
+
+.form-wrapper .form .input-box p {
+  display: inline; 
+  padding-left: 5px;
+}
+
+.form-wrapper .form .form-level-1 {
+  margin-left: 10px;
+}
+
+.form-wrapper .form div.form-level-1 {
+  overflow: hidden; 
+  clear: both; 
+  display: block; 
+  padding-top: 3px; 
+  padding-bottom: 3px;
+}
+
+.form-wrapper .form p.form-level-1 {
+  padding: 0;
+  margin: 0;
+  display: block;
+  font-weight: bold;
+}
+
+.form-wrapper .form .form-level-1 input {
+  overflow:visible;
+}
+
+.form-wrapper .form .form-level-1 .form-level-2 {
+  margin-left: 10px;
+}
+
+.form-wrapper .form .form-level-1 .form-level-2 label {
+  font-weight:bold;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.form-wrapper .form .form-level-1 .form-level-2 input {
+  display: block;
 }
 
 .page-navigation-wrapper .page-navigation h3 {
