@@ -8862,7 +8862,8 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 }
 
 .form-wrapper .form input,
-.form-wrapper .form textarea {
+.form-wrapper .form textarea,
+.form-wrapper .form select {
   background-color: #f7f7f7 !important;
   border-radius: 0px !important;
   box-shadow: none;
@@ -8953,7 +8954,8 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   font-weight: bold;
 }
 
-.form-wrapper .form.full-size-form .input-box input {
+.form-wrapper .form.full-size-form .input-box input,
+.form-wrapper .form.full-size-form .input-box select {
   display: block;
   width: 100%;
   margin-bottom: 20px;
