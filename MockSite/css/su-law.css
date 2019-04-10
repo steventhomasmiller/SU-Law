@@ -8948,6 +8948,17 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   display: block;
 }
 
+.form-wrapper .form.full-size-form .input-box label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-wrapper .form.full-size-form .input-box input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .page-navigation-wrapper .page-navigation h3 {
   font-size: 16px;
   color: #a00;
