@@ -5979,6 +5979,7 @@ a .homepageGridItemCopy h4:hover{/*delete*/
   border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #fdb913 25.01%, #fdb913 75%, rgba(0, 0, 0, 0) 75.01%);
   border-image-slice: 1;
   flex: 1;
+  background-color: #EEEEEE;
 }
 @media screen and (min-width: 992px) { /* md + lg*/
   .jumbotron3Wrapper .jumbotron3Text h2,
@@ -7865,7 +7866,7 @@ h3.degreeItemHeaderButtonTitle {
 }
 
 .spotlightWrapper .spotlightSource{
-  border-left:3px solid transparent;/*Default*/
+  border-left:3px solid #aa0000 !important;
   font-size:1.4em;
   font-weight:bold;
   padding: 3px 3px 3px 15px;
@@ -8980,4 +8981,44 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   color: #a00;
   text-decoration: none;
   font-size: 14px;
+}
+
+.standardContent p.top-text {
+  padding: 100px 100px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.jumbotron3Text.standardContent.no-line {
+  border-top: none;
+}
+
+.jumbotron3Text.standardContent h2 {
+  width: 60%;
+}
+
+.jumbotron3Text.standardContent .text-wrapper{
+  margin-top: 110px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.floating-sidebar {
+  position: fixed;
+  margin-left: 90%;
+  width: 10%;
+  margin-top: -300px;
+}
+
+.floating-sidebar .sidebar-item {
+  list-style-type: none;
+  height: 100px;
+  background-color: #555555;
+  text-align: center;
+}
+
+.floating-sidebar .sidebar-item .sidebar-link {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #ffffff;
 }
