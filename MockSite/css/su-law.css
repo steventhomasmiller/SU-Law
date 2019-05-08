@@ -259,18 +259,18 @@ header.menu-is-open .primary-nav-trigger:focus {
     transition: all 0.8s ease;
 }
 /* search box */
-#googleSearchBox{
+.googleSearchBox{
   padding: 20px 0;
   transition: 0.4s;
   transition-timing-function: ease;
 }
 
- #googleSearchBox td.gsc-input{
+ .googleSearchBox td.gsc-input{
   width:100%;
   padding-right:0;
 }
 
- #googleSearchBox input#gsc-i-id1{
+ .googleSearchBox input#gsc-i-id1{
   background: #881111 !important;
   border: 1px solid #881111;
   color: #ffffff;
@@ -288,13 +288,13 @@ header.menu-is-open .primary-nav-trigger:focus {
 }
 
  @media (min-width:992px) {
-    #googleSearchBox input#gsc-i-id1{
+    .googleSearchBox input#gsc-i-id1{
     width: 115%;  
     }
 }
 
 
-body #googleSearchBox input#gsc-i-id1:focus {
+body .googleSearchBox input#gsc-i-id1:focus {
     border: 1px solid #ffffff;
 
 }
@@ -305,7 +305,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
 
 
 
-#googleSearchBox button.gsc-search-button {
+.googleSearchBox button.gsc-search-button {
   background: #aa0000;  /*CHANGED TO MATCH HEADER BACKGROUND*/
   border: none;
   color: #ffffff;
@@ -321,19 +321,26 @@ body #googleSearchBox input#gsc-i-id1:focus {
   position: relative;
   vertical-align:middle;
   -webkit-font-smoothing: antialiased;
-} 
+}
 
-#googleSearchBox button.gsc-search-button:before {
+@media (max-width:1200px) {
+  .googleSearchBox button.gsc-search-button {
+    position: relative;
+    float: right;
+  }
+}
+
+.googleSearchBox button.gsc-search-button:before {
   content: "\e003";
 }
 
 
-#googleSearchBox .gsc-clear-button{ 
+.googleSearchBox .gsc-clear-button{ 
   display:none;
 }
 
-#googleSearchBox .gsc-search-button:hover,
-#googleSearchBox .gsc-search-button:focus {
+.googleSearchBox .gsc-search-button:hover,
+.googleSearchBox .gsc-search-button:focus {
   color: #fdb913;
 }
 
@@ -362,7 +369,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
   #globalHeaderResources {
     padding: 17px 30px;
   }
-  #googleSearchBox{
+  .googleSearchBox{
     padding: 0;
   }
   #globalHeaderResourcesLinks{
@@ -381,7 +388,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
 
 
 /* @media (min-width: 992px) {
-  #googleSearchBox{
+  .googleSearchBox{
     margin: auto;
     text-align:center;
     padding: 20px 0 25px;

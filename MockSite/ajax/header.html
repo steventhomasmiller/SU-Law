@@ -11,59 +11,44 @@
   </div>
   <div id="globalHeaderResourcesWrapper" class="col-xs-12 col-md-10">
   <div id="globalHeaderNavigationWrapper" class="collapse collapseMe navbar-collapse" style="box-shadow: none;-webkit-box-shadow: none;">
-      <div class="col-xs-12 col-md-12">
-        <div id="globalHeaderResources">
-          <div id="googleSearchBox" class="col-xs-12 col-sm-8 col-sm-push-2 col-md-3 col-md-push-9">
-            <table>
-              <form class="gsc-search-box">
-                <tbody>
-                  <tr>
-                    <td class="gsc-input">
-                      <div id="search_content">
-                        <input autocomplete="off" type="text" size="10" class="hidden" name="Search" title="Search" id="gsc-i-id1" x-webkit-speech="" x-webkit-grammar="builtin:search" lang="en" dir="ltr" placeholder="Search" spellcheck="false" style="outline: none;" required="required">
-                        <input type="hidden" name="bgresponse" id="bgresponse">
-                      </div>
-                    </td>
-                    <td class="gsc-search-button">
-                      <button type="button" id="search_button" value="Search" class="gsc-search-button" title="search" onclick="searchbox_control();"></button>
-                    </td>
-                    <td class="gsc-clear-button">
-                      <div class="gsc-clear-button" title="clear results">
-                        &nbsp;
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </form>
-            </table>
-            <script>
-              // Add listener to submit search query on form submit
-              $("form.gsc-search-box").on('submit', function() {
-                var URL = "//www.seattleu.edu/search/";
-                var search = encodeURIComponent($("form.gsc-search-box input.gsc-input"));
-                window.location.href = URL + "?q=" + search;
-                return false; // Stops the form from executing its default submit (which reloads the page and breaks our desired functionality)
-              });
-            </script> 
-          </div>
-          <ul id="globalHeaderResourcesLinks" class="col-xs-12 col-sm-12 col-md-9 col-md-pull-3 col-lg-8 col-lg-pull-4">
-            <li><a href="/visit/" id="SUtopNavVisit"  aria-label= "Plan a visit to Seattle University" class="globalHeaderResourcesLinksItem">Students</a></li>
-            <li><a href="/admissions/apply/" id="SUtopNavApply" aria-label= "Apply to Seattle University" class="globalHeaderResourcesLinksItem">Employees</a></li>
-            <li><a href="/giving/" id="SUtopNavGive" aria-label= "Give to Seattle University" class="globalHeaderResourcesLinksItem">Alumni</a></li>
-            <li><a href="/giving/" id="SUtopNavGive" aria-label= "Give to Seattle University" class="globalHeaderResourcesLinksItem">Legal Community</a></li>
-            <li class="dropdown"> <a href="#" class="dropdown-toggle" id="headerResourcesMenu" data-toggle="dropdown" aria-label="Open SU Resources submenu"aria-haspopup="true" aria-expanded="false">SU Resources <span class="fa fa-chevron-down visible-inline blue-arrow"></span> </a>
-              <ul class="dropdown-menu" aria-labelledby="headerResourcesMenu">
-                <li><a href="https://outlook.com/owa/seattleu.edu" target="_blank" title="Email (opens new window)">Library</a></li>
-                <li><a href="https://seattleu.instructure.com/login" target="_blank" title="Canvas (opens new window)">Calendar</a></li>
-                <li><a href="https://webadvisor.seattleu.edu/" target="_blank" title="SU Online (opens new window)">News</a></li>
-                <li><a href="https://www.seattleu.edu/mysu/">Maps</a></li>
-                <li><a href="https://www.seattleu.edu/mysu/">Technology</a></li>
-                <li><a href="https://www.seattleu.edu/mysu/">SU Connect</a></li>
-                <li><a href="https://www.seattleu.edu/mysu/">MySU</a></li>
-              </ul>
-            </li>
-          </ul>
+      <div class="col-xs-12 col-md-12 row" id="globalHeaderResources">
+        <ul id="globalHeaderResourcesLinks" class="col-xs-12 col-md-8 col-md-push-1 col-lg-6 col-lg-push-5">
+          <li><a href="/visit/" id="SUtopNavVisit"  aria-label= "Plan a visit to Seattle University" class="globalHeaderResourcesLinksItem">Students</a></li>
+          <li><a href="/admissions/apply/" id="SUtopNavApply" aria-label= "Apply to Seattle University" class="globalHeaderResourcesLinksItem">Employees</a></li>
+          <li><a href="/giving/" id="SUtopNavGive" aria-label= "Give to Seattle University" class="globalHeaderResourcesLinksItem">Alumni</a></li>
+          <li><a href="/giving/" id="SUtopNavGive" aria-label= "Give to Seattle University" class="globalHeaderResourcesLinksItem">Legal Community</a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" id="headerResourcesMenu" data-toggle="dropdown" aria-label="Open SU Resources submenu"aria-haspopup="true" aria-expanded="false">SU Resources <span class="fa fa-chevron-down visible-inline blue-arrow"></span> </a>
+            <ul class="dropdown-menu" aria-labelledby="headerResourcesMenu">
+              <li><a href="https://outlook.com/owa/seattleu.edu" target="_blank" title="Email (opens new window)">Library</a></li>
+              <li><a href="https://seattleu.instructure.com/login" target="_blank" title="Canvas (opens new window)">Calendar</a></li>
+              <li><a href="https://webadvisor.seattleu.edu/" target="_blank" title="SU Online (opens new window)">News</a></li>
+              <li><a href="https://www.seattleu.edu/mysu/">Maps</a></li>
+              <li><a href="https://www.seattleu.edu/mysu/">Technology</a></li>
+              <li><a href="https://www.seattleu.edu/mysu/">SU Connect</a></li>
+              <li><a href="https://www.seattleu.edu/mysu/">MySU</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div id="search-box-wrapper" class="col-xs-11 col-md-2 col-md-push-2 col-lg-3 col-lg-push-2">
+          <form class="gsc-search-box googleSearchBox">
+            <div class="gsc-input collapse" id="search-box">
+              <input autocomplete="off" type="text" size="10" name="Search" title="Search" id="gsc-i-id1" x-webkit-speech="" x-webkit-grammar="builtin:search" lang="en" dir="ltr" placeholder="Search" spellcheck="false" style="outline: none;" required="required">
+            </div>
+          </form>
         </div>
+        <div id="search-button-wrapper" class="googleSearchBox col-xs-1 col-md-1 col-md-push-1 col-lg-push-2">
+          <div class="gsc-search-button">
+            <button type="button" id="search_button" value="Search" class="gsc-search-button" title="search" data-toggle="collapse" data-target="#search-box"></button>
+          </div>
+        </div>
+        <script>
+          $("form.gsc-search-box").on('submit', function() {
+            var URL = "//www.seattleu.edu/search/";
+            var search = encodeURIComponent($("form.gsc-search-box input.gsc-input"));
+            window.location.href = URL + "?q=" + search;
+            return false;
+          });
+        </script> 
       </div>
     </div>
   </div>
@@ -360,7 +345,13 @@
     </ul>
   </div>
 </header>
-<script type="text/javascript">
+<script>
+  $('#search_button').on('click', function{
+    $('#globalHeaderResourcesLinks').toggleClass('col-lg-push-5');
+    $('#globalHeaderResourcesLinks').toggleClass('col-lg-push-1');
+  });
+</script>
+<!-- <script type="text/javascript">
   function searchbox_control() {
     var search_in = document.getElementById("gsc-i-id1");
     if (search_in.classList.contains("hidden")) {
@@ -419,7 +410,6 @@
     }
   });
 </script>
-
 <script type="text/javascript">
   window.onscroll = function() {
     var nav_elems = document.querySelectorAll( "#globalHeaderNavigation li.dropdown a" );
@@ -472,4 +462,4 @@
       document.querySelector( "#googleSearchBox input#gsc-i-id1" ).style.fontSize = null;
     }
   }
-</script>
+</script> -->
