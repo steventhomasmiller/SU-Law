@@ -345,71 +345,26 @@
     </ul>
   </div>
 </header>
-<script>
-  $('#search_button').on('click', function{
-    $('#globalHeaderResourcesLinks').toggleClass('col-lg-push-5');
-    $('#globalHeaderResourcesLinks').toggleClass('col-lg-push-1');
+
+<script type="text/javascript">
+  window.getElementById("search_button").addEventListener( "click", function() {
+    window.getElementById("globalHeaderResourcesLinks").classList.toggle('col-lg-push-5');
+    window.getElementById("globalHeaderResourcesLinks").classList.toggle('col-lg-push-1');
   });
 </script>
-<!-- <script type="text/javascript">
-  function searchbox_control() {
-    var search_in = document.getElementById("gsc-i-id1");
-    if (search_in.classList.contains("hidden")) {
-      search_in.classList.remove("hidden");
-      if (window.innerWidth >= 993)
-        document.getElementById("globalHeaderResourcesLinks").style.right = "30%";
-    }
-    else {
-      document.getElementById("search_button").type = "submit";
-    }
-    return false;
-  }
-</script>
+
 <script type="text/javascript">
   document.querySelector( ".primary-menu-button" ).addEventListener( "click", function() {
     document.querySelector( ".menu-icon" ).classList.toggle( "is-clicked" );
   });
 </script>
+
 <script type="text/javascript">
   document.querySelector( " #submenu-button" ).addEventListener( "click", function() {
     document.querySelector( ".menu-icon.sub-hamburger" ).classList.toggle( "is-clicked" );
   });
 </script>
-<script type="text/javascript">
-  window.addEventListener("resize", function(){
-    var nav_elems = document.querySelectorAll( "#globalHeaderNavigation li.dropdown a" );
-    var dropdown_elems = document.querySelectorAll( "#globalHeaderNavigation .mega-dropdown-menu");
-    var button_down_items = document.querySelectorAll( "#globalHeaderResources .dropdown-menu>li>a");
-    for (var i = nav_elems.length - 1; i >= 0; i--) {
-      nav_elems[i].style.padding = null;
-      nav_elems[i].style.fontSize = null;
-    }
-    for (var i = dropdown_elems.length - 1; i >= 0; i--) {
-      dropdown_elems[i].style.padding = null;
-    }
-    for (var i = button_down_items.length - 1; i >= 0; i--) {
-      button_down_items[i].style.fontSize = null;
-      button_down_items[i].style.padding = null;
-    }
-    document.querySelector( "#globalHeader #mainlogo img" ).style.height = null;
-    document.querySelector( "#globalHeader #mainlogo" ).style.padding = null;
-    document.querySelector( "#googleSearchBox" ).style.padding = null;
-    document.querySelector( "#globalHeader" ).style.height = null;
-    document.querySelector( "#globalHeaderNavigation" ).style.bottom = null;
-    document.querySelector( "#globalHeaderResourcesLinks" ).style.padding = null;
-    document.querySelector( "#globalHeaderResourcesWrapper" ).style.fontSize = null;
-    document.querySelector( "#googleSearchBox input#gsc-i-id1" ).style.fontSize = null;
-    if (window.innerWidth < 993) {
-      document.getElementById("globalHeaderResourcesLinks").style.right = "5%";
-    }
-    if (window.innerWidth >= 993 && !document.getElementById("gsc-i-id1").classList.contains("hidden"))
-      document.getElementById("globalHeaderResourcesLinks").style.right = "30%";
-    else {
-      //document.getElementById('googleSearchBox').classList.add('col-md-push-8');
-      document.getElementById('googleSearchBox').classList.remove('col-md-push-11');
-    }
-  });
-</script>
+
 <script type="text/javascript">
   window.onscroll = function() {
     var nav_elems = document.querySelectorAll( "#globalHeaderNavigation li.dropdown a" );
@@ -462,4 +417,4 @@
       document.querySelector( "#googleSearchBox input#gsc-i-id1" ).style.fontSize = null;
     }
   }
-</script> -->
+</script>
