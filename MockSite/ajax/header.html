@@ -29,8 +29,8 @@
             </ul>
           </li>
         </ul>
-        <div id="search-box-wrapper" class="col-xs-11 col-md-2 col-md-push-2 col-lg-3 col-lg-push-2">
-          <form class="gsc-search-box googleSearchBox">
+        <div class="col-xs-11 col-md-2 col-md-push-2 col-lg-3 col-lg-push-2">
+          <form class="gsc-search-box googleSearchBox" id="search-box-wrapper">
             <div class="gsc-input collapse" id="search-box">
               <input autocomplete="off" type="text" size="10" name="Search" title="Search" id="gsc-i-id1" x-webkit-speech="" x-webkit-grammar="builtin:search" lang="en" dir="ltr" placeholder="Search" spellcheck="false" style="outline: none;" required="required">
             </div>
@@ -347,21 +347,15 @@
 </header>
 
 <script type="text/javascript">
-  window.getElementById("search_button").addEventListener( "click", function() {
-    window.getElementById("globalHeaderResourcesLinks").classList.toggle('col-lg-push-5');
-    window.getElementById("globalHeaderResourcesLinks").classList.toggle('col-lg-push-1');
+  document.getElementById("search_button").addEventListener( "click", function() {
+    document.getElementById("globalHeaderResourcesLinks").classList.toggle('col-lg-push-5');
+    document.getElementById("globalHeaderResourcesLinks").classList.toggle('col-lg-push-2');
   });
 </script>
 
 <script type="text/javascript">
   document.querySelector( ".primary-menu-button" ).addEventListener( "click", function() {
     document.querySelector( ".menu-icon" ).classList.toggle( "is-clicked" );
-  });
-</script>
-
-<script type="text/javascript">
-  document.querySelector( " #submenu-button" ).addEventListener( "click", function() {
-    document.querySelector( ".menu-icon.sub-hamburger" ).classList.toggle( "is-clicked" );
   });
 </script>
 
@@ -389,7 +383,8 @@
       }
       document.querySelector( "#globalHeader #mainlogo img" ).style.height = "40px";
       document.querySelector( "#globalHeader #mainlogo" ).style.padding = "10px 15px";
-      document.querySelector( "#googleSearchBox" ).style.padding = "10px 0px";
+      document.querySelector( "#search-box-wrapper" ).style.padding = "10px 0px";
+      document.querySelector( "#search-button-wrapper" ).style.padding = "10px 0px";
       document.querySelector( "#globalHeader" ).style.height = "60px";
       document.querySelector( "#globalHeaderNavigation" ).style.bottom = "25px";
       document.querySelector( "#globalHeaderResourcesLinks" ).style.padding = "19px 0px";
@@ -409,12 +404,12 @@
       }
       document.querySelector( "#globalHeader #mainlogo img" ).style.height = null;
       document.querySelector( "#globalHeader #mainlogo" ).style.padding = null;
-      document.querySelector( "#googleSearchBox" ).style.padding = null;
+      document.querySelector( "#search-box-wrapper" ).style.padding = null;
+      document.querySelector( "#search-button-wrapper" ).style.padding = null;
       document.querySelector( "#globalHeader" ).style.height = null;
       document.querySelector( "#globalHeaderNavigation" ).style.bottom = null;
       document.querySelector( "#globalHeaderResourcesLinks" ).style.padding = null;
       document.querySelector( "#globalHeaderResourcesWrapper" ).style.fontSize = null;
-      document.querySelector( "#googleSearchBox input#gsc-i-id1" ).style.fontSize = null;
     }
   }
 </script>
