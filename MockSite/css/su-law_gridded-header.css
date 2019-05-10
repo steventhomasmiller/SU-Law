@@ -259,18 +259,18 @@ header.menu-is-open .primary-nav-trigger:focus {
     transition: all 0.8s ease;
 }
 /* search box */
-#googleSearchBox{
+.googleSearchBox{
   padding: 20px 0;
   transition: 0.4s;
   transition-timing-function: ease;
 }
 
- #googleSearchBox td.gsc-input{
+ .googleSearchBox td.gsc-input{
   width:100%;
   padding-right:0;
 }
 
- #googleSearchBox input#gsc-i-id1{
+ .googleSearchBox input#gsc-i-id1{
   background: #881111 !important;
   border: 1px solid #881111;
   color: #ffffff;
@@ -281,20 +281,24 @@ header.menu-is-open .primary-nav-trigger:focus {
   letter-spacing: .2px;
   line-height: 4rem;
   padding: 0 15px;
-  width: 100%;
+  width: 0%;
   float: right;
-  transition: 0.4s;
-  transition-timing-function: ease;
+
+  -webkit-transition: width 1s ease;
+  -moz-transition: width 1s ease;
+  -o-transition: width 1s ease;
+  transition: width 1s ease;
 }
 
- @media (min-width:992px) {
-    #googleSearchBox input#gsc-i-id1{
-    width: 115%;  
-    }
+.googleSearchBox .collapsing input#gsc-i-id1{
+  width: 100%;
 }
 
+.googleSearchBox .in input#gsc-i-id1{
+  width: 100%;
+}
 
-body #googleSearchBox input#gsc-i-id1:focus {
+body .googleSearchBox input#gsc-i-id1:focus {
     border: 1px solid #ffffff;
 
 }
@@ -305,7 +309,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
 
 
 
-#googleSearchBox button.gsc-search-button {
+.googleSearchBox button.gsc-search-button {
   background: #aa0000;  /*CHANGED TO MATCH HEADER BACKGROUND*/
   border: none;
   color: #ffffff;
@@ -321,19 +325,26 @@ body #googleSearchBox input#gsc-i-id1:focus {
   position: relative;
   vertical-align:middle;
   -webkit-font-smoothing: antialiased;
-} 
+}
 
-#googleSearchBox button.gsc-search-button:before {
+@media (max-width:1200px) {
+  .googleSearchBox button.gsc-search-button {
+    position: relative;
+    float: right;
+  }
+}
+
+.googleSearchBox button.gsc-search-button:before {
   content: "\e003";
 }
 
 
-#googleSearchBox .gsc-clear-button{ 
+.googleSearchBox .gsc-clear-button{ 
   display:none;
 }
 
-#googleSearchBox .gsc-search-button:hover,
-#googleSearchBox .gsc-search-button:focus {
+.googleSearchBox .gsc-search-button:hover,
+.googleSearchBox .gsc-search-button:focus {
   color: #fdb913;
 }
 
@@ -362,7 +373,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
   #globalHeaderResources {
     padding: 17px 30px;
   }
-  #googleSearchBox{
+  .googleSearchBox{
     padding: 0;
   }
   #globalHeaderResourcesLinks{
@@ -381,7 +392,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
 
 
 /* @media (min-width: 992px) {
-  #googleSearchBox{
+  .googleSearchBox{
     margin: auto;
     text-align:center;
     padding: 20px 0 25px;
@@ -840,7 +851,6 @@ _____________________  _____________________________  __________________________
 #siteNavigation {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  margin-bottom: 60px;
   position:relative;
 }
 @media screen and (max-width: 767.999px){
@@ -1844,7 +1854,7 @@ ul.boxlinks {
   list-style-type: none;
   margin: auto auto;
   padding:0;
-  width:100%; /* prevents ULs with less than three items from collapsing */   
+  /*width:100%;  /* prevents ULs with less than three items from collapsing */    
 }
 ul.boxlinks li{
   justify-content: center;
@@ -3219,8 +3229,12 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
     }
 }
 @media screen and (max-width: 767px){ /*Extra Small Displays*/
-    .callToActionButton{ /* Side Bars Irrelevant*/
-        flex-basis:100%;
+    .callToActionButton{
+      margin-top: 20px;
+      width: 100%;
+      max-width: 100%;
+      flex-basis: 100%;
+      height: 78px;
     }
 }
 .callToActionButton a {
@@ -5687,10 +5701,10 @@ input[type="checkbox"]:focus, input[type="file"]:focus {
 }
 .homepageGrid .homepageGridItem .homepageGridHeading{
   display: block;
-  font-size: calc(25vw / 4);
-  line-height: calc(25vw / 4);
+  font-size: calc(40vw / 4);
+  line-height: calc(40vw / 4);
 }
-@media screen and (max-width: 767.999px) { /* xs */
+@media screen and (max-width: 767px) { /* xs */
   .homepageGrid .homepageGridItem .homepageGridHeading{
     font-size: calc(100vw / 4);
     line-height: calc(100vw / 4);
@@ -5976,6 +5990,7 @@ a .homepageGridItemCopy h4:hover{/*delete*/
   border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #fdb913 25.01%, #fdb913 75%, rgba(0, 0, 0, 0) 75.01%);
   border-image-slice: 1;
   flex: 1;
+  background-color: #EEEEEE;
 }
 @media screen and (min-width: 992px) { /* md + lg*/
   .jumbotron3Wrapper .jumbotron3Text h2,
@@ -5989,8 +6004,9 @@ a .homepageGridItemCopy h4:hover{/*delete*/
     margin: 15px 0 15px 0;
     text-align: center;
   }
+  .jumbotron3Wrapper .jumbotron3Text p,
   .jumbotron3Wrapper .jumbotron3Text .boxlinks{
-    margin-bottom:15px;
+    margin: 0 30px 15px 30px;
   }
 }
 
@@ -7861,7 +7877,7 @@ h3.degreeItemHeaderButtonTitle {
 }
 
 .spotlightWrapper .spotlightSource{
-  border-left:3px solid transparent;/*Default*/
+  border-left:3px solid #aa0000 !important;
   font-size:1.4em;
   font-weight:bold;
   padding: 3px 3px 3px 15px;
@@ -8805,27 +8821,215 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
     background: #f7f7f7;
     padding: 2rem 3rem;
 }
-
-
-
-
-
-
 .alertSubtle .moreLink{
   display:none;
 }
 
+/*Alaska Sidebar Content*/
+.apply-button-wrapper {
+  display: inherit;
+}
 
+.apply-button {
+  background-color: #666;
+  display: block;
+  margin: 5px 0;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+}
 
+.apply-button-primary {
+  background-color: #a00;
+}
 
+.apply-button a {
+  color: #fff;
+  font-size: 14px;
+}
 
+.contact-info .title {
+  font-weight: bold;
+}
 
+.contact-info .body p {
+  font-weight: lighter;
+}
 
+.form-wrapper {
+  padding-bottom: 10px;
+}
 
+.form-wrapper .title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
+.form-wrapper .form label {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0;
+  display: block;
+  margin-bottom: 0;
+}
 
+.form-wrapper .form input,
+.form-wrapper .form textarea,
+.form-wrapper .form select {
+  background-color: #f7f7f7 !important;
+  border-radius: 0px !important;
+  box-shadow: none;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  height: inherit;
+  padding: 5px;
+  margin-bottom: 10px;
+}
 
+.form-wrapper .form .radio-label {
+  font-size: 14px;
+  color: #333;
+  vertical-align: baseline;
+}
 
+.form-wrapper .form input[type="radio"] {
+  margin: 4px 4px 0 0;
+}
 
+.form-wrapper .form input[type="submit"] {
+  display: block;
+  color: #ffffff;
+  background-color: #aa0000;
+  border-color: #ffffff;
+}
 
+.form-wrapper .form label {
+  display: inline;
+}
 
+.form-wrapper .form hr,
+.form-wrapper hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.form-wrapper .form .input-box {
+  display: block;
+}
+
+.form-wrapper .form .input-box p {
+  display: inline; 
+  padding-left: 5px;
+}
+
+.form-wrapper .form .form-level-1 {
+  margin-left: 10px;
+}
+
+.form-wrapper .form div.form-level-1 {
+  overflow: hidden; 
+  clear: both; 
+  display: block; 
+  padding-top: 3px; 
+  padding-bottom: 3px;
+}
+
+.form-wrapper .form p.form-level-1 {
+  padding: 0;
+  margin: 0;
+  display: block;
+  font-weight: bold;
+}
+
+.form-wrapper .form .form-level-1 input {
+  overflow:visible;
+}
+
+.form-wrapper .form .form-level-1 .form-level-2 {
+  margin-left: 10px;
+}
+
+.form-wrapper .form .form-level-1 .form-level-2 label {
+  font-weight:bold;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.form-wrapper .form .form-level-1 .form-level-2 input {
+  display: block;
+}
+
+.form-wrapper .form.full-size-form .input-box label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-wrapper .form.full-size-form .input-box input,
+.form-wrapper .form.full-size-form .input-box select {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.page-navigation-wrapper .page-navigation h3 {
+  font-size: 16px;
+  color: #a00;
+  font-weight: 700;
+}
+
+.page-navigation-wrapper .page-navigation ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.page-navigation-wrapper .page-navigation ul>li {
+  border-bottom: 1px solid #aaa;
+  padding: 3px 0 7px 10px;
+}
+.page-navigation-wrapper .page-navigation ul>li>a {
+  color: #a00;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.standardContent p.top-text {
+  padding: 100px 100px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.jumbotron3Text.standardContent.no-line {
+  border-top: none;
+}
+
+.jumbotron3Text.standardContent h2 {
+  width: 60%;
+}
+
+.jumbotron3Text.standardContent .text-wrapper{
+  margin-top: 110px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.floating-sidebar {
+  position: fixed;
+  margin-left: 90%;
+  width: 10%;
+  margin-top: -300px;
+}
+
+.floating-sidebar .sidebar-item {
+  list-style-type: none;
+  height: 100px;
+  background-color: #555555;
+  text-align: center;
+}
+
+.floating-sidebar .sidebar-item .sidebar-link {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #ffffff;
+}
