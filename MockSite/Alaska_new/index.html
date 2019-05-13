@@ -281,28 +281,74 @@
   </div>
   <div id="pageContentWrapper" role="main" class="container-fluid" style="padding: 0;">
     <div id="pageContent">
-      <ul class="floating-sidebar">
-        <a href="#" class="sidebar-item">
-          <li>
-            Jump To<span class="fa fa-angle-left"></span>
-          </li>
-        </a>
-        <a href="#" class="sidebar-item">
-          <li>
-            Top<span class="fa fa-angle-up"></span>
-          </li>
-        </a>
-        <a href="#" class="sidebar-item">
-          <li>
-            Back<span class="fa fa-angle-up"></span>
-          </li>
-        </a>
-        <a href="#" class="sidebar-item">
-          <li>
-            Next<span class="fa fa-angle-down"></span>
-          </li>
-        </a>
-      </ul>
+      <div class="sidebar-wrapper">
+        <ul class="floating-sidebar">
+          <a href="#jump-to" class="sidebar-item" data-toggle='collapse'>
+            <li>
+              Jump To<span class="fa fa-angle-left" style="width: 100%"></span>
+            </li>
+          </a>
+          <a href="#" class="sidebar-item">
+            <li>
+              <span class="fa fa-angle-up" style="width: 100%"></span>Top
+            </li>
+          </a>
+          <a href="#" class="sidebar-item">
+            <li>
+              <span class="fa fa-angle-up" style="width: 100%"></span>Back
+            </li>
+          </a>
+          <a href="#" class="sidebar-item">
+            <li>
+              Next<span class="fa fa-angle-down" style="width: 100%"></span>
+            </li>
+          </a>
+        </ul>
+        <div class="collapse" id="jump-to">
+          <ul class="jump-list">
+            <a href="#">
+              <li class="jump-item">
+                Alaska Home
+              </li>
+            </a>
+            <a href="#">
+              <li class="jump-item">
+                Summer Program
+              </li>
+            </a>
+            <a href="#">
+              <li class="jump-item">
+                3L Program
+              </li>
+            </a>
+            <a href="#">
+              <li class="jump-item">
+                Experiential Learning
+              </li>
+            </a>
+            <a href="#">
+              <li class="jump-item">
+                Prospective Students
+              </li>
+            </a>
+            <a href="#">
+              <li class="jump-item">
+                About the Alaska Law Campus
+              </li>
+            </a>
+            <a href="#">
+              <li class="jump-item">
+                For the Legal Community
+              </li>
+            </a>
+            <a href="#">
+              <li class="jump-item">
+                Contact Us
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
       <div class="standardContent">
         <p class="top-text">
           The Alaska Law Campus, part of Seattle University School of Law, offers a path for aspiring lawyers to study the state's compelling legal issues while  eperienceing its astounding physical landscape. We offer the most comprehensive legal education program in Alaska, with small classes taught by world-class legal experts.
@@ -313,7 +359,7 @@
         <div class="jumbotron3">
           <div class="jumbotron3Image" style="background-image:url(../assets/cityinred19.jpg); min-height:500px"> 
           </div>
-          <div class="jumbotron3Text standardContent no-line">
+          <div class="jumbotron3Text standardContent no-line jumbotron3TextDark">
             <div class="text-wrapper">
               <h2 id="label413882">Immerse Yourself in Alaska Law</h2>
               <p>Our Alaska-specific curriculum, taught by esteemed members of the Alaska bench and bar, gives you the substantive and practical knowledge to build your legal career.</p>
@@ -326,7 +372,7 @@
           </div>  
         </div>
         <div class="jumbotron3">
-          <div class="jumbotron3Text standardContent no-line">
+          <div class="jumbotron3Text standardContent no-line jumbotron3TextDark">
             <div class="text-wrapper">
               <h2 id="label413882">Gain Valuable Law Experience</h2>
               <p>Round out your education with a variety of internship and externship opportunities with local law firms, Alaska Native corperations, governmental agencies and more.</p>
@@ -343,7 +389,7 @@
         <div class="jumbotron3">
           <div class="jumbotron3Image" style="background-image:url(../assets/cityinred19.jpg); min-height:500px"> 
           </div>
-          <div class="jumbotron3Text standardContent no-line">
+          <div class="jumbotron3Text standardContent no-line jumbotron3TextDark">
             <div class="text-wrapper">
               <h2 id="label413882">Connect with a tight-knit legal community</h2>
               <p>Alaska's network of attourneys, judges and legal professionals is incredibly supportive and ready to help you on your journey to becoming a successful lawyer.</p>
@@ -356,22 +402,42 @@
           </div>  
         </div>
       </div>
-      <div class="standardContent">
-        <p>Our Program</p>
+      <div class="programWrapper row">
+        <div class="program-img-left col-md-8"></div>
+        <div class="program-img-right col-md-4"></div>
+        <div class="program-card">
+          <div class="program-title">Our Program</div>
+          <div class="program-text">
+            Our program appeals to all law students at any ABA-accredited law school in the country who want to:
+            <ul class="program-bullets">
+              <li>Experience Alaska's unique culture and breathtaking landscapes</li>
+              <li>Prepare to return home to practice law or simply spend a portion of law school in their home state</li>
+              <li>Get to know Alaska as a potential professional destination</li>
+            </ul>
+          </div>
+          <ul class="boxlinks">
+            <li>
+              <a href="#">Alaska 3L Program</a>
+            </li>
+            <li>
+              <a href="#">Alaska Summer Program</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="spotlightWrapper slick-slide slick-current slick-active">
-        <div class="spotlight spotlightAccentColorWhite" style="background-image: url(&quot; &quot;);">
-          <div class="spotlightImage col-xs-12 col-md-6">
+      <div class="spotlightWrapper">
+        <div class="spotlight spotlightAccentColorWhite">
+          <div class="spotlightImage col-xs-12 col-md-5">
             <img src="../assets/Freeborn-Agyei_crop.jpg" alt="Freeborn Agyei, 2014, Business Valuation Graduate Certificate">     
           </div>
-          <div class="spotlightCopy col-xs-12 col-md-6">
+          <div class="spotlightCopy col-xs-12 col-md-5">
             <h3>International Alum</h3>
             <p class="spotlightCopyBody">
               This is the holistic education I sought for when I enrolled at Seattle U. I really expanded options, friend network, and points of view.
             </p>
             <div class="spotlightCopyCitation">
-              <span class="spotlightSource">Freeborn Agyei, 2014, Business Valuation Graduate Certificate</span>
-              <span class="spotlightAffiliation">Ghana</span>
+              <span class="spotlightSource">Freeborn Agyei, 2014</span>
+              <span class="spotlightAffiliation">Business Valuation Graduate Certificate Ghana</span>
             </div>
           </div>
           <div class="clearfix"></div>

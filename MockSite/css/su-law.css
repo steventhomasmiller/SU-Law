@@ -5976,12 +5976,13 @@ a .homepageGridItemCopy h4:hover{/*delete*/
   border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, #fdb913 25.01%, #fdb913 75%, rgba(0, 0, 0, 0) 75.01%);
   border-image-slice: 1;
   flex: 1;
+  padding-top: 5%;
 }
 @media screen and (min-width: 992px) { /* md + lg*/
   .jumbotron3Wrapper .jumbotron3Text h2,
   .jumbotron3Wrapper .jumbotron3Text p,
   .jumbotron3Wrapper .jumbotron3Text ul{
-    padding: 0 60px;
+    padding: 0 20%;
   } 
 }
 @media screen and (max-width: 767.999px) { /* xs */
@@ -8818,6 +8819,9 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   border-top: none;
 }
 
+.jumbotron3Text.jumbotron3TextDark {
+  background-color: #f4f4f4;
+}
 
 .alertSubtle .moreLink{
   display:none;
@@ -8827,17 +8831,21 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   position: fixed;
   margin-left: 92%;
   width: 8%;
-  margin-top: -300px;
+  margin-top: -400px;
 }
 
 .floating-sidebar .sidebar-item li{
   list-style-type: none;
-  height: 100px;
-  background-color: #333333;
+  height: 140px;
+  background: #333333;
   text-align: center;
-  padding-top: 30%;
+  padding-top: 50%;
   padding-bottom: 10px;
   border-bottom: 1px solid #ffffff;
+}
+
+.floating-sidebar .sidebar-item:last-child li{
+  border-bottom: none;
 }
 
 .floating-sidebar .sidebar-item{
@@ -8852,9 +8860,99 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   border-bottom: 1px solid #a00;
 }
 
+#jump-to {
+  position: fixed;
+  margin-left: 75%;
+  width: 19.75%;
+  margin-top: -400px;
+}
 
+#jump-to .jump-list{
+  background-color: #6f6f6f;
+  padding-left: 0;
+}
 
+#jump-to .jump-list a {
+  text-decoration: none;
+}
+#jump-to .jump-list .jump-item {
+  list-style-type: none;
+  font-size: 2rem;
+  color: #ffffff;
+  padding: 20px 0 20px 40px;
+  border-bottom: 1px solid #b7b7b7;
+}
 
+#jump-to .jump-list a:last-child .jump-item {
+  border-bottom: none;
+}
 
+#jump-to .jump-list .jump-item:hover {
+  background-color: #05a1ba;
+  font-weight: bolder;
+}
 
+.programWrapper {
+  height: 600px;
+}
 
+.programWrapper .program-img-left,
+.programWrapper .program-img-right {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.programWrapper .program-img-left {
+  background: 
+  linear-gradient(
+    rgba(72, 195, 211, 0.5),
+    rgba(72, 195, 211, 0.5)
+    ),
+  url(../assets/cityinred19.jpg);
+}
+
+.programWrapper .program-img-right {
+  background-image:url(../assets/cityinred19.jpg);
+}
+
+.programWrapper .program-card {
+  position: absolute;
+  margin-left: 30%;
+  width: 50%;
+  height: 65%;
+  margin-top: 5%;
+  background-color: #ffffff;
+  padding: 50px 100px 20px 100px;
+}
+
+.programWrapper .program-card .program-title {
+  color: #aa0000;
+  clear:both; /* acts as a clearing element */
+  font-family: "Montserrat", sans-serif;
+  font-size:3.7rem;
+  font-weight: 520;
+  margin:30px 0 22px -3px; 
+}
+
+.programWrapper .program-card .program-text {
+  font-size: 1.45rem;
+  line-height: 3rem;
+}
+
+.programWrapper .program-card .program-text .program-bullets {
+  padding-left: 0;
+}
+
+.programWrapper .program-card .program-text .program-bullets li {
+  list-style: none;
+}
+
+.programWrapper .program-card .program-text .program-bullets li:before {
+  color: #01a3b0;
+  content: "\2B1B";
+  font-size: .85rem;
+  padding-right: 1.1225em;
+  position: relative;
+}
