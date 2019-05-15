@@ -87,7 +87,7 @@ body.advertising{ /* page layout #280291 */
   transition: 0.4s;
   transition-timing-function: ease;
   width:100%;
-  z-index:1000;
+  z-index:100;
 }
 
 
@@ -1858,8 +1858,8 @@ ul.boxlinks li:before{
 
 .boxlinks a,
 .boxlinkItem a{ /* a div with boxlinkItem is a standalone box in the same style as a boxlink li */
-  border: 1px solid #088099;
-  color: #aa0000;
+  border: 1px solid #48c3d3;
+  color: #a90400;
   display: block;
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
@@ -1887,8 +1887,8 @@ ul.boxlinks li:before{
 x.boxlinks li:hover a, x.boxlinks li:focus a,
 x.boxlinkItem:hover a, x.boxlinkItem:focus a,
 .boxlinkItem a:hover, .boxlinkItem a:focus{
-  background: #088099;
-  border: 1px solid #088099;
+  background: #48c3d3;
+  border: 1px solid #48c3d3;
   color: #ffffff;
   text-decoration: underline; 
 }
@@ -7726,7 +7726,7 @@ h3.degreeItemHeaderButtonTitle {
   background: linear-gradient(to right, rgba(247, 247, 247, 0) 57.5%, rgba(247, 247, 247, 1) 57.51%);
   display: flex;
   justify-content: center;
-  padding:0 7.5%;
+  padding-left: 15%;
 }
 
 @media screen and (max-width: 991.999px) { /* xs + sm */
@@ -7740,8 +7740,7 @@ h3.degreeItemHeaderButtonTitle {
   /*height:80%;*/
   margin: 30px auto;
   max-width:300px;
-  position: relative;
-  left: 7.5%;  
+  position: relative;  
 }
 .spotlightAccentColorRed .spotlightImage img{
   border-right:10px solid #aa0000;
@@ -7845,7 +7844,7 @@ h3.degreeItemHeaderButtonTitle {
   text-align: left;
 }
 .spotlightWrapper h3 {
-  color: #aa0000;
+  color: #f43f34;
   font-family: "Oswald", sans-serif;
   font-size:2rem;
   margin-top: 0;
@@ -7856,7 +7855,7 @@ h3.degreeItemHeaderButtonTitle {
   color: #333333;
   font-family: "Montserrat", sans-serif;
   font-weight:500;
-  font-size:1.6rem;
+  font-size:1.8rem;
   line-height: 2;
   margin-bottom:30px;
 }
@@ -8828,10 +8827,14 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 }
 
 .floating-sidebar {
+  padding: 0;
   position: fixed;
-  margin-left: 92%;
-  width: 8%;
-  margin-top: -400px;
+  margin-left: 95%;
+  width: 5%;
+  margin-top: -381px;
+  z-index: 200;
+  transition: 0.4s;
+  transition-timing-function: ease;
 }
 
 .floating-sidebar .sidebar-item li{
@@ -8864,7 +8867,10 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   position: fixed;
   margin-left: 75%;
   width: 19.75%;
-  margin-top: -400px;
+  margin-top: -381px;
+  z-index: 200;
+  transition: 0.4s;
+  transition-timing-function: ease;
 }
 
 #jump-to .jump-list{
@@ -8907,8 +8913,8 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 .programWrapper .program-img-left {
   background: 
   linear-gradient(
-    rgba(72, 195, 211, 0.5),
-    rgba(72, 195, 211, 0.5)
+    rgba(72, 195, 211, 0.7),
+    rgba(72, 195, 211, 0.7)
     ),
   url(../assets/cityinred19.jpg);
 }
@@ -8919,16 +8925,16 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 
 .programWrapper .program-card {
   position: absolute;
-  margin-left: 30%;
-  width: 50%;
+  margin-left: 25%;
+  width: 60%;
   height: 65%;
   margin-top: 5%;
   background-color: #ffffff;
   padding: 50px 100px 20px 100px;
 }
 
-.programWrapper .program-card .program-title {
-  color: #aa0000;
+.program-title {
+  color: #a80108;
   clear:both; /* acts as a clearing element */
   font-family: "Montserrat", sans-serif;
   font-size:3.7rem;
@@ -8936,23 +8942,103 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   margin:30px 0 22px -3px; 
 }
 
-.programWrapper .program-card .program-text {
-  font-size: 1.45rem;
-  line-height: 3rem;
+.program-text {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
 }
 
-.programWrapper .program-card .program-text .program-bullets {
+.program-text .program-bullets {
   padding-left: 0;
 }
 
-.programWrapper .program-card .program-text .program-bullets li {
+.program-text .program-bullets li {
   list-style: none;
 }
 
-.programWrapper .program-card .program-text .program-bullets li:before {
+.program-text .program-bullets li:before {
   color: #01a3b0;
   content: "\2B1B";
   font-size: .85rem;
   padding-right: 1.1225em;
   position: relative;
+}
+
+.spotlightCopyCitation.red-border {
+  border-left: 4px solid #f03f35;
+}
+
+.explore-wrapper {
+  width: 100%;
+  height: 600px;
+  background-image:url(../assets/cityinred19.jpg);
+}
+
+.explore-wrapper .explore-card {
+  position: absolute;
+  margin-left: 8%;
+  width: 40%;
+  height: 58%;
+  margin-top: 7.5%;
+  background-color: #ffffff;
+  padding: 30px 60px
+}
+.scolarship-wrapper {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: 
+  linear-gradient(
+    rgba(4, 174, 199, 0.8),
+    rgba(4, 174, 199, 0.8)
+    ),
+  url(../assets/cityinred19.jpg);
+}
+
+.scolarship-title {
+  color: #ffffff;
+  clear:both; /* acts as a clearing element */
+  font-family: "Montserrat", sans-serif;
+  font-size:3.7rem;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 50px;
+}
+
+.boxlinkItem.alt-boxlink a {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 22px 0;
+  font-weight: 550;
+}
+
+.learn-more-form{
+  padding: 0 280px;
+}
+
+.learn-more-form input {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #2a2a2a;
+  border: 2px solid #d9d9d9;
+  padding: 10px 15px;
+  margin: 15px 0;
+}
+
+.learn-more-form input:nth-child(3) {
+  width: 48%;
+}
+
+.learn-more-form input:nth-child(4) {
+  width: 48%;
+  position: relative;
+  float: right;
+}
+
+.learn-more-form input[type="submit"] {
+  position: relative;
+  left: 44%;
+  padding: 10px 70px;
+  font-variant: small-caps;
+  font-size: 2.25rem;
 }

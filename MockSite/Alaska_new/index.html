@@ -282,7 +282,7 @@
   <div id="pageContentWrapper" role="main" class="container-fluid" style="padding: 0;">
     <div id="pageContent">
       <div class="sidebar-wrapper">
-        <ul class="floating-sidebar">
+        <ul class="floating-sidebar" id="sidebar">
           <a href="#jump-to" class="sidebar-item" data-toggle='collapse'>
             <li>
               Jump To<span class="fa fa-angle-left" style="width: 100%"></span>
@@ -415,14 +415,14 @@
               <li>Get to know Alaska as a potential professional destination</li>
             </ul>
           </div>
-          <ul class="boxlinks">
-            <li>
+          <div class="row">
+            <div class="boxlinkItem col-md-6">
               <a href="#">Alaska 3L Program</a>
-            </li>
-            <li>
+            </div>
+            <div class="boxlinkItem col-md-6">
               <a href="#">Alaska Summer Program</a>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
       <div class="spotlightWrapper">
@@ -431,11 +431,11 @@
             <img src="../assets/Freeborn-Agyei_crop.jpg" alt="Freeborn Agyei, 2014, Business Valuation Graduate Certificate">     
           </div>
           <div class="spotlightCopy col-xs-12 col-md-5">
-            <h3>International Alum</h3>
+            <h3 class="spotlight-orange">Student Story</h3>
             <p class="spotlightCopyBody">
               This is the holistic education I sought for when I enrolled at Seattle U. I really expanded options, friend network, and points of view.
             </p>
-            <div class="spotlightCopyCitation">
+            <div class="spotlightCopyCitation red-border">
               <span class="spotlightSource">Freeborn Agyei, 2014</span>
               <span class="spotlightAffiliation">Business Valuation Graduate Certificate Ghana</span>
             </div>
@@ -443,6 +443,50 @@
           <div class="clearfix"></div>
         </div>
       </div>
+      <div class="explore-wrapper">
+        <div class="explore-image"></div>
+        <div class="explore-card">
+          <div class="program-title" style="line-height: 4rem;">
+            Explore a land of beauty and adventure
+          </div>
+          <div class="program-text">
+            Stunning landscapes, wide open spaces and opportunities to hike, climb, fish, paddle and more form an unforgettable backdrop to your legal education.
+          </div>
+          <div class="boxlinkItem col-md-6" style="padding: 25px 0;">
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <h3 class="program-title" style="text-align: center; padding-top: 80px;">Map heading goes here</h3>
+      <div class="standardContent">
+        <p class="top-text" style="padding-top: 20px; padding-bottom: 20px;">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d347205.34469193575!2d-150.06219358054784!3d61.271686982540466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x56c8917604b33f41%3A0x257dba5aa78468e3!2sAnchorage%2C+AK!5e0!3m2!1sen!2sus!4v1557945769619!5m2!1sen!2sus" width="100%" height="600" frameborder="0" style="border:0; padding-bottom: 13rem;" allowfullscreen></iframe>
+      </div>
+      <div class="scolarship-wrapper">
+        <div class="scolarship-title">
+          Resident of Alaska? Learn more about our scolarships
+        </div>
+        <div class="boxlinkItem alt-boxlink col-md-3 col-md-push-5">
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+      <h3 class="program-title" style="text-align: center; padding-top: 80px;">Learn more about Alaska</h3>
+      <form method="post" class="learn-more-form">
+        <div class="standardContent row">
+          <input type="text" name="name" placeholder="Name" class="col-md-12">
+          <input type="email" name="email" placeholder="Email" class="col-md-12">
+          <input type="text" name="interest" class="col-md-6">
+          <input type="text" name="year" class="col-md-6">
+          <input type="submit" name="submit" value="submit">
+        </div>
+      </form>
     </div>
   <div class="clearfix"></div>
   <div id="footerWrapper"></div>
@@ -458,16 +502,6 @@
   <script type="text/javascript" src="/media/scripts/alert.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-media.js"></script>
-  <script>
-    var previousWidth = window.innerWidth;
-    $(window).resize(function () {
-      if (previousWidth != window.innerWidth) {
-        determinePageWidth();
-        reorganizeContentItems();
-        previousWidth = window.innerWidth;
-      }
-    });
-  </script>
   <script type="text/javascript">
     (function(){
       function addVideoAttr(id) {
