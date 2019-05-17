@@ -8826,23 +8826,30 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   display:none;
 }
 
-.floating-sidebar {
-  padding: 0;
+/*.sidebar-wrapper {
   position: fixed;
-  margin-left: 95%;
-  width: 5%;
-  margin-top: -381px;
+  width: 100%;
   z-index: 200;
+}*/
+
+.floating-sidebar {
+  position: fixed;
+  margin-left: 97%;
+  z-index: 200;
+
+  padding: 0;
+  width: 45px;
+  margin-top: 100px;
   transition: 0.4s;
   transition-timing-function: ease;
 }
 
 .floating-sidebar .sidebar-item li{
   list-style-type: none;
-  height: 140px;
   background: #333333;
   text-align: center;
   padding-top: 50%;
+  height: 100px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ffffff;
 }
@@ -8852,9 +8859,12 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 }
 
 .floating-sidebar .sidebar-item{
-  font-size: 2rem;
+  font-size: 1.75rem;
+  line-height: 1.5rem;
   text-decoration: none;
   color: #ffffff;
+  font-variant: small-caps;
+  font-weight: 500;
 }
 
 .floating-sidebar .sidebar-item li:hover,
@@ -8865,9 +8875,11 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 
 #jump-to {
   position: fixed;
-  margin-left: 75%;
-  width: 19.75%;
-  margin-top: -381px;
+  margin-left: 76.5%;
+  z-index: 200;
+
+  width: auto;
+  margin-top: 100px;
   z-index: 200;
   transition: 0.4s;
   transition-timing-function: ease;
@@ -8883,9 +8895,13 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 }
 #jump-to .jump-list .jump-item {
   list-style-type: none;
-  font-size: 2rem;
+  font-size: 1.75rem;
+  line-height: 1.5rem;
+  text-decoration: none;
   color: #ffffff;
-  padding: 20px 0 20px 40px;
+  font-variant: small-caps;
+  font-weight: 500;
+  padding: 15px 40px 15px 40px;
   border-bottom: 1px solid #b7b7b7;
 }
 
@@ -9016,7 +9032,7 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   padding: 0 280px;
 }
 
-.learn-more-form input {
+.learn-more-form input{
   font-size: 1.75rem;
   font-weight: 500;
   color: #2a2a2a;
@@ -9025,11 +9041,21 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   margin: 15px 0;
 }
 
-.learn-more-form input:nth-child(3) {
+.learn-more-form select {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #2a2a2a;
+  background-color: #ffffff;
+  border: 2px solid #d9d9d9;
+  padding: 10px 15px;
+  margin: 15px 0;
+}
+
+.learn-more-form #interest {
   width: 48%;
 }
 
-.learn-more-form input:nth-child(4) {
+.learn-more-form #year {
   width: 48%;
   position: relative;
   float: right;
@@ -9037,8 +9063,26 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 
 .learn-more-form input[type="submit"] {
   position: relative;
-  left: 44%;
-  padding: 10px 70px;
+  left: 38%;
+  padding: 10px 70px 15px 70px;
   font-variant: small-caps;
   font-size: 2.25rem;
+  background-color: #b10a38;
+  color: #ffffff;
+  border: none;
+}
+
+.arrow-wrapper {
+  padding: 100px;
+}
+
+.return-arrow {
+  text-align: center;
+  position: relative;
+  left: 44%;
+  font-size: 40px;
+  color: #808080;
+  background-color: #eaeaea;
+  padding: 20px 30px;
+  border-radius: 50%;
 }

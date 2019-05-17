@@ -265,6 +265,74 @@
     <a class="sr-only sr-only-focusable" href="#ctaLinksAnchor">Skip to Apply, Request Info, Jobs, Contact links</a>
   </nav>
   <div class="clearfix"></div>
+  <div class="sidebar-wrapper">
+    <ul class="floating-sidebar" id="sidebar">
+      <a href="#jump-to" class="sidebar-item" data-toggle='collapse'>
+        <li>
+          jump to<span class="fa fa-angle-left" style="width: 100%"></span>
+        </li>
+      </a>
+      <a href="#" class="sidebar-item">
+        <li>
+          <span class="fa fa-angle-up" style="width: 100%"></span>top
+        </li>
+      </a>
+      <a href="#" class="sidebar-item">
+        <li>
+          <span class="fa fa-angle-up" style="width: 100%"></span>back
+        </li>
+      </a>
+      <a href="#" class="sidebar-item">
+        <li>
+          next<span class="fa fa-angle-down" style="width: 100%"></span>
+        </li>
+      </a>
+    </ul>
+    <div class="collapse" id="jump-to">
+      <ul class="jump-list">
+        <a href="#">
+          <li class="jump-item">
+            alaska home
+          </li>
+        </a>
+        <a href="#">
+          <li class="jump-item">
+            summer program
+          </li>
+        </a>
+        <a href="#">
+          <li class="jump-item">
+            3L program
+          </li>
+        </a>
+        <a href="#">
+          <li class="jump-item">
+            experiential learning
+          </li>
+        </a>
+        <a href="#">
+          <li class="jump-item">
+            prospective students
+          </li>
+        </a>
+        <a href="#">
+          <li class="jump-item">
+            about the alaska law campus
+          </li>
+        </a>
+        <a href="#">
+          <li class="jump-item">
+            for the legal community
+          </li>
+        </a>
+        <a href="#">
+          <li class="jump-item">
+            contact us
+          </li>
+        </a>
+      </ul>
+    </div>
+  </div>
   <div id="BannerZoneWrapper" role="banner" class="container-fluid">
     <div id="BannerZone" class="row">
       <div class="titleBanner2Wrapper" id="id365658">
@@ -281,74 +349,6 @@
   </div>
   <div id="pageContentWrapper" role="main" class="container-fluid" style="padding: 0;">
     <div id="pageContent">
-      <div class="sidebar-wrapper">
-        <ul class="floating-sidebar" id="sidebar">
-          <a href="#jump-to" class="sidebar-item" data-toggle='collapse'>
-            <li>
-              Jump To<span class="fa fa-angle-left" style="width: 100%"></span>
-            </li>
-          </a>
-          <a href="#" class="sidebar-item">
-            <li>
-              <span class="fa fa-angle-up" style="width: 100%"></span>Top
-            </li>
-          </a>
-          <a href="#" class="sidebar-item">
-            <li>
-              <span class="fa fa-angle-up" style="width: 100%"></span>Back
-            </li>
-          </a>
-          <a href="#" class="sidebar-item">
-            <li>
-              Next<span class="fa fa-angle-down" style="width: 100%"></span>
-            </li>
-          </a>
-        </ul>
-        <div class="collapse" id="jump-to">
-          <ul class="jump-list">
-            <a href="#">
-              <li class="jump-item">
-                Alaska Home
-              </li>
-            </a>
-            <a href="#">
-              <li class="jump-item">
-                Summer Program
-              </li>
-            </a>
-            <a href="#">
-              <li class="jump-item">
-                3L Program
-              </li>
-            </a>
-            <a href="#">
-              <li class="jump-item">
-                Experiential Learning
-              </li>
-            </a>
-            <a href="#">
-              <li class="jump-item">
-                Prospective Students
-              </li>
-            </a>
-            <a href="#">
-              <li class="jump-item">
-                About the Alaska Law Campus
-              </li>
-            </a>
-            <a href="#">
-              <li class="jump-item">
-                For the Legal Community
-              </li>
-            </a>
-            <a href="#">
-              <li class="jump-item">
-                Contact Us
-              </li>
-            </a>
-          </ul>
-        </div>
-      </div>
       <div class="standardContent">
         <p class="top-text">
           The Alaska Law Campus, part of Seattle University School of Law, offers a path for aspiring lawyers to study the state's compelling legal issues while  eperienceing its astounding physical landscape. We offer the most comprehensive legal education program in Alaska, with small classes taught by world-class legal experts.
@@ -403,8 +403,8 @@
         </div>
       </div>
       <div class="programWrapper row">
-        <div class="program-img-left col-md-8"></div>
-        <div class="program-img-right col-md-4"></div>
+        <div class="program-img-left col-xs-8"></div>
+        <div class="program-img-right col-xs-4"></div>
         <div class="program-card">
           <div class="program-title">Our Program</div>
           <div class="program-text">
@@ -478,13 +478,30 @@
         </div>
       </div>
       <h3 class="program-title" style="text-align: center; padding-top: 80px;">Learn more about Alaska</h3>
-      <form method="post" class="learn-more-form">
+      <form method="post" class="learn-more-form" id="learn-more">
         <div class="standardContent row">
-          <input type="text" name="name" placeholder="Name" class="col-md-12">
-          <input type="email" name="email" placeholder="Email" class="col-md-12">
-          <input type="text" name="interest" class="col-md-6">
-          <input type="text" name="year" class="col-md-6">
+          <input type="text" name="name" value="Name" class="col-md-12">
+          <input type="email" name="email" value="Email" class="col-md-12">
+          <select id="interest" name="interest" form="learn-more" class="col-md-6">
+            <option value="" disabled selected>Interest</option>
+            <option value="JD">JD</option>
+            <option value="LLM">LLM</option>
+            <option value="MLS">MLS</option>
+          </select>
+          <select id="year" name="year" form="learn-more" class="col-md-6">
+            <option value="" disabled selected>Year</option>
+            <option value="freshman">Freshman</option>
+            <option value="sophomore">Sophomore</option>
+            <option value="junior">Junior</option>
+            <option value="senior">Senior</option>
+            <option value="graduate">Graduate</option>
+          </select>
           <input type="submit" name="submit" value="submit">
+          <div class="row arrow-wrapper">
+            <a href="#" class="return-arrow">
+              <span class="fa fa-arrow-up"></span>
+            </a>
+          </div>
         </div>
       </form>
     </div>
