@@ -8865,6 +8865,8 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   color: #ffffff;
   font-variant: small-caps;
   font-weight: 500;
+  padding: 0;
+  border: none;
 }
 
 .floating-sidebar .sidebar-item li:hover,
