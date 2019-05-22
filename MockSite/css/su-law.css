@@ -9088,3 +9088,53 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   padding: 20px 30px;
   border-radius: 50%;
 }
+
+.standardContent.biography {
+  padding: 100px 0 50px 0;
+}
+
+.standardContent.biography h3 {
+  font-variant: small-caps;
+  font-weight: 550;
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 25px;
+}
+
+.standardContent.biography .body {
+  padding-bottom: 30px;
+}
+
+.standardContent.biography .body a {
+  color: #05a0be;
+}
+
+.standardContent.publications h2{
+  text-align: center;
+  width: 100%;
+  padding: 100px 0 20px 0;
+}
+
+.standardContent.publications .selector-bar {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.standardContent.publications .selector-bar a{
+  font-variant: small-caps;
+  text-decoration: none;
+  font-weight: 550;
+  font-size: 2.25rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 25px;
+  color: #a7a7a7;
+  border-right: 2px solid #a7a7a7;
+}
+
+.standardContent.publications .selector-bar a:last-child {
+  border-right: none;
+}
+
+.standardContent.publications .selector-bar a:hover {
+  color: #05a0be;
+}
