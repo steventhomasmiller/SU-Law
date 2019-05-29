@@ -8826,12 +8826,6 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   display:none;
 }
 
-/*.sidebar-wrapper {
-  position: fixed;
-  width: 100%;
-  z-index: 200;
-}*/
-
 .floating-sidebar {
   position: fixed;
   margin-left: 97%;

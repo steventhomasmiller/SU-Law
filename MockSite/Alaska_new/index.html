@@ -259,117 +259,16 @@
   <script>
     $('#headerWrapper').load('../ajax/header.html');
   </script>
+  <div class="sidebar-wrapper"></div>
+  <script>
+    $('.sidebar-wrapper').load('../ajax/floating-sidebar.html');
+  </script>
   <nav aria-label="Skip to important sections">
     <a class="sr-only sr-only-focusable" href="#zoneA">Skip to main content</a>
     <a class="sr-only sr-only-focusable" href="#contactInformationAnchor">Skip to contact information</a>
     <a class="sr-only sr-only-focusable" href="#ctaLinksAnchor">Skip to Apply, Request Info, Jobs, Contact links</a>
   </nav>
   <div class="clearfix"></div>
-  <div class="sidebar-wrapper">
-    <ul class="floating-sidebar" id="sidebar">
-      <button class="sidebar-item" data-target="#jump-to" data-toggle='collapse'>
-        <li>
-          jump to<span class="fa fa-angle-left" style="width: 100%"></span>
-        </li>
-      </button>
-      <a href="#" class="sidebar-item">
-        <li>
-          <span class="fa fa-angle-up" style="width: 100%"></span>top
-        </li>
-      </a>
-      <button class="sidebar-item sidebar-back" onclick="">
-        <li>
-          <span class="fa fa-angle-up" style="width: 100%"></span>back
-        </li>
-      </button>
-      <button class="sidebar-item sidebar-next" onclick="">
-        <li>
-          next<span class="fa fa-angle-down" style="width: 100%"></span>
-        </li>
-      </button>
-    </ul>
-    <div class="collapse" id="jump-to">
-      <ul class="jump-list">
-        <a href="#">
-          <li class="jump-item">
-            alaska home
-          </li>
-        </a>
-        <a href="#">
-          <li class="jump-item">
-            summer program
-          </li>
-        </a>
-        <a href="#">
-          <li class="jump-item">
-            3L program
-          </li>
-        </a>
-        <a href="#">
-          <li class="jump-item">
-            experiential learning
-          </li>
-        </a>
-        <a href="#">
-          <li class="jump-item">
-            prospective students
-          </li>
-        </a>
-        <a href="#">
-          <li class="jump-item">
-            about the alaska law campus
-          </li>
-        </a>
-        <a href="#">
-          <li class="jump-item">
-            for the legal community
-          </li>
-        </a>
-        <a href="#">
-          <li class="jump-item">
-            contact us
-          </li>
-        </a>
-      </ul>
-    </div>
-    <script>
-      $.fn.isInViewport = function() {
-        var elementTop = $(this).offset().top - 100;
-        var elementBottom = elementTop + $(this).outerHeight();
-        var viewportTop = $(window).scrollTop();
-        var viewportBottom = viewportTop + $(window).height();
-        return elementBottom > viewportTop && elementTop < viewportBottom;
-      };
-    </script>
-    <script>
-      $(window).on('resize scroll', function() {
-        var flag = false;
-        $(".element-wrapper").each(function(index, value) {
-          if ($(this).isInViewport() && !flag) {
-            $(this).addClass('on-screen');
-            flag = true;
-          }
-          else {
-            $(this).removeClass('on-screen');
-          }
-        });
-      })
-    </script>
-    <script>
-      $(".sidebar-back").click(function() {
-          $([document.documentElement, document.body]).animate({
-              scrollTop: $(".on-screen").prev().offset().top - 90
-          }, 200);
-      });
-    </script>
-    <script>
-      $(".sidebar-next").click(function() {
-          $([document.documentElement, document.body]).animate({
-              scrollTop: $(".on-screen").next().offset().top - 90
-          }, 200);
-      });
-    </script>
-  </div>
   <div id="BannerZoneWrapper" role="banner" class="container-fluid">
     <div id="BannerZone" class="row">
       <div class="titleBanner2Wrapper" id="id365658">
