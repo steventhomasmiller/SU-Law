@@ -432,6 +432,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
   width:100%;
   transition: 0.4s;
   transition-timing-function: ease;
+  border-bottom: 2px solid #333;
 }
 @media (max-width:1169.999px) {
   #globalHeaderNavigation {
@@ -9084,7 +9085,7 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 }
 
 .standardContent.biography {
-  padding: 100px 0 50px 0;
+  padding: 50px 0;
 }
 
 .standardContent.biography h3 {
@@ -9110,7 +9111,6 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 }
 
 .standardContent.publications .selector-bar {
-  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -9131,4 +9131,108 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 
 .standardContent.publications .selector-bar a:hover {
   color: #05a0be;
+}
+
+.standardContent.bio-card {
+  height: 600px;
+  padding-top: 150px;
+}
+
+.standardContent.bio-card .bio-picture {
+  background-image: url(../assets/cityinred19.jpg);
+  width: 325px;
+  height: 325px;
+  border-radius: 50%
+}
+
+.standardContent.bio-card .bio-name h1 {
+  color: #a90100;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.standardContent.bio-card .bio-contacts div {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.standardContent.bio-card .bio-contacts {
+  padding: 20px 0 30px 15px;
+  width: 105%;
+}
+
+.standardContent.bio-card .bio-contacts div p,
+.standardContent.bio-card .bio-contacts div a{
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.standardContent.bio-card .bio-contacts div p,
+.standardContent.bio-card .bio-contacts div .fas {
+  color: #919191;
+}
+
+.standardContent.bio-card .bio-contacts div a{
+  color: #48c3d2;
+}
+
+.standardContent.bio-card .bio-contacts div .fas {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  padding-left: 15px;
+  font-size: 25px;
+}
+
+.standardContent.bio-card .bio-links i {
+  padding-right: 10px;
+}
+
+.standardContent.publications,
+.standardContent.news {
+  padding-bottom: 150px;
+}
+
+.standardContent.publications .data .entry,
+.standardContent.news .news-post {
+  padding: 50px 0 40px 0;
+  border-bottom: 1px solid #6f6f6f;
+}
+
+.standardContent.publications .data .entry:hover .entry-title h2,
+.standardContent.news .news-post:hover .news-title h2{
+  color: #a70200;
+}
+
+.standardContent.publications .data .entry:hover{
+  border-bottom: none;
+}
+
+.standardContent.publications .data .entry-title h2,
+.standardContent.news .news-post .news-title h2{
+  color: #272727;
+  font-weight: 500;
+  text-align: left;
+  padding: 0 0 15px 0;
+  margin: 0;
+}
+
+.standardContent.publications .data .entry-subtext p,
+.standardContent.news .news-post .news-subtext p {
+  font-weight: lighter;
+}
+
+.standardContent.news .news-heading {
+  text-align: center;
+  padding-top: 150px;
+}
+
+.standardContent.news .news-post .news-info p{
+  color: #01a4b3;
+  font-weight: 550;
+  font-size: 20px;
 }
