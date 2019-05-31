@@ -2694,85 +2694,56 @@ a.BlackArrowCircle:focus{
    ==========================================================================================
    Last edited 01/09/19 by Aubrey   
 */
-.accordionWrapper {
-
-}
 .accordionWrapper h2.accordionTitle {
     color: #aa0000;
-    font-family: "Roboto Slab",serif;
-    font-weight: 700;
-    margin-bottom: 25px;
-    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-left: 0;
+    text-align: center;
 }
+
+.accordionWrapper .accordionDescription p {
+  text-align: center;
+  font-size: 19px;
+  margin-bottom: 60px;
+}
+
 .accordionItemList {
-    background-color: #f7f7f7;
-    margin-left: 4px;
-    padding: 15px 0; 
+    background-color: #fff;
 }
 .accordionWrapper .accordionItem {
-  margin-bottom: 15px;
-  margin-left: -4px;
+  border-bottom: 1px solid #6f6f6f;
 }
 .accordionWrapper .accordionItemHeader {  
-  border-left: 4px solid #04a9c5;
   height: auto;
 }
 .accordionWrapper .accordionItemHeaderButton {
   height: auto;
-  /* position: relative; */
   display:flex;
   align-items: center;
-}
-.accordionWrapper .accordionItemHeaderButton:hover, .accordionWrapper .accordionItemHeaderButton:focus {
   text-decoration: none;
-}
-.accordionWrapper .accordionItemStatus {
-  display: inline-block;  
-  height: 50px;
-  position: relative;
-  width: 50px;
-}
-.accordionWrapper .accordionItemStatus .accordionItemStatusDash1 {   
-  background-color: #04a9c5;   
-  height: 3px;
-  left: 15px;
-  position: absolute;
-  top: 24px;     
-  width: 17px;
-}
-.accordionWrapper .accordionItemStatus .accordionItemStatusDash2 {
-  background-color: #04a9c5;
-  height: 17px;
-  left: 22px;
-  position: absolute;
-  top: 17px;
-  width: 3px;
+  padding: 30px 0;
 }
 .accordionWrapper h3.accordionItemHeaderButtonTitle {
-    color: #aa0000;
-    font-family: "Oswald", sans-serif;
-    font-size: 1.8rem;
-    line-height: 1.2;
-    margin: 0px 0 0 0;
-    text-transform: uppercase;
-    margin-right: 15px;
+    color: #04a1b9;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.0rem;
+    font-weight: 500;
+    margin: 0;
+    width: 100%;
+}
+.accordionWrapper h3.accordionItemHeaderButtonTitle i {
+  float: right;
+  transition-timing-function: ease;
+  transition-duration: .3s;
+}
+.accordionWrapper .accordionItemHeaderButton.collapsed h3.accordionItemHeaderButtonTitle i {
+  transform: rotate(-90deg);
 }
 .accordionWrapper .accordionItemInfo {
-  padding: 0 60px;
-}
-@media screen and (max-width: 767.999px) {
-  #zoneA.col-xs-12 .accordionItemInfo {
-    padding: 0 50px;
-  }
-}
-.accordionItemHeaderButton[aria-expanded="true"] .accordionItemStatusDash2{
-    display: none;
-}
-.accordionItemHeaderButton[aria-expanded="false"] .accordionItemStatusDash2{
-    display: block;
-}
-.accordionWrapper .accordionItemHeader:focus h3{
-    text-decoration: underline !important;
+  padding-bottom: 10px;
 }
 
 /* ==========================================================================================
@@ -3360,7 +3331,7 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
   background-color: #ffffff;
   color:#333333;
   display: inline-block;
-  font-family: 'Monserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   text-transform: uppercase;
 }
@@ -7013,13 +6984,6 @@ a.degreeItemHeaderButton {
  display:flex;
  height:50px;
 }
-
-.degreeItemHeaderButton[aria-expanded="true"] .accordionItemStatusDash2 {
-    display: none !important;
-}
-.degreeItemHeaderButton[aria-expanded="false"] .accordionItemStatusDash2 {
-    display: block !important;
-}
 .programOverviewWrapper .degreeItemHeader:focus h3 {
     text-decoration: underline !important;
 }
@@ -8755,18 +8719,6 @@ x#zoneA .primaryContentWrapper img { /* allows images in primary content to be f
 @media screen and (max-width: 767.999px) { /* xs */
   .BannerZoneWrapper { /*Margin???*/ /* Apply to zone and not content */
     margin-bottom: 15px;
-  }
-}
-
-@media screen and (min-width:1200px) and (max-width:1640px) { /*also add standardContent class to .accordionTitle */
-  .accordionWrapper .accordionTitle {
-    margin-left: 30px;
-  }
-}
-
-@media screen and (max-width: 1199.999px) { /* xs + sm + md */
-  .accordionWrapper .accordionTitle {
-    margin-left: 15px;
   }
 }
 
