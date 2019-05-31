@@ -2957,10 +2957,10 @@ a.BlackArrowCircle:focus{
 /* ---------- Blog Posts in Fulltext #zoneA---------------- */
 .blogEntryWrapper{ }
 
-.blogEntryTitle { 
+.blogEntryWrapper h2.blogEntryTitle{ 
   clear: both;
   color: #aa0000;
-  font-family: "Roboto Slab", serif;
+  font-family: "Montserrat", serif;
   font-size:4.8rem;
   hyphens: auto;
   line-height: 100%;
@@ -2973,6 +2973,9 @@ a.BlackArrowCircle:focus{
 
 .blogEntry{ 
   margin-left:0; /* Aligns text to left if screen is larger than max-width*/
+}
+.blogEntry p{
+  font-weight: lighter;
 }
 .blogEntryWrapper .postedBy{
   font-style:italic;
