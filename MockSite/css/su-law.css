@@ -4238,8 +4238,14 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
    Last revised 08/20/18 by Aubrey   
 */
 .featuredCuratedEventsWrapper {
+  background: 
+    linear-gradient(
+    rgba(8, 128, 153, 0.8),
+    rgba(8, 128, 153, 0.8)
+    ),
+  url(../assets/cityinred19.jpg);
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   padding:60px;
 }
@@ -4288,7 +4294,6 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
 .featuredCuratedEventsWrapper  .curatedEventsTitle h2 {
   color:#ffffff;
   font-family:"Roboto Slab", serif;
-  xfont-weight: 700;
   letter-spacing: 2px;
   padding: 0 0 30px;
   text-align:center;
@@ -4296,6 +4301,8 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
 }
 .featuredCuratedEventsWrapper .curatedEventsList {
   background:#ffffff;
+  padding: 0;
+  position: relative;
 }
 @media screen and (max-width: 991.999px) { /* xs + sm */
   .featuredCuratedEventsWrapper .curatedEventsList {
@@ -4308,6 +4315,12 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
   display:flex;
   margin: 0 0 1px 0;
   padding: 30px;
+  position: relative;
+  height: 200px;
+}
+
+.featuredCuratedEventsWrapper li.featuredCuratedEventItem:before {
+  display: none;
 }
 @media screen and (max-width: 767.999px) { /* xs */
   .featuredCuratedEventsWrapper li.featuredCuratedEventItem {
@@ -4347,6 +4360,7 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
 .featuredCuratedEventsWrapper li.featuredCuratedEventItem .eventInformation {
   color: #333333;
   padding: 0 30px;
+  line-height: 2rem;
 }
 @media screen and (max-width: 767.999px) { /* xs */
   .featuredCuratedEventsWrapper li.featuredCuratedEventItem .eventInformation {
@@ -4363,6 +4377,7 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
 }
 .featuredCuratedEventsWrapper li.featuredCuratedEventItem .eventInformation .eventTitle a{
     color: #aa0000;
+    text-decoration: none;
 }
 .featuredCuratedEventsWrapper li.featuredCuratedEventItem .eventInformation .eventTitle a:hover,
 .featuredCuratedEventsWrapper li.featuredCuratedEventItem .eventInformation .eventTitle a:focus{
@@ -5027,6 +5042,7 @@ input[type="checkbox"]:focus, input[type="file"]:focus {
 */
 
 .panelWrapper {
+  padding-top: 50px;
     position:relative;
 }
 .panelWrapper .panelFlexContainer{
@@ -6198,6 +6214,7 @@ a:not([href]) {
 */
 
 .megaBanner{
+  background-image: url(../assets/cityinred19.jpg);
   background-position: left center; /* could be overriden by content item */
   background-repeat: no-repeat;
   background-size: cover;
