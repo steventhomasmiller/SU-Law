@@ -5050,6 +5050,17 @@ input[type="checkbox"]:focus, input[type="file"]:focus {
     float:right;
     width:100%; 
 }
+
+.panelWrapper h2{
+    color: #aa0000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-left: 0;
+    /*text-align: center;*/
+}
+
 @media (min-width:766px) and (max-width:768px) {/*1px gap fix*/
   .panelWrapper .clearfix{
     display:block!important; 
