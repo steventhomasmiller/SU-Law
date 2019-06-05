@@ -5043,7 +5043,7 @@ input[type="checkbox"]:focus, input[type="file"]:focus {
 
 .panelWrapper {
   padding-top: 50px;
-    position:relative;
+  position:relative;
 }
 .panelWrapper .panelFlexContainer{
     display:flex;
@@ -5056,8 +5056,7 @@ input[type="checkbox"]:focus, input[type="file"]:focus {
     font-family: 'Montserrat', sans-serif;
     font-size: 35px;
     font-weight: 500;
-    margin-bottom: 30px;
-    margin-left: 0;
+    margin: 0 0 30px 0;
     /*text-align: center;*/
 }
 
@@ -5084,7 +5083,13 @@ input[type="checkbox"]:focus, input[type="file"]:focus {
 }
 .panelWrapper .panelText {
     background: #ffffff;
-    padding: 15px;
+    padding: 70px 60px;
+}
+@media (max-width: 991px) {
+  .panelWrapper .panelText {
+    background: #ffffff;
+    padding: 20px 40px;
+  }
 }
 .panelWrapper .panelRedDiv,
 .panelWrapper .panelOrangeDiv,
@@ -5265,16 +5270,16 @@ input[type="checkbox"]:focus, input[type="file"]:focus {
 @media screen and (max-width: 767.999px) { /* xs */
   .panelText h2 {
    margin: 15px 0 15px 0;
-   text-align: center;
  }
 }
 .panelText p {
-  line-height: 2.4rem;
+  font-size: 1.8rem;
+  line-height: 200%;
   margin: 0;  
 }
 
 .panelInner .panelLinks{
-  padding-top: 30px;
+  padding: 30px 0 0 0;
   text-align:center;
   width:100%;
   display:flex;
@@ -5298,7 +5303,7 @@ input[type="checkbox"]:focus, input[type="file"]:focus {
 }
 
 .panelInner .panelLinks li{
-  border:1px solid #088099;
+  border: 2px solid #088099;
   display: flex;
   flex: 0 1 calc(50% - 7px);
   flex-direction: column;
@@ -6679,26 +6684,37 @@ a:not([href]) {
    2,3 or 4 short spotlight bios
    Last revised 12/12/2017 by Aubrey 
 */
+
+.miniSpotlightHeading h2 {
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.miniSpotlightHeading p {
+  padding: 0 185px 30px 185px;
+  text-align: center;
+  font-size: 1.8rem;
+}
 .miniSpotLightImage{
   border-bottom: 8px solid white;
   border-left: 8px solid white;
   border-radius: 100%;
   border-top: 8px solid white;
   height: 150px;
-  /*float: left;
-  margin: 0 20px 0 0px;*/
-  margin: 0 auto;
+  float: left;
   overflow: hidden;
   width: 150px;
   padding: 0px;
 }
 .miniSpotLightImage img{
-  width: 100%;
   padding: 0;
 }
 .miniSpotLightItemText h5{
   font-weight: 500;
-  margin-bottom: 10px;
+  font-family:"Montserrat", sans-serif; 
+  font-size: 2.5rem;
+  margin-bottom: 5px;
 }
 #zoneB .miniSpotLightItem,
 #zoneC .miniSpotLightItem{
@@ -6708,57 +6724,56 @@ a:not([href]) {
 }
 .miniSpotLightItem {
   padding: 25px;
-  text-align:center;
 }
-.miniSpotLightItem:nth-child(4n + 1){
-  border-right: 1px solid #f7f7f7;
+.miniSpotLightItemText {
+  padding-left: 185px;
 }
-.miniSpotLightItem:nth-child(-n + 3){
-  border-bottom: 1px solid #f7f7f7;
-}
-@media (max-width: 750px) {
-  .miniSpotLightItem:nth-child(-n + 5){
-    border-bottom: 1px solid #f7f7f7;
+@media (max-width: 990px) {
+  .miniSpotLightImage {
+    float: none;
+    margin: 0 auto;
   }
-  .miniSpotLightItem:nth-child(4n + 1){
-    border-right: 0px solid #f7f7f7;
+  .miniSpotLightItemText {
+    padding-left: 0;
+    display: block;
   }
+  .miniSpotLightItemText h5 {
+    text-align: center;
+  }
+  .miniSpotLightItemText .subtext p {
+    text-align: center;
+  }
+  .miniSpotlightHeading p {
+    padding: 0 25px 30px 25px;
+  }
+}
+.miniSpotLightItemText .subtext p{
+  color: #6f6f6f;
+  font-size: 1.8rem;
+  margin: 0;
+  line-height: 150%;
+}
+.miniSpotLightItemText .subtext a{
+  color: #4cbcce;
+}
+.miniSpotLightItemText .subtext .contact {
+  padding-top: 15px;
+}
+.miniSpotLightItemText .subtext .contact p{
+  font-weight: lighter;
+}
+.miniSpotLightItemText .subtext p i{
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  padding-left: 15px;
+}
 }
 .miniSpotLightClear{
     clear:both;
-}
-.miniSpotLightColorRed{
-  border-right:8px solid #aa0000;
-}
-.miniSpotLightColorOrange{
-  border-right:8px solid #ef4135;
-}
-.miniSpotLightColorGold{
-  border-right:8px solid #fdb913;
-}
-.miniSpotLightColorGreen{
-  border-right:8px solid #55B31B;
-}
-.miniSpotLightColorDarkGreen{
-  border-right:8px solid #124a12;
-}
-.miniSpotLightColorDarkBlue{
-  border-right:8px solid #003282;
-}
-.miniSpotLightColorLightBlue{
-  border-right:8px solid #04A9C5;
-}
-.miniSpotLightColorEmerald{
-  border-right:8px solid #008765;
-}
-.miniSpotLightColorWhite{
-  border-right:8px solid #f7f7f7;
-}
-.miniSpotLightColorBrown{
-  border-right:8px solid #807060;
-}
-.miniSpotLightColorBlack{
-  border-right:8px solid #333333;
 }
 
 
