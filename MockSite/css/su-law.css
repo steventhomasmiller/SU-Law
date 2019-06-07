@@ -428,6 +428,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
   margin:0;
   padding: 3px 0 0 9px;
   position: relative;
+  z-index: 100;
   text-transform: uppercase;
   width:100%;
   transition: 0.4s;
@@ -527,8 +528,11 @@ body #googleSearchBox input#gsc-i-id1:focus {
 /******** mega drop down menu ********/
 
 #globalHeaderNavigation li.mega-dropdown {
-  position: static;
+  position: relative;
+  z-index: 100;
   text-align:center;
+}
+#globalHeaderNavigation li.mega-dropdown a {
 }
 @media (max-width:991.999px) {
   #globalHeaderNavigationWrapper li.mega-dropdown {
@@ -8982,30 +8986,23 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   position: relative;
 }
 
-.spotlightCopyCitation.red-border {
+.spotlightCopyCitation.red-border-side {
   border-left: 4px solid #f03f35;
   padding-left: 13px;
 }
 
-
 @media (max-width: 574px) {
-    .spotlightCopyCitation.red-border {
-  border-top: 4px solid #f03f35;
-  border-left: none;
-  padding-top: 25px;
-    }
-
-   /* .spotlightCopyCitation.red-border:before {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 100px;
-            top: -5px;
-            left: 0px;
-            border-top: 4px solid #f03f35;
-          }*/
+  .spotlightCopyCitation.red-border-side {
+    border-left: none;
+  }
 }
 
+.red-border-top {
+  border-top: 4px solid #f03f35;
+  height: 25px;
+  position: relative;
+  margin: 0 auto;
+}
 
 .explore-wrapper {
   width: 100%;
