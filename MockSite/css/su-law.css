@@ -7697,7 +7697,7 @@ h3.degreeItemHeaderButtonTitle {
 @media screen and (min-width: 992px) { /* md + lg*/
   .spotlight {
     display:flex;
-    min-height:500px;
+    min-height:400px;
   } 
   .container div#zoneA.col-md-6 .spotlightImage img{
       max-width:100%; 
