@@ -5092,7 +5092,7 @@ input[type="checkbox"]:focus, input[type="file"]:focus {
 @media (max-width: 991px) {
   .panelWrapper .panelText {
     background: #ffffff;
-    padding: 20px 40px;
+    padding: 20px 0px;
   }
 }
 .panelWrapper .panelRedDiv,
@@ -6705,10 +6705,10 @@ a:not([href]) {
   border-left: 8px solid white;
   border-radius: 100%;
   border-top: 8px solid white;
-  height: 150px;
+  height: 165px;
   float: left;
   overflow: hidden;
-  width: 150px;
+  width: 165px;
   padding: 0px;
 }
 .miniSpotLightImage img{
@@ -6717,7 +6717,7 @@ a:not([href]) {
 .miniSpotLightItemText h5{
   font-weight: 500;
   font-family:"Montserrat", sans-serif; 
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   margin-bottom: 5px;
 }
 #zoneB .miniSpotLightItem,
@@ -6727,7 +6727,7 @@ a:not([href]) {
   width: 100%;
 }
 .miniSpotLightItem {
-  padding: 25px;
+  padding: 25px 7px 25px 7px;
 }
 .miniSpotLightItemText {
   padding-left: 185px;
@@ -6753,7 +6753,7 @@ a:not([href]) {
 }
 .miniSpotLightItemText .subtext p{
   color: #6f6f6f;
-  font-size: 1.8rem;
+  font-size: 1.40rem;
   margin: 0;
   line-height: 150%;
 }
