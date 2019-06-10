@@ -3093,7 +3093,7 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
 .callToActionOverlay{
   background: rgba(247,247,247,0.75); /*Default white*/
   width:100%;
-  height: 200px;
+  height: 280px;
   margin:auto auto;
 }
 .callToActionWrapper .callToActionOverlayColorGold{
@@ -3118,7 +3118,7 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
   background: rgba(239,65,53,0.75);
 }
 .callToActionWrapper .callToActionOverlayColorRed{
-  background: rgba(170,0,0,0.75);
+  background: rgba(170,0,0,1);
 }
 .callToActionWrapper .callToActionOverlayColorBrown{
   background: rgba(128,112,96,0.75);
@@ -3130,14 +3130,13 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
   margin: auto auto;
   max-width:95%;
   padding:30px;
-  height: 200px;
 }
 .callToActionWrapper h2{
+  text-align: center;
   color:#ffffff;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size:4.5rem;
-  margin: 0 0 15px 0;
-  text-transform: uppercase;
+  padding-top: 50px;
 }
 .callToActionWrapper h2.callToActionHeaderColorGold{ color:#fdb913; }
 .callToActionWrapper h2.callToActionHeaderColorDarkBlue{ color:#003282; }
@@ -3155,13 +3154,11 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
   list-style-type: none;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 75%;
+  margin:0 auto;
 }
 .callToActionButton{
   background-color:#f7f7f7;
-  justify-content: center;
-  max-width:24%;
-  margin-top: 45px;
-  text-align:center;
 }
 /* Flex Grid Queries [FOR ZONE A]*/
 @media screen and (min-width: 1200px) { /*Large Displays*/
@@ -3209,26 +3206,11 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
   font-size: 1.8rem;
   height: 100%;
   line-height: 2.4rem;
-  padding: 15px 45px 15px 15px;
+  padding: 15px;
   position:relative;
   text-align: center;
   width:100%;
   vertical-align: top;  
-}
-.callToActionButton a:after {
-  background-color:#f7f7f7;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgODAgODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCI+CiAgICA8cGF0aCBkPSJNIDIwIDQwIEwgNjAgNDAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjMDQ4OTlkIiAvPgogICAgPHBhdGggZD0iTSA1MCAzMCBMIDYwIDQwIDUwIDUwIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZT0iIzA0ODk5ZCIgZmlsbD0ibm9uZSIgLz4KICAgIDxwYXRoIGQ9Ik0gNDAgMzAgTCA1MCA0MCA0MCA1MCIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2U9IiMwNDg5OWQiIGZpbGw9Im5vbmUiIC8+CiAgICA8cGF0aCBkPSJNIDMwIDMwIEwgNDAgNDAgMzAgNTAiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjMDQ4OTlkIiBmaWxsPSJub25lIiAvPgogICAgPGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iMzUiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlPSIjMDQ4OTlkIiBmaWxsPSJub25lIiAvPgogIDwvc3ZnPg==");
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: 25px; 
-  content:' ';
-  display:block;
-  height:25px;
-  position:absolute;
-  right:15px;
-  top: calc(50% - 12px); /* 12px is ~50% of its height) to vertically center it */
-  width: 25px;
-    
 }
 .callToActionButton a:hover {
   color:#088099;
@@ -5967,6 +5949,7 @@ a .homepageGridItemCopy h4:hover{/*delete*/
 .jumbotron3Wrapper{ }
 .jumbotron3{
   display:flex;
+  padding-bottom: 175px;
 }
 .jumbotron3 h2 a:focus, .jumbotron3 h1 a:hover{
   text-decoration:underline;
@@ -5988,6 +5971,10 @@ a .homepageGridItemCopy h4:hover{/*delete*/
   border-image-slice: 1;
   flex: 1;
   padding-top: 5%;
+  position: relative;
+  top: 75px;
+  right: 75px;
+  z-index: 0;
 }
 @media screen and (min-width: 992px) { /* md + lg*/
   .jumbotron3Wrapper .jumbotron3Text h2,
@@ -6010,6 +5997,7 @@ a .homepageGridItemCopy h4:hover{/*delete*/
   background-position: center;
   background-size:cover;
   flex: 1;
+  z-index: 1;
 }
 .jumbotron3 .boxlinks li{
   display: block;
@@ -8828,9 +8816,13 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 .jumbotron3Text.standardContent.no-line {
   border-top: none;
 }
+.jumbotron3Text.standardContent.left-text {
+  right: 0;
+  left: 75px;
+} 
 
 .jumbotron3Text.jumbotron3TextDark {
-  background-color: #f4f4f4;
+  background-color: #f7f7f7;
 }
 
 .alertSubtle .moreLink{
@@ -9259,4 +9251,59 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   color: #01a4b3;
   font-weight: 550;
   font-size: 20px;
+}
+
+.titleBanner2BackgroundImage.homepageImage{
+  height: 600px !important;
+}
+
+.homepageTitleBanner {
+  text-align: center;
+  width: 78%;
+}
+
+.homepageSubtitle,
+.homepageTitle,
+.homepageArrow {
+  text-transform: uppercase;
+  display: block;
+}
+
+.homepageSubtitle {
+  padding-top: 85px;
+  padding-bottom: 25px;
+}
+
+.homepageTitle {
+  font-weight: 700 !important;
+  font-size: 140px;
+  padding-bottom: 150px;
+}
+
+.homepageArrow {
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  width: 65px;
+  padding: 5px 0;
+  margin: 0 auto;
+  font-size: 45px;
+}
+
+.paragraph-text-title {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 50px !important;
+  padding-bottom: 25px;
+}
+
+.paragraph-text {
+  text-align: center;
+  font-size: 20px !important;
+  padding: 0 200px;
+}
+
+.map-image {
+  background-image:url(../assets/cityinred19.jpg);
+  display: block;
+  height: 600px;
 }
