@@ -1353,7 +1353,7 @@ _____________________  _____________________________  __________________________
   font-family: "Roboto Slab", serif;
   font-size: 2.1rem;
   font-weight: 400;
-  margin:15px 0 3px 0; 
+  margin:35px 0 3px 0; 
 } 
 .standardContent h3 a{ /* links in minor headings */
   color: #aa0000;
@@ -3135,7 +3135,7 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
   text-align: center;
   color:#ffffff;
   font-family: 'Montserrat', sans-serif;
-  font-size:4.5rem;
+  font-size:3.5rem;
   padding-top: 50px;
 }
 .callToActionWrapper h2.callToActionHeaderColorGold{ color:#fdb913; }
@@ -3215,12 +3215,14 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
   background-color: #f7f7f7;
   color: #aa0000;
   display:inline-block;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  font-weight: 501;
   height: 100%;
-  line-height: 2.4rem;
+  line-height: 2.0rem;
   padding: 15px;
   position:relative;
   text-align: center;
+  text-transform: uppercase;
   width:100%;
   vertical-align: top;  
 }
@@ -9322,7 +9324,7 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 .paragraph-text-title {
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  font-size: 50px !important;
+  font-size: 45px !important;
   padding-bottom: 25px;
 }
 
