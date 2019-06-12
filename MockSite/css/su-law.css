@@ -1339,7 +1339,7 @@ _____________________  _____________________________  __________________________
   font-family: "Montserrat", sans-serif;
   font-size:2.7rem;
   font-weight: 520;
-  margin:30px 0 22px -3px; 
+  margin:30px 0 22px -0; 
 } 
 .standardContent h2 a { /* links in major headings */
   color: #aa0000;
@@ -6722,10 +6722,10 @@ a:not([href]) {
   font-size: 1.8rem;
 }
 .miniSpotLightImage{
-  border-bottom: 8px solid white;
-  border-left: 8px solid white;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
   border-radius: 100%;
-  border-top: 8px solid white;
+  border-top: 1px solid white;
   height: 165px;
   float: left;
   overflow: hidden;
@@ -6748,7 +6748,7 @@ a:not([href]) {
   width: 100%;
 }
 .miniSpotLightItem {
-  padding: 25px 7px 25px 7px;
+  padding: 25px 0;
 }
 .miniSpotLightItemText {
   padding-left: 185px;
@@ -9124,11 +9124,11 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   border-radius: 50%;
 }
 
-.standardContent.biography {
+.biography {
   padding: 50px 0;
 }
 
-.standardContent.biography h3 {
+.biography h3 {
   font-variant: small-caps;
   font-weight: 550;
   font-size: 2.5rem;
@@ -9136,11 +9136,11 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   padding-bottom: 25px;
 }
 
-.standardContent.biography .body {
+.biography .body {
   padding-bottom: 30px;
 }
 
-.standardContent.biography .body a {
+.biography .body a {
   color: #05a0be;
 }
 
