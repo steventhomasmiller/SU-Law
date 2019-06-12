@@ -5086,7 +5086,8 @@ input[type="checkbox"]:focus, input[type="file"]:focus {
 @media (max-width: 991px) {
   .panelWrapper .panelText {
     background: #ffffff;
-    padding: 20px 0px;
+    padding: 20px 0 20px 15px;
+    width: 100%;
   }
 }
 .panelWrapper .panelRedDiv,
