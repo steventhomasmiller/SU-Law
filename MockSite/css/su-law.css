@@ -80,6 +80,9 @@ body.advertising{ /* page layout #280291 */
 
 #globalHeader{
   background:#aa0000;
+  /* for possible alternate header
+  background: rgba(170,0,0,0.75);
+  */
   padding:0px;
   position: fixed;
   top:0;
@@ -554,6 +557,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
   transition: 0.4s;
   transition-timing-function: ease;
 }
+
 @media (max-width:991.999px) {
   #globalHeaderNavigation .mega-dropdown-menu {
     border-top:none;
