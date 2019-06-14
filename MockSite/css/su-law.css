@@ -531,8 +531,8 @@ body #googleSearchBox input#gsc-i-id1:focus {
 /******** mega drop down menu ********/
 
 #globalHeaderNavigation li.mega-dropdown {
-  position: relative;
-  z-index: 100;
+  position: static;
+ /* z-index: 100;*/
   text-align:center;
 }
 #globalHeaderNavigation li.mega-dropdown a {
