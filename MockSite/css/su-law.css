@@ -1341,8 +1341,8 @@ _____________________  _____________________________  __________________________
   color: #aa0000;
   clear:both; /* acts as a clearing element */
   font-family: "Montserrat", sans-serif;
-  font-size:2.7rem;
-  font-weight: 520;
+  font-size:2.8rem;
+  font-weight: 495;
   margin:30px 0 22px -0; 
 } 
 .standardContent h2 a { /* links in major headings */
@@ -1408,7 +1408,7 @@ _____________________  _____________________________  __________________________
     font-size:2.4rem;
   }
   .standardContent h2 {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
   .standardContent h3 {
     font-size: 1.8rem;
@@ -1867,7 +1867,7 @@ ul.boxlinks li:before{
 
 .boxlinks a,
 .boxlinkItem a{ /* a div with boxlinkItem is a standalone box in the same style as a boxlink li */
-  border: 1px solid #48c3d3;
+  border: 2px solid #48c3d3;
   color: #a90400;
   display: block;
   font-family: "Montserrat", sans-serif;
@@ -1897,7 +1897,7 @@ x.boxlinks li:hover a, x.boxlinks li:focus a,
 x.boxlinkItem:hover a, x.boxlinkItem:focus a,
 .boxlinkItem a:hover, .boxlinkItem a:focus{
   background: #48c3d3;
-  border: 1px solid #48c3d3;
+  border: 2px solid #48c3d3;
   color: #ffffff;
   text-decoration: underline; 
 }
@@ -5966,7 +5966,7 @@ a .homepageGridItemCopy h4:hover{/*delete*/
 .jumbotron3Wrapper{ }
 .jumbotron3{
   display:flex;
-  padding-bottom: 175px;
+  padding-bottom: 100px;
 }
 .jumbotron3 h2 a:focus, .jumbotron3 h1 a:hover{
   text-decoration:underline;
@@ -5977,7 +5977,7 @@ a .homepageGridItemCopy h4:hover{/*delete*/
   padding: 0;
   text-transform: uppercase;
 }
-@media screen and (max-width: 767px) { /* xs */
+@media screen and (max-width: 767px) { /* xs and sm */
   .jumbotron3{
     flex-direction: column-reverse; 
   }
@@ -6000,10 +6000,14 @@ a .homepageGridItemCopy h4:hover{/*delete*/
   left: -75px;
 } 
 
+.jumbotron3.left-text .jumbotron3Text {
+  right: -75px;
+}
+
 .jumbotron3Text.jumbotron3TextDark {
   background-color: #f7f7f7;
 }
-@media screen and (min-width: 992px) { /* md + lg*/
+@media screen and (min-width: 993px) { /* md + lg*/
   .jumbotron3Wrapper .jumbotron3Text h2,
   .jumbotron3Wrapper .jumbotron3Text p,
   .jumbotron3Wrapper .jumbotron3Text ul{
@@ -6012,11 +6016,22 @@ a .homepageGridItemCopy h4:hover{/*delete*/
   .jumbotron3.right-text {
     flex-direction: row-reverse;
   }
+
 }
+
+@media screen and (min-width: 767px) and (max-width: 992px){
+  /* For tablet */
+  .jumbotron3Wrapper .jumbotron3Text h2,
+  .jumbotron3Wrapper .jumbotron3Text p,
+  .jumbotron3Wrapper .jumbotron3Text ul{
+    padding: 0 9% 9% 9%;
+  } 
+}
+
 @media screen and (max-width: 767.999px) { /* xs */
   .jumbotron3Wrapper .jumbotron3Text h2{
     margin: 15px 0 15px 0;
-    text-align: center;
+    text-align: left;
   }
   .jumbotron3Wrapper .jumbotron3Text .boxlinks{
     margin-bottom:15px;
@@ -6025,9 +6040,10 @@ a .homepageGridItemCopy h4:hover{/*delete*/
     top: 0;
     left: 0 !important;
     right: 0;
+    padding: 20px;
   }
   .jumbotron3 {
-    padding: 0;
+    padding: 0 0 50px 0;
   }
 }
 
