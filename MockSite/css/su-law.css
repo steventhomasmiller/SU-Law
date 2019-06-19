@@ -6034,7 +6034,7 @@ a .homepageGridItemCopy h4:hover{/*delete*/
 .jumbotron3Text.jumbotron3TextDark {
   background-color: #f7f7f7;
 }
-@media screen and (min-width: 993px) { /* md + lg*/
+@media screen and (min-width: 767px) /*Maybe add back max width of 993px*/ { /* md + lg*/
   .jumbotron3Wrapper .jumbotron3Text h2,
   .jumbotron3Wrapper .jumbotron3Text p,
   .jumbotron3Wrapper .jumbotron3Text ul{
@@ -6070,7 +6070,7 @@ a .homepageGridItemCopy h4:hover{/*delete*/
     padding: 20px;
   }
   .jumbotron3 {
-    padding: 0 0 50px 0;
+    padding: 0 0 0 0;
   }
 }
 
@@ -9326,7 +9326,7 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 }
 
 .titleBanner2BackgroundImage.homepageImage{
-  height: 600px !important;
+  height: 700px !important;
 }
 
 .homepageTitleBanner {
