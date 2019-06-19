@@ -76,12 +76,16 @@ body.advertising{ /* page layout #280291 */
 /* ======================================================================================================== */
 /* ============================================== Header ============================================== */
 /* Logo, Red and white bars on top */
-/* Last edited 1/29/18 by Aubrey */ 
+/* Last edited 6/18/19 by Steve */ 
 
 #globalHeader{
   background:#aa0000;
+  
   /* for possible alternate header
+
   background: rgba(170,0,0,0.75);
+  opacity: 0.9;
+
   */
   padding:0px;
   position: fixed;
@@ -91,6 +95,7 @@ body.advertising{ /* page layout #280291 */
   transition-timing-function: ease;
   width:100%;
   z-index:100;
+
 }
 
 
@@ -274,6 +279,12 @@ header.menu-is-open .primary-nav-trigger:focus {
 }
 
  #googleSearchBox input#gsc-i-id1{
+  
+   /* for possible alternate header
+
+  background: rgba(170,0,0,0.75);
+  */
+
   background: #881111 !important;
   border: 1px solid #881111;
   color: #ffffff;
@@ -310,6 +321,12 @@ body #googleSearchBox input#gsc-i-id1:focus {
 
 #googleSearchBox button.gsc-search-button {
   background: #aa0000;  /*CHANGED TO MATCH HEADER BACKGROUND*/
+  
+  /* for possible alternate header
+
+  background: rgba(170,0,0,0.75);
+  
+  */
   border: none;
   color: #ffffff;
   cursor:pointer;
@@ -427,6 +444,10 @@ body #googleSearchBox input#gsc-i-id1:focus {
 }
 #globalHeaderNavigation {
   -webkit-backface-visibility: hidden; /*stops the flickering. Maybe. */
+  /* for possible alternate header
+
+  background: rgba(170,0,0,0.75);
+  */
   background: #ffffff;
   margin:0;
   padding: 3px 0 0 9px;
@@ -473,6 +494,12 @@ body #googleSearchBox input#gsc-i-id1:focus {
   } 
 }
 #globalHeaderNavigation li.mega-dropdown a.dropdown-toggle{
+ 
+  /* for possible alternate header
+
+  background: rgba(170,0,0,0.75);
+  */
+
   background:#ffffff;
 }
 #globalHeaderNavigation li.mega-dropdown a.dropdown-toggle:focus{
@@ -8876,7 +8903,7 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 
 .floating-sidebar {
   position: fixed;
-  margin-left: 97%;
+  margin-left: 95%;
   z-index: 200;
 
   padding: 0;
