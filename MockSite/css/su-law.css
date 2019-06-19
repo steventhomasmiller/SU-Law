@@ -606,7 +606,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
   list-style-type: none;
 }
 
-@media screen and (min-width: 576px) and (max-width:993px){
+@media screen and (min-width: 576px) and (max-width:992px){
   #globalHeaderNavigation .globalHeaderNavigationMainLinks ul li {
   max-height: 30px;
   padding: 0px 20px 65px;
@@ -642,9 +642,15 @@ body #googleSearchBox input#gsc-i-id1:focus {
   #globalHeaderNavigation .globalHeaderNavigationQuickLinks {
     border-left: none;
     border-top: 2px solid #04a9c5;
-    padding: 30px 13px 0;
+    padding: 30px 32px 0;
   } 
 }
+
+.globalHeaderNavigationQuickLinks ul {
+  list-style: none;
+  padding: 0;
+}
+
 #globalHeaderNavigation .globalHeaderNavigationQuickLinks h5 {
   color: #aa0000;
   font-family: "Oswald", sans-serif;
