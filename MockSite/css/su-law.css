@@ -9219,6 +9219,7 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   text-align: center;
 }
 
+
 .standardContent.publications .selector-bar a{
   font-variant: small-caps;
   text-decoration: none;
@@ -9230,13 +9231,16 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   border-right: 2px solid #a7a7a7;
 }
 
+
 .standardContent.publications .selector-bar a:last-child {
   border-right: none;
 }
 
+
 .standardContent.publications .selector-bar a:hover {
   color: #05a0be;
 }
+
 
 .standardContent.bio-card {
   height: 600px;
@@ -9244,7 +9248,7 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 }
 
 .standardContent.bio-card .bio-picture {
-  background-image: url(../assets/cityinred19.jpg);
+  background-image: url(../assets/banner-chang.jpg);
   width: 325px;
   height: 325px;
   border-radius: 50%
@@ -9342,6 +9346,30 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   font-size: 20px;
 }
 
+.standardContent.directory .selector-bar {
+  padding: 100px 0 20px 0;
+  text-align: center;
+}
+
+.standardContent.directory .selector-bar a:last-child {
+  border-right: none;
+}
+
+.standardContent.directory .selector-bar a{
+  font-variant: small-caps;
+  text-decoration: none;
+  font-weight: 550;
+  font-size: 2.25rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 25px;
+  color: #a7a7a7;
+  border-right: 2px solid #a7a7a7;
+}
+
+.standardContent.directory .selector-bar a:hover {
+  color: #05a0be;
+}
+
 .titleBanner2BackgroundImage.homepageImage{
   height: 700px !important;
 }
@@ -9380,7 +9408,7 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   border-radius: 50px;
   width: 65px;
   padding: 5px 0;
-  margin: 0 auto;
+  margin: 0 auto 61px;
   font-size: 45px;
 }
 
