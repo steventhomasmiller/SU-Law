@@ -1093,6 +1093,13 @@ _____________________  _____________________________  __________________________
   color: #000;
   font-weight: normal;
   padding: 0px 7px 14px 0;
+    color: #797979;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2em;
+    position: relative;
+    text-decoration: none;
 }
 #siteNavigation #menu .multilevel-linkul-0 li .glyphicon {
   padding: 10px 10px;
@@ -1146,6 +1153,13 @@ _____________________  _____________________________  __________________________
   #siteNavigation #menu .multilevel-linkul-0 li a,
   #siteNavigation #menu .multilevel-linkul-0 span.currentsection{ /* first submenu*/
     padding: 10px 35px 10px 25px;
+    color: #797979;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2em;
+    position: relative;
+    text-decoration: none;
   }
   #siteNavigation #menu .multilevel-linkul-1 li a,
   #siteNavigation #menu .multilevel-linkul-1 span.currentsection{ /* second submenu*/
