@@ -9223,10 +9223,36 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   color: #05a0be;
 }
 
+.bioContact {
+  background-color: #05A1BA;
+  padding-top: 5px;
+}
+
+.bioContact h3 {
+  color: #FFF;
+}
+
+.bioContact p {
+  color: #FFF;
+}
+
+.bioExpertise {
+ border: 2px solid #05A1BA;
+ margin-top: 25px;
+}
+
+.bioExpertise h3{
+  color: #000;
+}
+
+.bioExpertise p {
+  color: #000;
+}
+
 .standardContent.publications h2{
   text-align: center;
   width: 100%;
-  padding: 100px 0 20px 0;
+  padding: 20px 0 20px 0;
 }
 
 .standardContent.publications .selector-bar {
@@ -9317,7 +9343,7 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 
 .standardContent.publications,
 .standardContent.news {
-  padding-bottom: 150px;
+  padding-bottom: 55px;
 }
 
 .standardContent.publications .data .entry,
@@ -9351,7 +9377,7 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 
 .standardContent.news .news-heading {
   text-align: center;
-  padding-top: 150px;
+  padding-top: 11px;
 }
 
 .standardContent.news .news-post .news-info p{
