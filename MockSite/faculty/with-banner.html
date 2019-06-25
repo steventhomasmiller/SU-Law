@@ -33,13 +33,13 @@
     rgba(0, 0, 0, 0.3)
     ),
   url('../assets/banner-chang.jpg');
-  background-position:  center;
+  background-position: center;
   position: relative;
   }
   #id365658 .titleBanner2BackgroundImage h1{
     position: absolute;
     top: 31%;
-    left: 22%;
+    left: 35%;
     transform: translate(-50%, -50%);
     color: #ffffff;
     font-size: 55px;
@@ -48,7 +48,7 @@
   #id365658 .titleBanner2BackgroundImage h4{
     position: absolute;
     top: 49%;
-    left: 50%;
+    left: 37%;
     transform: translate(-50%, -50%);
     color: #ffffff;
     font-size: 15px;
@@ -58,16 +58,19 @@
   }
   @media screen and (min-width:992px) {
     #id365658 .titleBanner2BackgroundImage{
-      height: 400px;
+      height: 600px;
     }
   }
   @media screen and (min-width: 768px) and (max-width: 991.999px){
     #id365658 .titleBanner2BackgroundImage{
-
+      height: 300px;
+      background-position-x: right;
+      background-position-y: center;
+      background-size: cover;
     }
   }
 
-  /* Maybe oonly for faculty profile pages */
+  /* Maybe only for faculty profile pages */
   @media screen and (max-width: 767.999px){
     #id365658 .titleBanner2BackgroundImage{
       height: 300px;
@@ -75,6 +78,28 @@
       background-position-y: center;
       background-size: cover;
     }
+
+    #id365658 .titleBanner2BackgroundImage h1 {
+      position: absolute;
+      top: 31%;
+      left: 33%;
+      transform: translate(-43%, 50%);
+      color: #ffffff;
+      font-size: 29px;
+      font-weight: lighter;
+    }
+
+    #id365658 .titleBanner2BackgroundImage h4{
+    position: absolute;
+    top: 59%;
+    left: 35%;
+    transform: translate(-43%, -50%);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: lighter;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+  }
   }
   /* End TitleBanner CSS */
 
@@ -263,10 +288,10 @@
   <script>
     $('#headerWrapper').load('../ajax/header.html');
   </script>
-  <div class="sidebar-wrapper"></div>
+ <!--  <div class="sidebar-wrapper"></div>
   <script>
     $('.sidebar-wrapper').load('../ajax/floating-sidebar.html');
-  </script>
+  </script> -->
   <nav aria-label="Skip to important sections">
     <a class="sr-only sr-only-focusable" href="#zoneA">Skip to main content</a>
     <a class="sr-only sr-only-focusable" href="#contactInformationAnchor">Skip to contact information</a>
@@ -290,7 +315,7 @@
       </div>
     </div>
   </div>
-      <div class="element-wrapper" style="background-color: #f7f7f7;">
+      <div class="element-wrapper" style="/*background-color: #f7f7f7;*/">
         <div class="standardContent biography row">
           <div class="col-md-8">
             <h2>Biography</h2>
@@ -304,8 +329,11 @@
               For several years, he has been serving as co-counsel in two cases in Alaska challenging the involuntary psychiatric hospitalization and forced psychotropic medication of Native foster children. Students from his Civil Rights Clinic have assisted on these and other cases.
             </p>
           </div>
+
+          <!-- BEGIN SIDEBAR -->
+
           <div class="col-md-4 col-md-push-1">
-            <h3>education</h3>
+            <h3>Contact</h3>
             <div class="body">
               <p>
                 A.B., cum laude,<br>
@@ -314,17 +342,6 @@
               <p>
                 M.A. (Philosophy), J.D., cum laude,<br>
                 Duke University, 1992
-              </p>
-            </div>
-            <h3>affiliations</h3>
-            <div class="body">
-              <p>
-                Lorem ipsum dolor sit amet<br>
-                consectetur adipisicing elit
-              </p>
-              <p>
-                sed do eiusmod tempor incididunt<br>
-                ut labore et dolore magna aliqua
               </p>
             </div>
             <h3>areas of expertise</h3>
@@ -337,15 +354,57 @@
                 Jurisprudence<br>
                 Perspectives on Immigration and Citizenship
               </p>
-            </div>
-            <h3>courses</h3>
-            <div class="body">
-              <p>
-                <a href="#">Civil Rights Clinic (ADVC-430-A)</a><br>
-                <a href="#">Contracts (CONT-105-A)</a>
-              </p>
-            </div>
+            </div> 
           </div>
+
+          <!-- END SIDEBAR -->
+
+           <!--BEGIN ACCORDION-->
+            <div class="accordionWrapper noGap contentItem col-md-8" data-position-default="ZoneA" data-position-selected="ZoneA" id='id260924' role="tablist" aria-multiselectable="true">
+              <a name="d.en.260924"></a>
+              <dl role="presentation" class="accordionItemList">
+                <div class="accordionItem">
+                  <dt class="accordionItemHeader" tabindex="0" role="heading" id="heading1260924">
+                    <a class="accordionItemHeaderButton collapsed" tabindex="-1" role="button" data-toggle="collapse" data-parent='#id260924' href="#collapse1260924" aria-expanded="false" aria-controls="collapse1260924">
+                      <h3 class="accordionItemHeaderButtonTitle">Education<i class="fas fa-angle-down"></i></h3>
+                    </a>
+                  </dt>
+                  <dd id="collapse1260924" class="accordionItemContentWrapper collapse" role="region" aria-labelledby="heading1260924">
+                    <div class="accordionItemInfo standardContent">
+                      <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+                    </div>
+                  </dd>
+                </div>
+                <div class="accordionItem">
+                  <dt class="accordionItemHeader" tabindex="0" role="heading" id="heading2260924">
+                    <a class="accordionItemHeaderButton collapsed" tabindex="-1" role="button" data-toggle="collapse" data-parent="#id260924" href="#collapse2260924" aria-expanded="false"aria-controls="collapse2260924">
+                      <h3 class="accordionItemHeaderButtonTitle">Affiliations<i class="fas fa-angle-down"></i></h3>
+                    </a>
+                  </dt>
+                  <dd id="collapse2260924" class="accordionItemContentWrapper collapse" role="region" aria-labelledby="heading2260924">
+                    <div class="accordionItemInfo standardContent">
+                      <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+                    </div>
+                  </dd>
+                </div>
+                
+               
+                <div class="accordionItem">
+                  <dt class="accordionItemHeader" tabindex="0" role="heading" id="heading5260924">
+                    <a class="accordionItemHeaderButton collapsed" tabindex="-1" role="button" data-toggle="collapse" data-parent="#id260924" href="#collapse5260924" aria-expanded="false" aria-controls="collapse5260924">
+                      <h3 class="accordionItemHeaderButtonTitle">Courses<i class="fas fa-angle-down"></i></h3>
+                    </a>
+                  </dt>
+                  <dd id="collapse5260924" class="accordionItemContentWrapper collapse" role="region" aria-labelledby="heading5260924">
+                    <div class="accordionItemInfo standardContent">
+                      <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+                    </div>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+            <!--END ACCORDION-->
+
         </div>
       </div>
       <div class="element-wrapper">
