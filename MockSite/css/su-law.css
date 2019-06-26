@@ -9259,6 +9259,11 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   text-align: center;
 }
 
+.standardContent.publications:hover {
+  border: none;
+  color: #fff;
+}
+
 
 .standardContent.publications .selector-bar a{
   font-variant: small-caps;
@@ -9341,6 +9346,10 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   padding-right: 10px;
 }
 
+.standardContent.publications {
+  background-color: #f7f7f7;
+}
+
 .standardContent.publications,
 .standardContent.news {
   padding-bottom: 55px;
@@ -9359,6 +9368,7 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 
 .standardContent.publications .data .entry:hover{
   border-bottom: none;
+  color: #fff;
 }
 
 .standardContent.publications .data .entry-title h2,
@@ -9373,6 +9383,14 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 .standardContent.publications .data .entry-subtext p,
 .standardContent.news .news-post .news-subtext p {
   font-weight: lighter;
+}
+
+.entry-category {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  color: #EE3F3A;
 }
 
 .standardContent.news .news-heading {
