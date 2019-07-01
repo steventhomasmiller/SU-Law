@@ -3504,6 +3504,154 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
   color:#333333;
 }
 
+/* ==========================================================================================
+   ===== Card ===== Content Type #5135 =================================================
+   ==========================================================================================
+   Last edited 04/10/19 by Jason   
+*/
+#zoneA .cardsWrapper {
+  margin-bottom:60px;
+}
+.cardsWrapper .cards {
+    display: flex;
+    justify-content: space-between;
+}
+.cardsWrapper .card {
+    align-items: stretch;
+    flex: 1 1 0;
+    padding: 0 15px 0 15px;
+}
+.cardsWrapper .card a.cardLink{
+  display:block;
+  text-decoration:none;
+  transition: all 0.2s ease;
+}
+.cardsWrapper .card a.cardLink .cardImage{
+  background: #000000;
+}
+.cardsWrapper .card a.cardLink:hover img{
+  opacity: .7;
+}
+.cardsWrapper .cardImage img {
+  min-width: 100%;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+.cardsWrapper .card h3{
+  margin: 1rem 0;
+}
+
+.cardsWrapper .cardButton{
+text-align: left;
+}
+.cardsWrapper .cardButton a {
+  display: block;
+    font-size: 1.6rem;
+    padding-right: 4rem;
+    text-decoration: none;
+}
+.cardsWrapper .cardButton a:hover, .cardsWrapper .cardButton a:focus {
+    text-decoration: underline;
+}
+.cardsWrapper .cardButton a:after {
+  content: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgOTEuNDQgMzMuMTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDkxLjQ0IDMzLjEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0VGNDEzNTt9Cjwvc3R5bGU+CjxnPgoJPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSI1Mi44NCwyOS45MyA1NS41NywzMi43NCA3MC45OSwxOC4yOCA4My4xNSwxOC4yOCA3MC44OSwyOS45MyA3My42MywzMyA5MS4yNywxNi42NSA3My42MywwLjI4IAoJCTcwLjg5LDMuMDUgODMuMTYsMTQuMjggNzEsMTQuMjggNTUuNTcsMC4xMiA1Mi44NCwyLjk3IDY1LjExLDE0LjI4IDUyLjk1LDE0LjI4IDM3LjUyLDAuMTIgMzQuNzgsMi45NyA0Ny4wNSwxNC4yOCAwLjE3LDE0LjI4IAoJCTAuMTcsMTguMjggNDcuMDUsMTguMjggMzQuNzgsMjkuOTMgMzcuNTIsMzIuNzQgNTIuOTQsMTguMjggNjUuMSwxOC4yOCAJIi8+CjwvZz4KPC9zdmc+");
+    font-weight: 400;
+    width: 2.4rem;
+    position: absolute;
+   margin-left: 1rem;
+} 
+.cardsWrapper .cardButton .btn-boxlink {
+  padding: 0;
+  width: 100%;
+}
+.cardsWrapper .btn-boxlink a {
+    align-items: center;
+    border: 1px solid #088099;
+    bottom: 3rem;
+    color: #aa0000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 1.6rem;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+.cardsWrapper .btn-boxlink a:hover {
+    background: #088099;
+    border: 1px solid #088099;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+.cardsWrapper .cardLayout1234 .card {
+    flex-basis: 25%;
+}
+.cardsWrapper .cardLayout123 .card {
+    flex-basis: 33%;
+}
+.cardsWrapper .cardLayout12 .card {
+    flex-basis: 50%;
+}
+.cardsWrapper .cardLayout1 .card {
+    flex-basis: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.999px) { /* sm + md */
+    #zoneA .cardsWrapper .cards {
+        flex-wrap: wrap;
+    }
+  
+    #zoneA.col-sm-12 .cardsWrapper .cardLayout12 .card, 
+    #zoneA.col-md-12 .cardsWrapper .cardLayout12 .card, 
+    #zoneA.col-sm-9 .cardsWrapper .cardLayout12 .card, 
+    #zoneA.col-md-9 .cardsWrapper .cardLayout12 .card,
+    #zoneA.col-sm-6 .cardsWrapper .cardLayout12 .card, 
+    #zoneA.col-md-6 .cardsWrapper .cardLayout12 .card{ 
+      flex-basis: calc(50% - 7px);
+    }
+    #zoneA.col-sm-12 .cardsWrapper .cardLayout123 .card,
+    #zoneA.col-md-12 .cardsWrapper .cardLayout123 .card,
+    #zoneA.col-sm-9 .cardsWrapper .cardLayout123 .card,  
+    #zoneA.col-md-9 .cardsWrapper .cardLayout123 .card,
+    #zoneA.col-sm-6 .cardsWrapper .cardLayout123 .card,  
+    #zoneA.col-md-6 .cardsWrapper .cardLayout123 .card{  
+      flex-basis: calc(33% - 7px);  
+    }  
+    #zoneA.col-sm-12 .cardsWrapper .cardLayout1234 .card,
+    #zoneA.col-md-12 .cardsWrapper .cardLayout1234 .card,  
+    #zoneA.col-md-9 .cardsWrapper .cardLayout1234 .card{
+      flex-basis: calc(25% - 7px);
+    }
+  
+    #zoneA.col-sm-9 .cardsWrapper .cardLayout1234 .card,  
+    #zoneA.col-sm-6 .cardsWrapper .cardLayout1234 .card,  
+    #zoneA.col-md-6 .cardsWrapper .cardLayout1234 .card{  
+      flex-basis: calc(50% - 7px);  
+    }
+
+    .cardsWrapper .cardButton .btn-boxlink {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 767.999px) { /* xs */
+    .cardsWrapper .cards {
+        display: block;
+    }
+    .cardsWrapper .card {
+      margin-top: 60px;
+    }    
+    .cardsWrapper .card .standardContent {
+        padding: 0;
+    }
+    .cardsWrapper .cardButton .btn-boxlink {
+        padding: 0;
+    }
+}
 
 /* ==========================================================================================
    ===== Carousel ===== Content Type #4117 ================================================== 
