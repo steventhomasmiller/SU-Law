@@ -6172,7 +6172,7 @@ a .homepageGridItemCopy h4:hover{/*delete*/
 .jumbotron3Wrapper{ }
 .jumbotron3{
   display:flex;
-  padding-bottom: 100px;
+  padding-bottom: 124px;
 }
 .jumbotron3 h2 a:focus, .jumbotron3 h1 a:hover{
   text-decoration:underline;
@@ -6249,7 +6249,7 @@ a .homepageGridItemCopy h4:hover{/*delete*/
     padding: 20px;
   }
   .jumbotron3 {
-    padding: 0 0 0 0;
+    padding: 0 0 55px 0;
   }
 }
 
