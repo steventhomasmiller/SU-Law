@@ -477,7 +477,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
   font-size: 1.43rem;
   font-weight: 499;
   line-height: 1;
-  padding: 25px 25px;
+  padding: 25px 24px;
   transition: 0.4s;
   transition-timing-function: ease;
 }
@@ -1520,7 +1520,7 @@ _____________________  _____________________________  __________________________
 .standardContent ul li:before {
   font-family: 'seattle-u';
   font-size:13px !important;
-    content: 'b'; /* triple chevron */
+   /* content: 'b'; /* triple chevron */
   color: #aa0000;
   padding-right: 5px;
   display: table-cell; /* align 2nd line text, pt 3  */
@@ -3817,13 +3817,13 @@ text-align: left;
 }
 @media (max-width: 767px) {
   .colorButton{
-      flex-basis: 100%;
+      flex-basis: 33%;
   } 
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .colorButton:nth-last-child(n+6),
   .colorButton:nth-last-child(n+6) ~ a{
-      flex-basis: 33%;
+      flex-basis: 12%;
   } /*if 6 (or more) items, the flexbasis changes to 33%   doc: https://alistapart.com/article/quantity-queries-for-css*/
 }
 .colorButtonRed{ background-color:#aa0000; color:#ffffff;}
@@ -9531,6 +9531,31 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 .standardContent.publications .data .entry-subtext p,
 .standardContent.news .news-post .news-subtext p {
   font-weight: lighter;
+}
+
+.resourcesBox{
+  background-color:#f7f7f7;
+}
+
+.resourcesBox h2 {
+  text-align: center;
+  width: 100%;
+  padding: 20px 0 20px 0;
+}
+
+.resourcesBox .linkCategory {
+  font-variant: small-caps;
+  text-decoration: none;
+  font-weight: 550;
+  font-size: 1.9rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 25px;
+  color: #a7a7a7;
+}
+
+.resourcesList li a {
+  list-style-type: none;
+  margin-left: -29px;
 }
 
 .entry-category {
