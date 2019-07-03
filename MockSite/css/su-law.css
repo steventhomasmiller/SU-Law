@@ -376,7 +376,7 @@ body #googleSearchBox input#gsc-i-id1:focus {
 }
 #globalHeaderResourcesLinks li a:hover, #globalHeaderResourcesLinks li a:focus, 
 #globalHeaderResourcesLinks li span:hover, #globalHeaderResourcesLinks li span:focus{
-  text-decoration:underline;
+  text-decoration:none;
 }
 @media (max-width:991.999px) {
   #globalHeaderResources {
@@ -553,6 +553,24 @@ body #googleSearchBox input#gsc-i-id1:focus {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   transition: 0.5s;
+}
+
+li.dropdown.open span.fa-fa-chevron.visible-inline.blue-arrow {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
+
+/* a proud achievement */
+
+#globalHeaderResourcesLinks li.dropdown.open .fa.fa-chevron-down.visible-inline.blue-arrow {
+   -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  transition: 0.4s;
+}
+
+.fa.fa-chevron-down.visible-inline.blue-arrow span:hover {
+  text-decoration: none;
 }
 
 /******** mega drop down menu ********/
@@ -1143,6 +1161,12 @@ _____________________  _____________________________  __________________________
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+
+.fafa-chevron-down.visible-inline.blue-arrow {
+  transform: rotate(180deg);
+  transition: 0.4s;
+}
+
 @media screen and (max-width: 991.999px){
   #siteNavigation #menu li a {
     padding:10px 35px 10px 15px;
