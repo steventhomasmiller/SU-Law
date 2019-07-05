@@ -3257,6 +3257,7 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
 }
 .callToActionButton{
   background-color:#f7f7f7;
+  text-transform: uppercase;
 }
 /* Flex Grid Queries [FOR ZONE A]*/
 @media screen and (min-width: 1200px) { /*Large Displays*/
@@ -3837,11 +3838,18 @@ text-align: left;
   justify-content: center;
   text-align:center;
   padding: 30px 15px;
-  width: 0; 
+  width: 0;
+  border-right: 1px solid #fff; 
 }
+
+.colorButton:last-child {
+ border-right: none;
+}
+
 @media (max-width: 767px) {
   .colorButton{
       flex-basis: 33%;
+      border-right: none;
   } 
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -9429,11 +9437,12 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 
 .standardContent.publications .selector-bar {
   text-align: center;
+  margin-bottom: 23px;
 }
 
 .standardContent.publications:hover {
-  border: none;
-  color: #fff;
+  /*border: none;*/
+  --box-shadow-color: #ff0000;
 }
 
 
@@ -9529,18 +9538,25 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 
 .standardContent.publications .data .entry,
 .standardContent.news .news-post {
-  padding: 50px 0 40px 0;
+  padding: 50px 0 40px 15px;
   border-bottom: 1px solid #6f6f6f;
 }
 
-.standardContent.publications .data .entry:hover .entry-title h2,
+/* .standardContent.publications .data .entry,
+.standardContent.news .news-post:first-child {
+  margin-top: 30px;
+}*/
+
+/*.standardContent.publications .data .entry:hover .entry-title h2,
 .standardContent.news .news-post:hover .news-title h2{
   color: #a70200;
-}
+}*/
 
 .standardContent.publications .data .entry:hover{
   border-bottom: none;
-  color: #fff;
+  background-color: #fff;
+   --box-shadow-color: #000; /* Declaring the variable */
+    box-shadow: 1px 1px 7px var(--box-shadow-color);
 }
 
 .standardContent.publications .data .entry-title h2,
@@ -9555,6 +9571,7 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 .standardContent.publications .data .entry-subtext p,
 .standardContent.news .news-post .news-subtext p {
   font-weight: lighter;
+  text-transform: uppercase;
 }
 
 .resourcesBox{
