@@ -27,26 +27,47 @@
  <style>
  /* Start TitleBanner CSS */
  #id365658 .titleBanner2BackgroundImage{
-  background: 
-  linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)
-    ),
-  url('../assets/schools-and-colleges.jpg');
-  background-position:  center;
+  background: url('../assets/banner-chang.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   }
-  #id365658 .titleBanner2BackgroundImage h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+ #id365658 .titleBanner2BackgroundImage h1{
+    /*position: absolute;
+    top: 31%;
+    left: 35%;
+    transform: translate(-50%, -50%);*/
     color: #ffffff;
     font-size: 55px;
     font-weight: lighter;
   }
-  #id365658 .titleBanner2BackgroundImage h4{
+  
+  /*#id365658 .titleBanner2BackgroundImage h4{
     position: absolute;
+    top: 49%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: lighter;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+  } */
+
+   /* .titleBanner2BackgroundImage .bio-phone{
+    position: absolute;
+    top: 63%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: lighter;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+  }
+
+  .titleBanner2BackgroundImage .bio-email {
+     position: absolute;
     top: 63%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -57,7 +78,19 @@
     -webkit-text-stroke-color: white;
   }
 
- .titleBanner2BackgroundImage .bio-phone{
+  .titleBanner2BackgroundImage .bio-office {
+     position: absolute;
+    top: 63%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: lighter;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+  }
+
+ .titleBanner2BackgroundImage .bio-links{
       position: absolute;
     top: 63%;
     left: 50%;
@@ -68,22 +101,72 @@
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: white;
   }
- } 
+
+   .titleBanner2BackgroundImage .boxlinkitem{
+      position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: lighter;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+  }
+
+     .titleBanner2BackgroundImage .boxlinkItem{
+      position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: lighter;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+  }
+*/
 
   @media screen and (min-width:992px) {
     #id365658 .titleBanner2BackgroundImage{
-      height: 400px;
+      height: 600px;
     }
   }
   @media screen and (min-width: 768px) and (max-width: 991.999px){
     #id365658 .titleBanner2BackgroundImage{
-
+      height: 300px;
+      background-position-x: right;
+      background-position-y: center;
+      background-size: cover;
     }
   }
+
+  /* Maybe only for faculty profile pages */
   @media screen and (max-width: 767.999px){
     #id365658 .titleBanner2BackgroundImage{
-
+      height: 300px;
+      background-position-x: right;
+      background-position-y: center;
+      background-size: cover;
     }
+
+    #id365658 .titleBanner2BackgroundImage h1 {
+      color: #ffffff;
+      font-size: 21px;
+      font-weight: lighter;
+    } 
+
+    #id365658 .titleBanner2BackgroundImage h4{
+    position: absolute;
+    top: 59%;
+    left: 35%;
+    transform: translate(-43%, -50%);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: lighter;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+  }
   }
   /* End TitleBanner CSS */
 
@@ -272,7 +355,10 @@
   <script>
     $('#headerWrapper').load('../ajax/header.html');
   </script>
-  
+ <!--  <div class="sidebar-wrapper"></div>
+  <script>
+    $('.sidebar-wrapper').load('../ajax/floating-sidebar.html');
+  </script> -->
   <nav aria-label="Skip to important sections">
     <a class="sr-only sr-only-focusable" href="#zoneA">Skip to main content</a>
     <a class="sr-only sr-only-focusable" href="#contactInformationAnchor">Skip to contact information</a>
@@ -281,39 +367,47 @@
   <div class="clearfix"></div>
   <div id="pageContentWrapper" role="main" class="container-fluid" style="padding: 0;">
     <div id="pageContent">
-      <div class="element-wrapper">
-        <div class="standardContent bio-card row">
-          <div class="bio-picture col-md-4"></div>
-          <div class="bio-text-wrapper col-md-7 col-md-push-1">
+      <div id="BannerZoneWrapper" role="banner" class="container-fluid">
+    <div id="BannerZone" class="row">
+      <div class="titleBanner2Wrapper" id="id365658">
+        <a name="d.en.365658"></a>
+        <div class="titleBanner2">
+          <div class="titleBanner2BackgroundImage">
+            <div class="titleBanner2Overlay titleBanner2OverlayTransparent"></div>
             <div class="bio-name row col-md-12">
               <h1>Robert S. Chang</h1>
             </div>
-            <div class="bio-title row col-md-12">
-              <p>Executive Director of the Korematsu Center and Professor of Law</p>
+
+           <!-- <div class="bio-title row col-md-12">
+              <h4>Executive Director of the Korematsu Center and Professor of Law</h4>
             </div>
-            <div class="bio-contacts row col-md-12">
-              <div class="bio-phone col-md-4">
-                <p><i class="fas fa-phone"></i>(206) 398-4025</p>
+                <div class="bio-phone">
+                <i class="fas fa-phone"></i>(206) 398-4025
               </div>
-              <div class="bio-email col-md-5">
-                <i class="fas fa-envelope"></i><a href="">changro@seattleu.edu</a>
+                  <div class="bio-email">
+                    <i class="fas fa-envelope"></i><a href="">changro@seattleu.edu</a>
+                  </div>
+                  <div class="bio-office">
+                  <i class="fas fa-map-marker-alt"></i>Sullivan Hall 318
+                </div>
+                  <div class="bio-links row">
+                <div class="boxlinkItem">
+                  <a href="#"><i class="fas fa-download"></i>curriculum vitae</a>
+                </div>
+                <div class="boxlinkItem">
+                  <a href="#"><i class="fab fa-twitter"></i>@twittergoeshere</a>
+                </div>
               </div>
-              <div class="bio-office col-md-3">
-                <p><i class="fas fa-map-marker-alt"></i>Sullivan Hall 318</p>
-              </div>
-            </div>
-            <div class="bio-links row">
-              <div class="boxlinkItem col-md-6">
-                <a href="#"><i class="fas fa-download"></i>curriculum vitae</a>
-              </div>
-              <div class="boxlinkItem col-md-6">
-                <a href="#"><i class="fab fa-twitter"></i>@twittergoeshere</a>
-              </div>
+            </div> -->
+          
             </div>
           </div>
+          <div class="titleBanner2Triangles  titleBanner2TrianglesRed"> </div>
         </div>
       </div>
-      <div class="element-wrapper" style="background-color: #f7f7f7;">
+    </div>
+  </div>
+      <div class="element-wrapper" style="/*background-color: #f7f7f7;*/">
         <div class="standardContent biography row">
           <div class="col-md-8">
             <h2>Biography</h2>
@@ -327,29 +421,25 @@
               For several years, he has been serving as co-counsel in two cases in Alaska challenging the involuntary psychiatric hospitalization and forced psychotropic medication of Native foster children. Students from his Civil Rights Clinic have assisted on these and other cases.
             </p>
           </div>
-          <div class="col-md-4 col-md-push-1">
-            <h3>education</h3>
+
+          <!-- BEGIN SIDEBAR -->
+
+          <div class="bioContact col-md-3 col-md-push-1">
+            
+            <h3>Contact</h3>
             <div class="body">
               <p>
-                A.B., cum laude,<br>
-                Princeton University, 1988
+                <strong>Robert Chang</strong><br>
+                Executive Director of the Korematsu Center and Professor of Law
               </p>
               <p>
-                M.A. (Philosophy), J.D., cum laude,<br>
-                Duke University, 1992
+                Sullivan Hall 318<br>
+                (206) 398-4025<br>
+                changro@seattleu.edu
               </p>
+              </div>
             </div>
-            <h3>affiliations</h3>
-            <div class="body">
-              <p>
-                Lorem ipsum dolor sit amet<br>
-                consectetur adipisicing elit
-              </p>
-              <p>
-                sed do eiusmod tempor incididunt<br>
-                ut labore et dolore magna aliqua
-              </p>
-            </div>
+            <div class="bioExpertise col-md-3 col-md-push-1">
             <h3>areas of expertise</h3>
             <div class="body">
               <p>
@@ -360,19 +450,62 @@
                 Jurisprudence<br>
                 Perspectives on Immigration and Citizenship
               </p>
-            </div>
-            <h3>courses</h3>
-            <div class="body">
-              <p>
-                <a href="#">Civil Rights Clinic (ADVC-430-A)</a><br>
-                <a href="#">Contracts (CONT-105-A)</a>
-              </p>
-            </div>
+            </div> 
           </div>
+  
+
+          <!-- END SIDEBAR -->
+
+           <!--BEGIN ACCORDION-->
+            <div class="accordionWrapper noGap contentItem col-md-8" data-position-default="ZoneA" data-position-selected="ZoneA" id='id260924' role="tablist" aria-multiselectable="true">
+              <a name="d.en.260924"></a>
+              <dl role="presentation" class="accordionItemList">
+                <div class="accordionItem">
+                  <dt class="accordionItemHeader" tabindex="0" role="heading" id="heading1260924">
+                    <a class="accordionItemHeaderButton collapsed" tabindex="-1" role="button" data-toggle="collapse" data-parent='#id260924' href="#collapse1260924" aria-expanded="false" aria-controls="collapse1260924">
+                      <h3 class="accordionItemHeaderButtonTitle">Education<i class="fas fa-angle-down"></i></h3>
+                    </a>
+                  </dt>
+                  <dd id="collapse1260924" class="accordionItemContentWrapper collapse" role="region" aria-labelledby="heading1260924">
+                    <div class="accordionItemInfo standardContent">
+                      <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+                    </div>
+                  </dd>
+                </div>
+                <div class="accordionItem">
+                  <dt class="accordionItemHeader" tabindex="0" role="heading" id="heading2260924">
+                    <a class="accordionItemHeaderButton collapsed" tabindex="-1" role="button" data-toggle="collapse" data-parent="#id260924" href="#collapse2260924" aria-expanded="false"aria-controls="collapse2260924">
+                      <h3 class="accordionItemHeaderButtonTitle">Affiliations<i class="fas fa-angle-down"></i></h3>
+                    </a>
+                  </dt>
+                  <dd id="collapse2260924" class="accordionItemContentWrapper collapse" role="region" aria-labelledby="heading2260924">
+                    <div class="accordionItemInfo standardContent">
+                      <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+                    </div>
+                  </dd>
+                </div>
+                
+               
+                <div class="accordionItem">
+                  <dt class="accordionItemHeader" tabindex="0" role="heading" id="heading5260924">
+                    <a class="accordionItemHeaderButton collapsed" tabindex="-1" role="button" data-toggle="collapse" data-parent="#id260924" href="#collapse5260924" aria-expanded="false" aria-controls="collapse5260924">
+                      <h3 class="accordionItemHeaderButtonTitle">Courses<i class="fas fa-angle-down"></i></h3>
+                    </a>
+                  </dt>
+                  <dd id="collapse5260924" class="accordionItemContentWrapper collapse" role="region" aria-labelledby="heading5260924">
+                    <div class="accordionItemInfo standardContent">
+                      <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+                    </div>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+            <!--END ACCORDION-->
+
         </div>
       </div>
       <div class="element-wrapper">
-        <div class="standardContent publications row">
+        <div class="standardContent publications row col-xs-12">
           <h2>Publications</h2>
           <div class="selector-bar">
             <a href="" data-toggle="collapse">all</a>
@@ -390,6 +523,9 @@
           </div>
           <div id="articles-essays" class="data collapse">
             <div class="entry">
+              <div class="entry-category">
+                Articles and Essays
+              </div>
               <div class="entry-title">
                 <h2>Whitewashing Precedent: From the Chinese Exclusion Act to Korematsu to the Muslim Travel Ban Cases</h2>
               </div>
@@ -398,6 +534,9 @@
               </div>
             </div>
             <div class="entry">
+              <div class="entry-category">
+                Articles and Essays
+              </div>
               <div class="entry-title">
                 <h2>The Great White Hope: Social Control and the Phsychological Wages of Whiteness</h2>
               </div>
@@ -406,6 +545,9 @@
               </div>
             </div>
             <div class="entry">
+              <div class="entry-category">
+                Articles and Essays
+              </div>
               <div class="entry-title">
                 <h2>Will LGBT Antidescrimination Law Follow the Course of Race Antidescrimination Law?</h2>
               </div>
@@ -414,6 +556,9 @@
               </div>
             </div>
             <div class="entry">
+              <div class="entry-category">
+                Articles and Essays
+              </div>
               <div class="entry-title">
                 <h2>Evading Miller</h2>
               </div>
@@ -422,6 +567,9 @@
               </div>
             </div>
             <div class="entry">
+              <div class="entry-category">
+                Articles and Essays
+              </div>
               <div class="entry-title">
                 <h2>The Invention of Asian Americans</h2>
               </div>
@@ -430,6 +578,9 @@
               </div>
             </div>
             <div class="entry">
+              <div class="entry-category">
+                Articles and Essays
+              </div>
               <div class="entry-title">
                 <h2>Analysing Stops, Citations, and Searches in Washington and Beyond</h2>
               </div>
@@ -438,6 +589,9 @@
               </div>
             </div>
             <div class="entry" style="border-bottom: none;">
+              <div class="entry-category">
+                Articles and Essays
+              </div>
               <div class="entry-title">
                 <h2>Catering the Immigrant in the Inter/national Imagination (Part III): Aoki, Rawls, and Immigration</h2>
               </div>
@@ -460,7 +614,7 @@
         </div>
       </div>
       <div class="element-wrapper" style="background-color: #f7f7f7;">
-        <div class="standardContent news row">
+        <div class="standardContent news row col-xs-12">
           <div class="news-heading">
             <h2>In the News</h2>
           </div>
@@ -501,5 +655,17 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript">// <![CDATA[
+$(function () {
+            $(".accordion").accordion({
+                heightStyle: "content",
+                collapsible: true,
+                //Set the active accodtion tab to none
+                active: 'none'
+            });
+
+        });
+// ]]></s
 </body>
 </html>

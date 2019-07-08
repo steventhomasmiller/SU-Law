@@ -3257,7 +3257,18 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
 }
 .callToActionButton{
   background-color:#f7f7f7;
+  border: 2px solid #aa0000;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  height: 100%;
+  line-height: 1.6rem;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
+  transition: all 0.2s ease;
 }
 /* Flex Grid Queries [FOR ZONE A]*/
 @media screen and (min-width: 1200px) { /*Large Displays*/
