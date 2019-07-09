@@ -9236,7 +9236,7 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   position: absolute;
   margin-left: 25%;
   width: 60%;
-  height: 65%;
+  height: 100%;
   margin-top: 5%;
   background-color: #ffffff;
   padding: 50px 100px 20px 100px;
@@ -9300,7 +9300,7 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   position: absolute;
   margin-left: 8%;
   width: 40%;
-  height: 58%;
+  height: 100%;
   margin-top: 7.5%;
   background-color: #ffffff;
   padding: 30px 60px
@@ -9482,6 +9482,11 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 .standardContent.bio-card {
   height: 600px;
   padding-top: 150px;
+
+  /* Delete below this line depending on styles */
+  background-image: url('../assets/banner-chang.jpg');
+  background-position: center;
+  max-width: 1400px;
 }
 
 .standardContent.bio-card .bio-picture {
