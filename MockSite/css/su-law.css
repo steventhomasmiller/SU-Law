@@ -2332,6 +2332,12 @@ footer {
 footer #footerInner{
   padding: 90px 0;
 }
+
+@media screen and (min-width: 375px) and (max-width: 991.999px) {
+  footer #footerInner{
+  padding: 45px 0;
+}
+}
 body.advertising footer #footerInner{
   padding: 30px 0;
 }
@@ -2468,7 +2474,7 @@ footer .footerLinks a:hover, footer .footerLinks a:focus {
 /* -------- Social media links ----------- */
 @media (max-width:767.999px) {
   #footerSocialMediaLinks {
-    text-align: right;
+    text-align: center;
   }
 }
 
@@ -2494,11 +2500,11 @@ footer #footerSocialMediaLinks .social a:hover, footer #footerSocialMediaLinks .
 /* -------- CTA Links ----------- */
 
 #footerCallToActionLinks{
-  margin-top: 4px;
+  margin-top: 30px;
 }
 @media (max-width:767.999px) {
   #footerCallToActionLinks{
-    margin-top:0;
+    margin-top:40px;
   }
   #footerCallToActionLinks li{
     margin-bottom: 20px;
@@ -3575,6 +3581,19 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
 }
 .cardsWrapper .card h3{
   margin: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2em;
+  font-weight: 495;
+  color: #000;
+  padding: 20px;
+}
+
+.cardText p {
+  margin: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  color: #837b7b;
+  border-bottom: 1px solid #6f6f6f;
+  padding: 0 15px 40px 20px;
 }
 
 .cardsWrapper .cardButton{
@@ -3585,6 +3604,7 @@ text-align: left;
     font-size: 1.6rem;
     padding-right: 4rem;
     text-decoration: none;
+    padding-top: 15px;
 }
 .cardsWrapper .cardButton a:hover, .cardsWrapper .cardButton a:focus {
     text-decoration: underline;
@@ -3600,6 +3620,13 @@ text-align: left;
   padding: 0;
   width: 100%;
 }
+
+.standardContent .card .cardDateline p {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 0 15px 5px 20px;
+}
+
 .cardsWrapper .btn-boxlink a {
     align-items: center;
     border: 1px solid #088099;
@@ -3628,7 +3655,13 @@ text-align: left;
     flex-basis: 25%;
 }
 .cardsWrapper .cardLayout123 .card {
-    flex-basis: 33%;
+    flex-basis: 30%;
+    background-color: #f7f7f7;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    height: 100%;
 }
 .cardsWrapper .cardLayout12 .card {
     flex-basis: 50%;
@@ -9489,6 +9522,15 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   max-width: 1400px;
 }
 
+@media screen and (max-width: 767.999px){
+      .standardContent.bio-card {
+        height: 600px;
+        background-position-x: right;
+        background-position-y: center;
+        background-size: cover;
+    }
+  }  
+
 .standardContent.bio-card .bio-picture {
   background-image: url(../assets/banner-chang.jpg);
   width: 325px;
@@ -9557,6 +9599,8 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
   padding: 50px 0 40px 15px;
   border-bottom: 1px solid #6f6f6f;
 }
+
+
 
 /* .standardContent.publications .data .entry,
 .standardContent.news .news-post:first-child {
