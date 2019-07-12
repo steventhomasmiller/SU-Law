@@ -9743,15 +9743,14 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 }
 
 .resourcesList li a {
-  list-style-type: none;
+  list-style-type: none !important;
   margin-left: -6px;
   text-decoration: none;
   color: #1ab9d6;
   font-weight: 501;
 }
 
-.linkCategory ul.resourcesList li:before {
-  content: '';
+.standardContent .resourcesBox .linkCategory ul.resourcesList li:before {
   margin-left: -29px;
   text-decoration: none;
   color: #1ab9d6;
