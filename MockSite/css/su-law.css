@@ -1528,8 +1528,10 @@ _____________________  _____________________________  __________________________
   line-height:2;
   list-style-type:none;
   margin-bottom: 20px;
-    margin-left: 16px; /* indent */
+    margin-left: 0px; /* indent, but not that much */
   display: table;/* align 2nd line text, pt 1  */
+  font-weight: 500;
+  padding-left: 3px; /* indent, but not that much */
 }
 .standardContent ul li ul, .standardContent ol li ol{
     margin-bottom: 0;
@@ -1544,12 +1546,12 @@ _____________________  _____________________________  __________________________
 .standardContent ul li:before {
   font-family: 'seattle-u';
   font-size:13px !important;
-   /* content: 'b'; /* triple chevron */
-  color: #aa0000;
-  padding-right: 5px;
+  content: '\25FC'; /* triple chevron */
+  color: #01a3b0;
+  padding-right: 15px;
   display: table-cell; /* align 2nd line text, pt 3  */
   position: relative; 
-  top: 2px; /* moves the chevron 2px down to better align with text*/
+  top:-1px; /* moves the chevron 2px down to better align with text*/
 }
 /* ie can't handle the font-family while getting a display property. Using no-flexboxlegacy as a proxy for IE */
 .no-flexboxlegacy #zoneA .standardContent ul li:before, .no-flexboxlegacy #zoneB .standardContent ul li:before, .no-flexboxlegacy #zoneC .standardContent ul li:before{
@@ -3557,6 +3559,7 @@ Converter here: https://www.webpagefx.com/web-design/hex-to-rgb/
 .cardsWrapper .cards {
     display: flex;
     justify-content: space-between;
+    padding-left: 30px;
 }
 .cardsWrapper .card {
     align-items: stretch;
@@ -3663,6 +3666,13 @@ text-align: left;
     padding-right: 0;
     height: 100%;
 }
+
+@media screen and (min-width: 375px) and (max-width: 992px) {
+  .cardsWrapper .cardLayout123 .card {
+    margin-right: 0;
+  }
+}
+
 .cardsWrapper .cardLayout12 .card {
     flex-basis: 50%;
 }
@@ -4412,6 +4422,14 @@ text-align: left;
     padding-right:0;
   } 
 }
+
+/*.dualColumn .dualContentList li:before {
+  color: #01a3b0;
+  content: "\25FC";
+  font-size: .85rem;
+  padding-right: 1.1225em;
+  top: -1px;
+}*/
 
 /* ========================================================================================== 
    ===== Facebook Feed ===== Content Type #208 ============================================== 
@@ -9636,6 +9654,8 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 
 .resourcesBox{
   background-color:#f7f7f7;
+  max-width: 100%;
+  margin-bottom: 5%;
 }
 
 .resourcesBox h2 {
@@ -9656,7 +9676,18 @@ a.fellowshipsItemExternalWebsiteLink:hover .fas.fa-external-link-alt {
 
 .resourcesList li a {
   list-style-type: none;
+  margin-left: -6px;
+  text-decoration: none;
+  color: #1ab9d6;
+  font-weight: 501;
+}
+
+.linkCategory ul.resourcesList li:before {
+  content: '';
   margin-left: -29px;
+  text-decoration: none;
+  color: #1ab9d6;
+  font-weight: 501;
 }
 
 .entry-category {
