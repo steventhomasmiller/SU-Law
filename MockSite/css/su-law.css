@@ -3885,6 +3885,7 @@ text-align: left;
   margin: 0 0 30px 0;
 }
 .colorButton {
+  position: relative;
   display: flex; 
   flex: 1;
   flex-direction: column;
@@ -3893,7 +3894,74 @@ text-align: left;
   text-align:center;
   padding: 30px 15px;
   width: 0;
-  border-right: 1px solid #fff; 
+  /*border-right: 1px solid #fff; */
+  /*border-right-width: 1%*/
+}
+
+#button1::after{
+  content : "";
+  position: absolute;
+  right    : -1px;
+  z-index: 100;
+  top  : 21.5px;
+  width  : 2px;
+  height   : 70%;
+  background: #fff;
+}
+
+#button2::after{
+  content : "";
+  position: absolute;
+  right    : -1px;
+  z-index: 100;
+  top  : 21.5px;
+  width  : 2px;
+  height   : 70%;
+  background: #fff;
+}
+
+#button3::after{
+  content : "";
+  position: absolute;
+  right    : -1px;
+  z-index: 100;
+  top  : 21.5px;
+  width  : 2px;
+  height   : 70%;
+  background: #fff;
+}
+
+#button4::after{
+  content : "";
+  position: absolute;
+  right    : -1px;
+  z-index: 100;
+  top  : 21.5px;
+  width  : 2px;
+  height   : 70%;
+  background: #fff;
+}
+
+#button5::after{
+  content : "";
+  position: absolute;
+  right    : -1px;
+  z-index: 100;
+  top  : 21.5px;
+  width  : 2px;
+  height   : 70%;
+  background: #fff;
+}
+
+#button6::after{
+  content : "";
+  position: absolute;
+  right    : -1px;
+  z-index: 100;
+  top  : 21.5px;
+  width  : 2px;
+  height   : 70%;
+  background: #fff;
 }
 
 .colorButton:last-child {
