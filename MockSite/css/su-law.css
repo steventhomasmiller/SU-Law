@@ -1546,8 +1546,8 @@ _____________________  _____________________________  __________________________
 .standardContent ul li:before {
   font-family: 'seattle-u';
   font-size:13px !important;
-  content: '\25FC'; /* triple chevron */
-  color: #01a3b0;
+  content: '\25FC'; /*  black medium square */
+  color: #f7f7f7;
   padding-right: 15px;
   display: table-cell; /* align 2nd line text, pt 3  */
   position: relative; 
