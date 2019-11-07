@@ -27,231 +27,32 @@
 
  <style>
  /* Start TitleBanner CSS */
- #id365658 .titleBanner2BackgroundImage{
-  background: 
-  linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)
-    ),
-  url('../assets/schools-and-colleges.jpg');
+ /* Start Mega Banner 867579 */
+
+#id867579 .megaBanner{
+  background-image: url('../assets/Alaska_PageBanner.jpg');
   background-position:  center;
-  position: relative;
+}
+@media screen and (min-width:992px) {
+  #id867579 .megaBanner{
+    
   }
-  #id365658 .titleBanner2BackgroundImage h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    font-size: 55px;
-    font-weight: lighter;
+  #id867579 .megaBannerOverlay {
+    
   }
-  #id365658 .titleBanner2BackgroundImage h4{
-    position: absolute;
-    top: 63%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: lighter;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: white;
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  #id867579 .megaBanner{
+     
   }
-  @media screen and (min-width:992px) {
-    #id365658 .titleBanner2BackgroundImage{
-      height: 400px;
-    }
+}
+@media screen and (max-width: 767px){
+  #id867579 .megaBanner{
+     
   }
-  @media screen and (min-width: 768px) and (max-width: 991.999px){
-    #id365658 .titleBanner2BackgroundImage{
+}
 
-    }
-  }
-  @media screen and (max-width: 767.999px){
-    #id365658 .titleBanner2BackgroundImage{
-
-    }
-  }
-  /* End TitleBanner CSS */
-
-  .hero {
-    background-color: #333;
-    border-top:10px solid #fdb913;
-    position: relative;
-    min-height: 637px;
-    display: flex;
-    flex-direction: row;
-  }
-  .hero .bg-container-1 {
-    background-color: #000;
-    background-image:url('../assets/library1200x800.jpg'); 
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 637px;
-    z-index: 0;
-    flex: 5;
-  }
-  #id413878 .hero .bg-container-2 {
-    background-color: #000;
-    background-image:url('../assets/CSE_ProjectsDay_yck_027-2.jpg'); 
-    background-position: 75% 60% !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 637px;
-    z-index: 0;
-    flex: 4;
-  }
-  @media (max-width:992px) {
-    .hero .bg-container-2 {
-      background-position:center;
-    }
-  }
-  .hero .overlay {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(1, 146, 171, 0.7); 
-    z-index: 999;
-    height: 40%;
-    text-align: center;
-  }
-  .hero .tri-overlay {
-    background-image: linear-gradient(45deg, rgba(170,0,0,.7) 0%, rgba(170,0,0,.7) 23%, transparent 23%, transparent 100%);
-    background-size: contain;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  .hero h2 {
-    color: #fdb913;
-    text-transform: uppercase;
-    font-family: Montserrat, sans-serif;
-    font-size: 3rem;
-    margin: 3rem 0;
-    letter-spacing: 1px;
-  }
-  .hero h1 {
-    background: none;
-    color: white;
-    display: block;
-    font-size: 6rem;
-    font-family: Roboto Slab,serif;
-    font-size: 36px;
-    letter-spacing: 2px;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    z-index: 1000;
-    max-width: 90%;
-    margin: 0 auto;
-    background-image:url('../assets/Jesuit-Education.png'); 
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    text-indent: -99999em;
-    height: 80px;
-  }
-  .hero svg.arrow {
-    stroke: #fdb913;
-    width: 50px;
-    transform: rotate(90deg);
-    margin: 0 auto;
-    z-index:1000;
-    top: 4.5rem;
-    display:none;
-  }
-  @media (max-width:767.999px) {
-    .hero {
-      flex-direction: column;
-    }
-    .hero .bg-container-1 {
-      background-position: left 20%;
-      height: 50%;
-      flex:1;
-      display:none
-    }
-    .hero .bg-container-2 {
-      height: 50%;
-      flex:1;
-    }
-  }
-  @media (max-width:1009.999px) {
-    .hero h1 {
-      font-size:2.4rem;
-      top:-8rem;  
-    }
-    .hero h1 strong {
-      margin:0 !important;
-    }
-    .hero svg.arrow {
-      top:0rem;  
-    }
-  }
-  @media (max-width:991.999px) {
-    .hero h1 {
-      font-size:2.4rem;
-      top:0rem;  
-    }
-    .hero svg.arrow {
-      top:5rem;
-    }
-  }
-  @media (max-width:767.999px) {
-    .hero h1 {
-      font-size:2.4rem;
-      top:0rem;  
-    }
-    .hero h1 strong {
-      margin:0 !important;
-    }
-    .hero svg.arrow {
-      top:3rem;
-    }
-  }
-
-  #id411825{ display:none} /* hides christmas centerpiece for testing purposes */
-  #id291340{ display:none} /* hides "all begins here and links to The Ones and Tour for reasons */
-
-  .homepageGridItemCopy a {
-    color: #fff;
-    text-decoration: underline;
-  }
-  .homepageGridItemCopy a:hover, .homepageGridItemCopy a:focus {
-    color: #fdb913;
-  }
-
-  .homepageGridWrapper .homepageGrid .homepageGridItem2 .homepageGridHeading,
-  x.homepageGridWrapper .homepageGrid .homepageGridItem4 .homepageGridHeading{
-    font-size: calc(25vw / 9);
-    line-height: calc(25vw / 9);
-    xtext-shadow: 0 0 9px #000000;
-  }
-
-  @media screen and (max-width: 767.999px) { /* xs */
-    .homepageGridWrapper .homepageGrid .homepageGridItem2 .homepageGridHeading,
-    x.homepageGridWrapper .homepageGrid .homepageGridItem4 .homepageGridHeading{
-      font-size: calc(25vw / 4);
-      line-height: calc(25vw / 4);
-      xtext-shadow: 0 0 9px #000000;
-    }
-  }
-  .homepageGrid .homepageGridItem2 h3,
-  .homepageGrid .homepageGridItem4 h3{
-    color:#333333;
-  }
-  .homepageGrid .homepageGridItem2 a:hover, .homepageGrid .homepageGridItem2 a:focus,
-  .homepageGrid .homepageGridItem4 a:hover, .homepageGrid .homepageGridItem4 a:focus{
-    background-image: linear-gradient(rgba(255, 255,255, .3), rgba(255, 255, 255, .3));
-  }
-
-  #zoneA #id285421{
-    background-color:#333333;
-    padding-top: 30px;
-    margin-bottom:0px;
-  }
+/* End Mega Banner */
   </style>
 </head>
 <body class="homePage">
@@ -265,198 +66,259 @@
     <a class="sr-only sr-only-focusable" href="#contactInformationAnchor">Skip to contact information</a>
     <a class="sr-only sr-only-focusable" href="#ctaLinksAnchor">Skip to Apply, Request Info, Jobs, Contact links</a>
   </nav>
-  <div class="clearfix"></div>
+   <div class="clearfix"></div>
+
+    <!-- BEGIN BANNER WRAPPER -->
+
   <div id="BannerZoneWrapper" role="banner" class="container-fluid">
     <div id="BannerZone" class="row">
-      <div class="titleBanner2Wrapper" id="id365658">
-        <a name="d.en.365658"></a>
-        <div class="titleBanner2">
-          <div class="titleBanner2BackgroundImage">
-            <div class="titleBanner2Overlay titleBanner2OverlayTransparent"></div>
-            <h1>Alaska Law Campus</h1>
-            <h4>Alaska Law Campus</h4>
+      <div class="megaBannerWrapper" id="id867579">
+<a name="d.en.867579"></a>
+  <div class="megaBanner">
+    <div class="copy">
+      
+      <!-- <div class="megaBannerOverlay megaBannerOverlay megaBannerTriangles">  </div> -->
+      
+      <div class="megaBannerText standardContent ">
+        <h1>Alaska Law Campus</h1>  
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- <div class="arrowGraphicDown arrowGraphicDown"></div>-->
+  
+  
+  <div class="megaBannerIntroWrapper">
+    <div class="megaBannerIntro col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+    
+      <p>The Alaska Law Campus, part of Seattle University School of Law, offers a path for aspiring lawyers to study the state's compelling legal issues while experiencing its astounding physical landscape. We offer the most comprehensive legal education program in Alaska, with small classes taught by world-class legal experts.</p>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+    </div>
+  </div>
+  <!-- END BANNER WRAPPER -->
+
+<div id="pageContentWrapper" role="main" class="container-fluid">
+    <div id="pageContent" class="row">
+      
+      <div id="TopZone"> 
+          
+      </div>
+
+      <div id="MainZone"><div class="panelWrapper contentItem noGap" id="id867629" data-position-default="Main" data-position-selected="Main" role="presentation" aria-labelledby="label867629">
+  
+  <a name="d.en.867629"></a>
+  
+  <div class='panelFlexContainer centerCenterPanel' style="height:600px;">
+    
+    <div class='panelInner col-xs-12 col-sm-12 col-md-8 col-lg-7 centerCenterPanel'>
+      
+      <div class="panelText">
+        <div class="standardContent">
+          <h2 id="label867629">Our program</h2>
+          <div>
+            <p>Our program appeals to all law students at any ABA-accredited law school in the country who want to:</p>
+<ul>
+<li>Experience Alaska's unique culture and breathtaking landscapes</li>
+<li>Prepare to return home to practice law or simply spend a portion of law school in their homestate</li>
+<li>Get to know Alaska as a potential professional destination</li>
+</ul>
           </div>
+          <ul class="panelLinks">
+            <li><a href="https://cms.seattleu.edu/terminalfour/preview/31/en/186814">Alaska 3L Program</a></li>
+            <li><a href="https://cms.seattleu.edu/terminalfour/preview/31/en/186813">Alaska Summer Program</a></li>
+          </ul>
+          <div class="clearfix"></div>
         </div>
       </div>
     </div>
   </div>
-  <div id="pageContentWrapper" role="main" class="container-fluid" style="padding: 0;">
-    <div id="pageContent">
-      <div class="element-wrapper">
+  <div class="clearfix visible-xs visible-sm"></div>
+  <div class="panelOverlay" style="background: url(../assets/Seward4.jpg) no-repeat center top; height:600px; background-size: cover;"></div>
+  <div class="clearfix"></div>
+</div> 
+<div class="jumbotron3Wrapper contentItem noGap col-md-11 col-md-push-1" id="id867609" data-position-default="Main" data-position-selected="Main" aria-labelledby="label867609">
+  <a name="d.en.867609"></a>
+  <div class="jumbotron3 alignmentleft">
+    <div class="jumbotron3Image" style="background-image:url(../assets/Students6.jpg); min-height:600px"> 
+    </div>
+    <div class="jumbotron3Text standardContent jumbotron3TextDark">
+      
+      <h2 id="label867609">Gain valuable law experience</h2>
+      
+      <p>Round out your education with a variety of internship and externship opportunities with local law firms, Alaska Native corporations, governmental agencies and more.</p>
+      <ul class="boxlinks">
+      <li><a data-t4-type="sslink" data-t4-ss-link-id="3" href="https://cms.seattleu.edu/terminalfour/preview/31/en/186676">Experiential Learning</a></li>
+        
+        
+        
+        </ul>
+    </div>  
+  </div>
+</div>
+<div class="jumbotron3Wrapper contentItem noGap col-md-11 col-md-push-1" id="id867614" data-position-default="Main" data-position-selected="Main" aria-labelledby="label867614">
+  <a name="d.en.867614"></a>
+  <div class="jumbotron3 alignmentright">
+    <div class="jumbotron3Image" style="background-image:url(../assets/Students11.jpg); min-height:600px"> 
+    </div>
+    <div class="jumbotron3Text standardContent jumbotron3TextDark">
+      
+      <h2 id="label867614">Connect with a tight-knit legal community</h2>
+      
+      <p>Alaska's network of attorneys, judges and legal professionals is incredibly supportive and ready to help you on your journey to become a successful lawyer.</p>
+      <ul class="boxlinks">
+      <li><a data-t4-type="sslink" data-t4-ss-link-id="2" href="https://cms.seattleu.edu/terminalfour/preview/31/en/186679">Legal Community</a></li>
+        
+        
+        
+        </ul>
+    </div>  
+  </div>
+</div>
+<div class="callToActionWrapper contentItem noGap" id="id867596" data-position-default="Main" data-position-selected="Main" aria-labelledby="label867596" style="background-image:url(../assets/picaresque.jpg);">
+  <a name="d.en.867596"></a>
+  <div class="callToActionOverlay callToActionOverlayColorDarkBlue">
+  <div class="callToAction">
+
+    <h2 id="label867596" class="callToActionHeaderColorWhite">Resident of Alaska? Check out our scholarships</h2>
+    
+    <ul class="callToActionButtonWrapper">
+      <li class="callToActionButton">
+        <a href="https://cms.seattleu.edu/terminalfour/preview/31/en/186349">        
+          Learn More
+        </a>
+        <div class="callToActionButtonArrow"></div>
+      </li>
+      
+    
+    
+    
+    </ul>
+    <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+  <div class="panelWrapper contentItem noGap" id="id867601" data-position-default="Main" data-position-selected="Main" role="presentation" aria-labelledby="label867601">
+  
+  <a name="d.en.867601"></a>
+  
+  <div class='panelFlexContainer centerLeftPanel' style="height:800px;">
+    
+    <div class='panelInner col-xs-12 col-sm-12 col-md-8 col-lg-7 centerLeftPanel'>
+      
+      <div class="panelText">
         <div class="standardContent">
-          <p class="top-text">
-            The Alaska Law Campus, part of Seattle University School of Law, offers a path for aspiring lawyers to study the state's compelling legal issues while  eperienceing its astounding physical landscape. We offer the most comprehensive legal education program in Alaska, with small classes taught by world-class legal experts.
-          </p>
+          <h2 id="label867601">Explore a land of beauty and adventure</h2>
+          <div>
+            <p>Stunning landscapes, wide open spaces, and opportunities to hike, climb, fish, paddle, and more form an unforgettable backdrop to your legal experience</p>
+          </div>
+          <ul class="panelLinks">
+            <li><a href="https://cms.seattleu.edu/terminalfour/preview/31/en/186678">Learn More</a></li>
+            
+          </ul>
+          <div class="clearfix"></div>
         </div>
-      </div>
-      <div class="element-wrapper">
-        <div class="jumbotron3Wrapper contentItem noGap" id="id413882" data-position-default="ZoneA" data-position-selected="ZoneA" aria-labelledby="label413882" data-order="2">
-          <a name="d.en.413882"></a>
-          <div class="jumbotron3">
-            <div class="jumbotron3Image" style="background-image:url(../assets/cityinred19.jpg); min-height:500px"> 
-            </div>
-            <div class="jumbotron3Text standardContent no-line jumbotron3TextDark">
-              <div class="text-wrapper">
-                <h2 id="label413882">Immerse Yourself in Alaska Law</h2>
-                <p>Our Alaska-specific curriculum, taught by esteemed members of the Alaska bench and bar, gives you the substantive and practical knowledge to build your legal career.</p>
-                <ul class="boxlinks">
-                  <li>
-                    <a href="#">Programs</a>
-                  </li>
-                </ul>
-              </div>
-            </div>  
-          </div>
-          <div class="jumbotron3">
-            <div class="jumbotron3Text standardContent no-line jumbotron3TextDark">
-              <div class="text-wrapper">
-                <h2 id="label413882">Gain Valuable Law Experience</h2>
-                <p>Round out your education with a variety of internship and externship opportunities with local law firms, Alaska Native corperations, governmental agencies and more.</p>
-                <ul class="boxlinks">
-                  <li>
-                    <a href="#">Experiential Learning</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="jumbotron3Image" style="background-image:url(../assets/cityinred19.jpg); min-height:500px"> 
-            </div>  
-          </div>
-          <div class="jumbotron3">
-            <div class="jumbotron3Image" style="background-image:url(../assets/cityinred19.jpg); min-height:500px"> 
-            </div>
-            <div class="jumbotron3Text standardContent no-line jumbotron3TextDark">
-              <div class="text-wrapper">
-                <h2 id="label413882">Connect with a tight-knit legal community</h2>
-                <p>Alaska's network of attourneys, judges and legal professionals is incredibly supportive and ready to help you on your journey to becoming a successful lawyer.</p>
-                <ul class="boxlinks">
-                  <li>
-                    <a href="#">Legal Community</a>
-                  </li>
-                </ul>
-              </div>
-            </div>  
-          </div>
-        </div>
-      </div>
-      <div class="element-wrapper">
-        <div class="programWrapper row">
-          <div class="program-img-left col-xs-8"></div>
-          <div class="program-img-right col-xs-4"></div>
-          <div class="program-card">
-            <div class="program-title">Our Program</div>
-            <div class="program-text">
-              Our program appeals to all law students at any ABA-accredited law school in the country who want to:
-              <ul class="program-bullets">
-                <li>Experience Alaska's unique culture and breathtaking landscapes</li>
-                <li>Prepare to return home to practice law or simply spend a portion of law school in their home state</li>
-                <li>Get to know Alaska as a potential professional destination</li>
-              </ul>
-            </div>
-            <ul>
-            <div class="row">
-              <div class="boxlinkItem col-md-6">
-                <a href="#">Alaska 3L Program</a>
-              </div>
-              <div class="boxlinkItem col-md-6">
-                <a href="#">Alaska Summer Program</a>
-              </div>
-            </div>
-        	</ul>
-          </div>
-        </div>
-      </div>
-      <div class="element-wrapper">
-        <div class="spotlightWrapper">
-          <div class="spotlight spotlightAccentColorWhite">
-            <div class="spotlightImage col-xs-12 col-md-5">
-              <img src="../assets/Freeborn-Agyei_crop.jpg" alt="Freeborn Agyei, 2014, Business Valuation Graduate Certificate">     
-            </div>
-            <div class="spotlightCopy col-xs-12 col-md-5">
-              <h3 class="spotlight-orange">Student Story</h3>
-              <p class="spotlightCopyBody">
-                This is the holistic education I sought for when I enrolled at Seattle U. I really expanded options, friend network, and points of view.
-              </p>
-              <div class="spotlightCopyCitation red-border">
-                <span class="spotlightSource">Freeborn Agyei, 2014</span>
-                <span class="spotlightAffiliation">Business Valuation Graduate Certificate Ghana</span>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-        </div>
-      </div>
-      <div class="element-wrapper">
-        <div class="explore-wrapper">
-          <div class="explore-image"></div>
-          <div class="explore-card">
-            <div class="program-title" style="line-height: 4rem;">
-              Explore a land of beauty and adventure
-            </div>
-            <div class="program-text">
-              Stunning landscapes, wide open spaces and opportunities to hike, climb, fish, paddle and more form an unforgettable backdrop to your legal education.
-            </div>
-            <div class="boxlinkItem col-md-6" style="padding: 25px 0;">
-              <a href="#">Learn more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="element-wrapper">
-        <h3 class="program-title" style="text-align: center; padding-top: 80px;">Map heading goes here</h3>
-        <div class="standardContent">
-          <p class="top-text" style="padding-top: 20px; padding-bottom: 20px;">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d347205.34469193575!2d-150.06219358054784!3d61.271686982540466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x56c8917604b33f41%3A0x257dba5aa78468e3!2sAnchorage%2C+AK!5e0!3m2!1sen!2sus!4v1557945769619!5m2!1sen!2sus" width="100%" height="600" frameborder="0" style="border:0; padding-bottom: 13rem;" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="element-wrapper">
-        <div class="scolarship-wrapper">
-          <div class="scolarship-title">
-            Resident of Alaska? Learn more about our scolarships
-          </div>
-          <div class="boxlinkItem alt-boxlink col-md-3 col-md-push-5">
-            <a href="#">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="element-wrapper">
-        <h3 class="program-title" style="text-align: center; padding-top: 80px;">Learn more about Alaska</h3>
-        <form method="post" class="learn-more-form" id="learn-more">
-          <div class="standardContent row">
-            <input type="text" name="name" value="Name" class="col-md-12">
-            <input type="email" name="email" value="Email" class="col-md-12">
-            <select id="interest" name="interest" form="learn-more" class="col-md-6">
-              <option value="" disabled selected>Interest</option>
-              <option value="JD">JD</option>
-              <option value="LLM">LLM</option>
-              <option value="MLS">MLS</option>
-            </select>
-            <select id="year" name="year" form="learn-more" class="col-md-6">
-              <option value="" disabled selected>Year</option>
-              <option value="freshman">Freshman</option>
-              <option value="sophomore">Sophomore</option>
-              <option value="junior">Junior</option>
-              <option value="senior">Senior</option>
-              <option value="graduate">Graduate</option>
-            </select>
-            <input type="submit" name="submit" value="submit">
-            <div class="row arrow-wrapper">
-              <a href="#" class="return-arrow">
-                <span class="fa fa-arrow-up"></span>
-              </a>
-            </div>
-          </div>
-        </form>
       </div>
     </div>
+  </div>
+  <div class="clearfix visible-xs visible-sm"></div>
+  <div class="panelOverlay" style="background: url(../assets/ice-cave.jpg) no-repeat center top; height:800px; background-size: cover;"></div>
   <div class="clearfix"></div>
+</div> 
+<section role="form" aria-labelledby="pageTitle" class="formPlaceholderWrapper contentItem hspace" id="id867672" data-position-default="Main" data-position-selected="">
+  <a name="d.en.867672"></a>
+  <div class="formPlaceholder standardContent">
+    <div class="formPreamble">
+      
+    </div>
+    <div class="js-t4form-container"></div>
+<script type="text/javascript">
+    var formData = {
+        "publishedSectionId": 185881,
+        "formId": 2229,
+        "formbankUri": "https://us.formbank.us",
+        "redirects": {
+            
+        },
+        "serviceBaseUrl": "https://us.formbank.us/rest",
+        "language": "en",
+        "customer": 2
+    };
+</script>
+
+<script>
+    var t4formModule = {
+        addCss: function(href, element) {
+            var cssElement = document.createElement('link');
+            cssElement.setAttribute('href', href);
+            cssElement.setAttribute('rel', 'stylesheet');
+            element.appendChild(cssElement);
+        },
+        addJs: function(element) {
+            var jsElement = document.createElement('script');
+            jsElement.setAttribute('data-main', 'https://us.formbank.us/client/public/js/main');
+            jsElement.setAttribute('src', 'https://us.formbank.us/client/public/require.js');
+            jsElement.setAttribute('defer', true);
+            element.appendChild(jsElement);
+        },
+        injectCss: function() {
+            var headElement = document.getElementsByTagName('head')[0];
+            if (!headElement) {
+              this.logError('No head element exists, form cannot be injected into this page');
+                return;
+            }
+            this.addCss('https://us.formbank.us/client/public/css/bootstrap.css', headElement);
+            this.addCss('https://us.formbank.us/client/public/css/bootstrap-theme.css', headElement);
+            this.addCss('https://us.formbank.us/client/public/css/bootstrap-datetimepicker.css', headElement);
+            this.addCss('https://us.formbank.us/client/public/css/font-awesome.css', headElement);
+            this.addCss('https://us.formbank.us/client/public/main.css', headElement);
+        },
+        injectJs: function() {
+            var bodyElement = document.getElementsByTagName('body')[0];
+            if (!bodyElement) {
+                this.logError('No body element exists, form cannot be injected into this page');
+                return;
+            }
+            this.addJs(bodyElement);
+        },
+        logError: function(message){
+            if(console){
+                console.log(message);
+            }
+        }
+    };
+
+    (function() {
+        document.addEventListener("DOMContentLoaded", function(event) {
+            t4formModule.injectJs();
+        });
+        document.addEventListener('formLoaded', function() {
+          var includeCss = context.form.get('includeCss');
+          if (includeCss) {
+            t4formModule.injectCss();
+          }
+        })
+    })();
+</script>
+
+
+  </div>
+</section>
+      
+    </div><!-- end #MainZone -->
+
+    <div id="SidebarZone" class="col-xs-12">
+      
+    </div><!-- end #SidebarZone -->   
+
+    <div class="clearfix"></div>
+  </div>  <!-- end #pageContent --> 
+</div><!-- end #pageContentWrapper -->
+
+<div class="clearfix"></div>
   <div id="footerWrapper"></div>
   <script>
     $('#footerWrapper').load('../ajax/footer.html');
